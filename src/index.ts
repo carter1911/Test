@@ -14,6 +14,7 @@ import {
   checkConversionTriggers,
   generateSummary
 } from './recommendations';
+import { FRONTEND_HTML } from './html';
 
 /**
  * Main Cloudflare Worker Entry Point
@@ -60,19 +61,30 @@ export default {
         return await handleChat(request, env, corsHeaders);
       }
 
-      // Default: API documentation
-      return jsonResponse({
-        name: env.APP_NAME || 'AI Revenue & Operations Analyst',
-        version: env.APP_VERSION || '1.0.0',
-        endpoints: {
-          '/health': 'Health check',
-          '/industries': 'List available industries',
-          '/analyze': 'POST - Run revenue analysis',
-          '/ai-insights': 'POST - Get AI-enhanced insights (requires HuggingFace API)',
-          '/chat': 'POST - Interactive chat with AI analyst'
-        },
-        documentation: 'https://github.com/your-repo/ai-revenue-analyst'
-      }, corsHeaders);
+      // Route: API documentation (JSON)
+      if (url.pathname === '/api') {
+        return jsonResponse({
+          name: env.APP_NAME || 'AI Revenue & Operations Analyst',
+          version: env.APP_VERSION || '1.0.0',
+          endpoints: {
+            '/': 'Interactive web interface',
+            '/health': 'Health check',
+            '/industries': 'List available industries',
+            '/analyze': 'POST - Run revenue analysis',
+            '/ai-insights': 'POST - Get AI-enhanced insights (requires HuggingFace API)',
+            '/chat': 'POST - Interactive chat with AI analyst'
+          },
+          documentation: 'https://github.com/your-repo/ai-revenue-analyst'
+        }, corsHeaders);
+      }
+
+      // Default: Serve HTML frontend
+      return new Response(FRONTEND_HTML, {
+        headers: {
+          'Content-Type': 'text/html;charset=UTF-8',
+          ...corsHeaders
+        }
+      });
 
     } catch (error) {
       console.error('Worker error:', error);
