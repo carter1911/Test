@@ -14,14 +14,12 @@ binding = "AI"
 APP_NAME = "AI Revenue & Operations Analyst"
 APP_VERSION = "1.0.0"
 
-# Define the secret binding for HuggingFace API
-# The actual secret value is stored securely in Cloudflare
-# and accessed via env.HUGGINGFACE_API_KEY in your worker
-[secrets]
-# HUGGINGFACE_API_KEY - Set via: wrangler secret put HUGGINGFACE_API_KEY
-
-# Development environment variables (use .dev.vars file locally)
-# Production secrets must be set via wrangler CLI or dashboard
+# SECRETS (not declared in wrangler.toml):
+# Secrets are set via CLI or Cloudflare Dashboard and accessed via env.HUGGINGFACE_API_KEY
+# To set: wrangler secret put HUGGINGFACE_API_KEY
+# Or: Cloudflare Dashboard > Workers > Settings > Variables > Add Variable (encrypted)
+#
+# Development environment variables: use .dev.vars file locally
 
 # Optional: KV namespace for storing user data
 # [[kv_namespaces]]
