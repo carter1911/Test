@@ -1,0 +1,30 @@
+{
+  "name": "ai-revenue-analyst",
+  "version": "1.0.0",
+  "description": "AI Revenue & Operations Analyst for service-based businesses - Cloudflare Workers Edition",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "wrangler dev",
+    "build": "esbuild src/index.ts --bundle --outfile=dist/worker.js --format=esm --target=es2022",
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail",
+    "secret:huggingface": "wrangler secret put HUGGINGFACE_API_KEY"
+  },
+  "keywords": [
+    "cloudflare-workers",
+    "ai",
+    "revenue-analytics",
+    "huggingface",
+    "operations"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240925.0",
+    "@types/node": "^20.10.0",
+    "esbuild": "^0.19.11",
+    "typescript": "^5.3.3",
+    "wrangler": "^3.80.0"
+  },
+  "dependencies": {}
+}

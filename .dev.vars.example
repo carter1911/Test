@@ -1,0 +1,11 @@
+# Local Development Environment Variables
+# Copy this file to .dev.vars and add your actual API keys
+# Never commit .dev.vars to version control
+
+# HuggingFace API Key
+# Get your key from: https://huggingface.co/settings/tokens
+HUGGINGFACE_API_KEY=hf_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+# Optional: Specify which HuggingFace model to use
+# HUGGINGFACE_MODEL=meta-llama/Meta-Llama-3-8B-Instruct
+# HUGGINGFACE_MODEL=mistralai/Mistral-7B-Instruct-v0.2

@@ -1,0 +1,23 @@
+{
+  "businessProfile": {
+    "industry": "med-spa",
+    "averageTicketValue": 500,
+    "monthlyLeadVolume": 200,
+    "leadSources": ["Google Ads", "Instagram", "Referrals", "Walk-ins"],
+    "bookingMethod": "phone"
+  },
+  "leadHandling": {
+    "missedCallsPercentage": 30,
+    "avgResponseTimeMinutes": 15,
+    "followUpAttemptsPerLead": 2,
+    "showRatePercentage": 65,
+    "closeRatePercentage": 35
+  },
+  "capacity": {
+    "staffSize": 5,
+    "bookingLimitsPerDay": 12,
+    "bookingLimitsPerWeek": 60,
+    "peakHours": ["10am-2pm", "4pm-7pm"],
+    "deadHours": ["7am-9am", "8pm-10pm"]
+  }
+}
