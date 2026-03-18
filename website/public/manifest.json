@@ -1,0 +1,42 @@
+{
+  "name": "BraveHeart Way | Sales & Marketing Consulting",
+  "short_name": "BraveHeart",
+  "description": "Revenue engine systems for exterior remodeling companies. Build scalable outbound sales and marketing systems.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0A0F1E",
+  "theme_color": "#D4A017",
+  "orientation": "portrait-primary",
+  "categories": ["business", "productivity"],
+  "icons": [
+    {
+      "src": "/images/braveheart-consulting-logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/braveheart-consulting-logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Book a Strategy Call",
+      "short_name": "Book Call",
+      "description": "Schedule your free strategy session",
+      "url": "/contact",
+      "icons": [{ "src": "/images/braveheart-consulting-logo.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Our Services",
+      "short_name": "Services",
+      "description": "Explore all BraveHeart services",
+      "url": "/services",
+      "icons": [{ "src": "/images/braveheart-consulting-logo.png", "sizes": "96x96" }]
+    }
+  ]
+}
