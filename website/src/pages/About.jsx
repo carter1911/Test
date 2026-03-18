@@ -75,69 +75,72 @@ export default function About() {
             alignItems: 'center',
           }}>
             <ScrollReveal direction="left">
-              {/* Headshot Placeholder */}
+              {/* Sekayi — real headshot slot */}
               <div style={{
-                background: 'linear-gradient(135deg, #1C2333, #252D40)',
-                border: '2px solid rgba(212,160,23,0.25)',
                 borderRadius: '16px',
-                aspectRatio: '3/4',
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                justifyContent: 'center',
-                gap: '16px',
-                position: 'relative',
                 overflow: 'hidden',
+                position: 'relative',
+                border: '2px solid rgba(212,160,23,0.25)',
+                boxShadow: '0 24px 80px rgba(0,0,0,0.55), 0 0 40px rgba(212,160,23,0.08)',
               }}>
+                <img
+                  src="/images/sekayi-headshot.jpg"
+                  alt="Sekayi Brown — Founder, BraveHeart Consulting LLC"
+                  style={{
+                    width: '100%',
+                    display: 'block',
+                    objectFit: 'cover',
+                    aspectRatio: '3/4',
+                  }}
+                  onError={e => {
+                    // Fallback if image not yet placed
+                    e.target.style.display = 'none'
+                    e.target.nextSibling.style.display = 'flex'
+                  }}
+                />
+                {/* Fallback placeholder — hidden when image loads */}
+                <div style={{
+                  display: 'none',
+                  background: 'linear-gradient(135deg, #1C2333, #252D40)',
+                  aspectRatio: '3/4',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  flexDirection: 'column',
+                  gap: '12px',
+                  color: '#6B7280',
+                  fontSize: '14px',
+                }}>
+                  <span style={{ fontSize: '40px' }}>📷</span>
+                  <span>Add sekayi-headshot.jpg to<br/>public/images/</span>
+                </div>
+
+                {/* Gradient name overlay at bottom */}
                 <div style={{
                   position: 'absolute',
                   bottom: 0,
                   left: 0,
                   right: 0,
-                  height: '60%',
-                  background: 'linear-gradient(to top, rgba(212,160,23,0.08), transparent)',
-                }} />
-                <div style={{
-                  width: '120px',
-                  height: '120px',
-                  background: 'rgba(212,160,23,0.15)',
-                  borderRadius: '50%',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  fontSize: '48px',
-                  border: '2px solid rgba(212,160,23,0.3)',
+                  background: 'linear-gradient(to top, rgba(6,10,20,0.95) 0%, rgba(6,10,20,0.5) 60%, transparent 100%)',
+                  padding: '40px 24px 24px',
                 }}>
-                  👤
-                </div>
-                <div style={{ textAlign: 'center', zIndex: 1 }}>
-                  <div style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: '28px', letterSpacing: '0.08em', color: '#fff' }}>
+                  <div style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: '26px', letterSpacing: '0.08em', color: '#fff' }}>
                     SEKAYI BROWN
                   </div>
-                  <div style={{ fontSize: '13px', letterSpacing: '0.15em', textTransform: 'uppercase', color: '#D4A017', fontWeight: 600, marginTop: '4px' }}>
+                  <div style={{ fontSize: '12px', letterSpacing: '0.15em', textTransform: 'uppercase', color: '#D4A017', fontWeight: 600, marginTop: '4px' }}>
                     Founder · BraveHeart Consulting LLC
                   </div>
-                </div>
-                <div style={{
-                  position: 'absolute',
-                  bottom: '24px',
-                  left: '24px',
-                  right: '24px',
-                  display: 'flex',
-                  gap: '8px',
-                }}>
-                  {['$150M+', '18+ Leaders', '100+ Bootcamps'].map((stat, i) => (
-                    <div key={i} style={{
-                      flex: 1,
-                      background: 'rgba(10,15,30,0.8)',
-                      border: '1px solid rgba(212,160,23,0.2)',
-                      borderRadius: '6px',
-                      padding: '10px 8px',
-                      textAlign: 'center',
-                    }}>
-                      <div style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: '16px', color: '#D4A017', letterSpacing: '0.03em' }}>{stat}</div>
-                    </div>
-                  ))}
+                  <div style={{ display: 'flex', gap: '8px', marginTop: '12px', flexWrap: 'wrap' }}>
+                    {['$150M+', '18+ Leaders', '100+ Bootcamps'].map((stat, i) => (
+                      <div key={i} style={{
+                        background: 'rgba(10,15,30,0.8)',
+                        border: '1px solid rgba(212,160,23,0.25)',
+                        borderRadius: '6px',
+                        padding: '6px 10px',
+                      }}>
+                        <div style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: '14px', color: '#D4A017', letterSpacing: '0.03em' }}>{stat}</div>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
             </ScrollReveal>
@@ -327,8 +330,163 @@ export default function About() {
         </div>
       </section>
 
-      {/* Values */}
+      {/* Family Section */}
       <section style={{ background: '#0A0F1E', padding: '100px 0' }}>
+        <div className="container">
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: '1.1fr 1fr',
+            gap: '72px',
+            alignItems: 'center',
+            maxWidth: '1100px',
+            margin: '0 auto',
+          }}>
+            <ScrollReveal direction="left">
+              {/* Family photo */}
+              <div style={{ position: 'relative' }}>
+                {/* Gold accent line */}
+                <div style={{
+                  position: 'absolute',
+                  top: '-16px',
+                  left: '-16px',
+                  width: '80px',
+                  height: '80px',
+                  border: '3px solid rgba(212,160,23,0.35)',
+                  borderRight: 'none',
+                  borderBottom: 'none',
+                  borderRadius: '4px 0 0 0',
+                  zIndex: 1,
+                }} />
+                <div style={{
+                  position: 'absolute',
+                  bottom: '-16px',
+                  right: '-16px',
+                  width: '80px',
+                  height: '80px',
+                  border: '3px solid rgba(212,160,23,0.35)',
+                  borderLeft: 'none',
+                  borderTop: 'none',
+                  borderRadius: '0 0 4px 0',
+                  zIndex: 1,
+                }} />
+                <div style={{
+                  borderRadius: '12px',
+                  overflow: 'hidden',
+                  boxShadow: '0 32px 80px rgba(0,0,0,0.6), 0 0 48px rgba(212,160,23,0.06)',
+                  border: '1px solid rgba(212,160,23,0.15)',
+                  position: 'relative',
+                }}>
+                  <img
+                    src="/images/sekayi-family.jpg"
+                    alt="Sekayi Brown with his family"
+                    style={{
+                      width: '100%',
+                      display: 'block',
+                      objectFit: 'cover',
+                      aspectRatio: '4/5',
+                      /* Subtle warm grade that bridges the Christmas-portrait
+                         lighting with the navy/gold site palette */
+                      filter: 'contrast(1.05) saturate(1.1) brightness(0.98)',
+                    }}
+                    onError={e => {
+                      e.target.style.display = 'none'
+                      e.target.nextSibling.style.display = 'flex'
+                    }}
+                  />
+                  {/* Fallback */}
+                  <div style={{
+                    display: 'none',
+                    background: 'linear-gradient(135deg, #1C2333, #252D40)',
+                    aspectRatio: '4/5',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    flexDirection: 'column',
+                    gap: '12px',
+                    color: '#6B7280',
+                    fontSize: '14px',
+                    textAlign: 'center',
+                    padding: '24px',
+                  }}>
+                    <span style={{ fontSize: '40px' }}>🏡</span>
+                    <span>Add sekayi-family.jpg to<br/>public/images/</span>
+                  </div>
+
+                  {/* Subtle bottom vignette */}
+                  <div style={{
+                    position: 'absolute',
+                    bottom: 0,
+                    left: 0,
+                    right: 0,
+                    height: '30%',
+                    background: 'linear-gradient(to top, rgba(10,15,30,0.4), transparent)',
+                    pointerEvents: 'none',
+                  }} />
+                </div>
+              </div>
+            </ScrollReveal>
+
+            <ScrollReveal direction="right">
+              <div>
+                <span className="label-text">The Man Behind the Mission</span>
+                <h2 style={{
+                  fontFamily: 'Playfair Display, serif',
+                  fontSize: 'clamp(28px, 3.5vw, 42px)',
+                  fontWeight: 700,
+                  color: '#fff',
+                  marginTop: '16px',
+                  marginBottom: '24px',
+                  lineHeight: 1.2,
+                }}>
+                  Family Is the<br />
+                  <em style={{ color: '#D4A017' }}>"Why" Behind It All</em>
+                </h2>
+
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '18px' }}>
+                  <p style={{ color: '#D0D5E0', fontSize: '16px', lineHeight: 1.8, fontWeight: 500 }}>
+                    Behind every system Sekayi builds and every leader he develops is a deeper
+                    purpose — the family waiting at home who remind him every day what it all means.
+                  </p>
+                  <p style={{ color: '#A0A8B8', fontSize: '15px', lineHeight: 1.8 }}>
+                    Sekayi is a proud husband and father. The discipline, resilience, and
+                    relentless pursuit of excellence that define his professional approach
+                    flow directly from his commitment to building a legacy his family can be proud of.
+                  </p>
+                  <p style={{ color: '#A0A8B8', fontSize: '15px', lineHeight: 1.8 }}>
+                    When clients work with BraveHeart, they're not just getting a consultant —
+                    they're getting someone who understands that a thriving business creates
+                    thriving families. That's not a tagline. It's personal.
+                  </p>
+                </div>
+
+                {/* Gold pull quote */}
+                <div style={{
+                  marginTop: '32px',
+                  padding: '20px 24px',
+                  background: 'rgba(212,160,23,0.07)',
+                  borderLeft: '3px solid #D4A017',
+                  borderRadius: '0 8px 8px 0',
+                }}>
+                  <p style={{
+                    fontFamily: 'Playfair Display, serif',
+                    fontSize: '17px',
+                    fontStyle: 'italic',
+                    color: '#fff',
+                    lineHeight: 1.6,
+                  }}>
+                    "I build revenue engines so that families — mine and the ones my clients come home to — can live without limits."
+                  </p>
+                  <span style={{ color: '#D4A017', fontSize: '12px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', display: 'block', marginTop: '10px' }}>
+                    — Sekayi Brown
+                  </span>
+                </div>
+              </div>
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
+      {/* Values */}
+      <section style={{ background: '#111827', padding: '100px 0' }}>
         <div className="container">
           <ScrollReveal>
             <div className="section-header">

@@ -63,14 +63,31 @@ export default function Navbar() {
         }
         .navbar__logo {
           display: flex;
-          flex-direction: column;
-          line-height: 1;
+          align-items: center;
+          gap: 12px;
           text-decoration: none;
           flex-shrink: 0;
         }
+        .navbar__logo-img {
+          height: 52px;
+          width: 52px;
+          object-fit: contain;
+          /* black-bg logo blends naturally into dark nav;
+             the chess diamond becomes a glowing emblem */
+          filter: drop-shadow(0 0 10px rgba(212,160,23,0.25));
+          transition: filter 0.3s ease;
+        }
+        .navbar__logo:hover .navbar__logo-img {
+          filter: drop-shadow(0 0 16px rgba(212,160,23,0.55));
+        }
+        .navbar__logo-text {
+          display: flex;
+          flex-direction: column;
+          line-height: 1;
+        }
         .navbar__logo-main {
           font-family: 'Bebas Neue', sans-serif;
-          font-size: 26px;
+          font-size: 22px;
           letter-spacing: 0.08em;
           color: #fff;
         }
@@ -79,7 +96,7 @@ export default function Navbar() {
         }
         .navbar__logo-sub {
           font-family: 'DM Sans', sans-serif;
-          font-size: 10px;
+          font-size: 9px;
           font-weight: 500;
           letter-spacing: 0.2em;
           text-transform: uppercase;
@@ -182,6 +199,26 @@ export default function Navbar() {
         .navbar__mobile.open {
           display: flex;
         }
+        .navbar__mobile-logo {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          margin-bottom: 32px;
+          text-decoration: none;
+        }
+        .navbar__mobile-logo img {
+          height: 56px;
+          width: 56px;
+          object-fit: contain;
+          filter: drop-shadow(0 0 12px rgba(212,160,23,0.4));
+        }
+        .navbar__mobile-logo-text {
+          font-family: 'Bebas Neue', sans-serif;
+          font-size: 24px;
+          letter-spacing: 0.08em;
+          color: #fff;
+        }
+        .navbar__mobile-logo-text span { color: #D4A017; }
         .navbar__mobile-link {
           font-family: 'Bebas Neue', sans-serif;
           font-size: 36px;
@@ -225,8 +262,15 @@ export default function Navbar() {
 
       <div className="navbar__inner">
         <Link to="/" className="navbar__logo">
-          <span className="navbar__logo-main">BRAVE<span>HEART</span> WAY</span>
-          <span className="navbar__logo-sub">BraveHeart Consulting LLC</span>
+          <img
+            src="/images/braveheart-consulting-logo.png"
+            alt="BraveHeart Consulting"
+            className="navbar__logo-img"
+          />
+          <div className="navbar__logo-text">
+            <span className="navbar__logo-main">BRAVE<span>HEART</span> WAY</span>
+            <span className="navbar__logo-sub">BraveHeart Consulting LLC</span>
+          </div>
         </Link>
 
         <div className="navbar__links">
@@ -261,6 +305,10 @@ export default function Navbar() {
       </div>
 
       <div className={`navbar__mobile ${menuOpen ? 'open' : ''}`}>
+        <Link to="/" className="navbar__mobile-logo">
+          <img src="/images/braveheart-consulting-logo.png" alt="BraveHeart" />
+          <span className="navbar__mobile-logo-text">BRAVE<span>HEART</span> WAY</span>
+        </Link>
         {navLinks.map(({ to, label }) => (
           <NavLink
             key={to}

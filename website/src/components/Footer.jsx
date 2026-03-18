@@ -16,15 +16,30 @@ export default function Footer() {
           margin-bottom: 64px;
         }
         .footer-logo {
-          font-family: 'Bebas Neue', sans-serif;
-          font-size: 28px;
-          letter-spacing: 0.08em;
-          color: #fff;
+          display: flex;
+          align-items: center;
+          gap: 14px;
           margin-bottom: 16px;
-          display: block;
           text-decoration: none;
         }
-        .footer-logo span { color: #D4A017; }
+        .footer-logo-img {
+          width: 60px;
+          height: 60px;
+          object-fit: contain;
+          /* Invert the white-bg logo so it reads on dark footer,
+             then tint toward gold to match the brand palette */
+          filter: invert(1) sepia(0.4) hue-rotate(5deg) saturate(0.9) brightness(0.95)
+                  drop-shadow(0 0 8px rgba(212,160,23,0.2));
+          flex-shrink: 0;
+        }
+        .footer-logo-text {
+          font-family: 'Bebas Neue', sans-serif;
+          font-size: 26px;
+          letter-spacing: 0.08em;
+          color: #fff;
+          line-height: 1;
+        }
+        .footer-logo-text span { color: #D4A017; }
         .footer-tagline {
           color: #A0A8B8;
           font-size: 14px;
@@ -156,7 +171,14 @@ export default function Footer() {
         <div className="footer-grid">
           {/* Brand */}
           <div>
-            <Link to="/" className="footer-logo">BRAVE<span>HEART</span> WAY</Link>
+            <Link to="/" className="footer-logo">
+            <img
+              src="/images/braveheart-way-logo.png"
+              alt="The BraveHeart Way"
+              className="footer-logo-img"
+            />
+            <span className="footer-logo-text">BRAVE<span>HEART</span> WAY</span>
+          </Link>
             <p className="footer-tagline">
               Developing and consulting small to medium size businesses in sales and customer service
               to help increase revenue and retention using the latest resources and strategies.
