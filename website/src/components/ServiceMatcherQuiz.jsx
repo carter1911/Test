@@ -125,7 +125,7 @@ export default function ServiceMatcherQuiz() {
   const q = questions[step]
 
   return (
-    <div style={{
+    <div className="quiz-inner" style={{
       background: 'linear-gradient(135deg, #1C2333, #252D40)',
       border: '1px solid rgba(212,160,23,0.2)',
       borderRadius: '12px',
@@ -177,7 +177,8 @@ export default function ServiceMatcherQuiz() {
           flex-shrink: 0;
         }
         @media (max-width: 600px) {
-          .quiz-inner { padding: 32px 24px !important; }
+          .quiz-inner { padding: 28px 20px !important; }
+          .quiz-option { padding: 16px 18px; font-size: 15px; }
         }
       `}</style>
 

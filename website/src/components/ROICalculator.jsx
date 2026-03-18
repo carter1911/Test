@@ -32,7 +32,7 @@ export default function ROICalculator() {
   const fmt = (n) => new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(n)
 
   return (
-    <div style={{
+    <div className="roi-outer" style={{
       background: 'linear-gradient(135deg, #1C2333, #252D40)',
       border: '1px solid rgba(212,160,23,0.2)',
       borderRadius: '12px',
@@ -102,6 +102,7 @@ export default function ROICalculator() {
         .roi-compare-label { font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #6B7280; margin-bottom: 4px; }
         .roi-compare-val { font-family: 'Bebas Neue', sans-serif; font-size: 24px; color: #fff; letter-spacing: 0.02em; }
         @media (max-width: 768px) { .roi-grid { grid-template-columns: 1fr; gap: 32px; } }
+        @media (max-width: 600px) { .roi-outer { padding: 28px 20px !important; } }
       `}</style>
 
       <div style={{ textAlign: 'center', marginBottom: '40px' }}>
