@@ -4,6 +4,7 @@ import StatCounter from '../components/StatCounter'
 import ServiceMatcherQuiz from '../components/ServiceMatcherQuiz'
 import ROICalculator from '../components/ROICalculator'
 import ScrollReveal from '../components/ScrollReveal'
+import LogoWatermark from '../components/LogoWatermark'
 
 const stats = [
   { end: 150, prefix: '$', suffix: 'M+', label: 'Revenue Influenced', sublabel: 'Across all client partnerships' },
@@ -175,6 +176,7 @@ export default function Home() {
 
         <div className="hero-bg-glow" />
         <div className="hero-bg-glow-2" />
+        <LogoWatermark position="center" size={640} opacity={0.038} delay={900} />
 
         <div style={{ maxWidth: '1000px', width: '100%', textAlign: 'center', position: 'relative', zIndex: 1 }}>
           <div className="hero-badge">
@@ -243,8 +245,9 @@ export default function Home() {
       </section>
 
       {/* ============ STATS ============ */}
-      <section style={{ background: '#0D1526', padding: '80px 0' }}>
-        <div className="container">
+      <section style={{ background: '#0D1526', padding: '80px 0', position: 'relative', overflow: 'hidden' }}>
+        <LogoWatermark position="right" size={500} opacity={0.042} delay={300} />
+        <div className="container" style={{ position: 'relative', zIndex: 1 }}>
           <ScrollReveal>
             <div style={{ textAlign: 'center', marginBottom: '48px' }}>
               <span className="label-text">Proven Track Record</span>
@@ -422,6 +425,7 @@ export default function Home() {
           inset: 0,
           background: 'radial-gradient(ellipse at center, rgba(212,160,23,0.07) 0%, transparent 70%)',
         }} />
+        <LogoWatermark position="center" size={720} opacity={0.05} delay={200} />
         <div className="container" style={{ textAlign: 'center', position: 'relative', zIndex: 1 }}>
           <ScrollReveal>
             <span className="label-text">Ready to Scale?</span>

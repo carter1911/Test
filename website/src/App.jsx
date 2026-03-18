@@ -3,6 +3,7 @@ import { Routes, Route, useLocation } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import ToastNotification from './components/ToastNotification'
+import ToolsDrawer from './components/ToolsDrawer'
 import { NotificationProvider, useNotification } from './context/NotificationContext'
 import Home from './pages/Home'
 import About from './pages/About'
@@ -137,6 +138,7 @@ export default function App() {
         </Routes>
       </main>
       <Footer />
+      <ToolsDrawer />
       <AppNotifications />
       <ToastNotification />
     </NotificationProvider>
