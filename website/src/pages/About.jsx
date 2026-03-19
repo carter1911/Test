@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import ScrollReveal from '../components/ScrollReveal'
+import LogoWatermark from '../components/LogoWatermark'
 
 const timeline = [
   {
@@ -49,6 +50,7 @@ export default function About() {
     <div>
       {/* Hero */}
       <section className="page-hero" style={{ minHeight: '60vh', display: 'flex', alignItems: 'center' }}>
+        <LogoWatermark position="top-right" size={420} opacity={0.055} delay={150} />
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
           <ScrollReveal>
             <span className="label-text">About Sekayi Brown</span>

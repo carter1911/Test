@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import ScrollReveal from '../components/ScrollReveal'
+import LogoWatermark from '../components/LogoWatermark'
 
 const services = [
   {
@@ -212,6 +213,7 @@ export default function Services() {
     <div>
       {/* Hero */}
       <section className="page-hero" style={{ minHeight: '55vh', display: 'flex', alignItems: 'center' }}>
+        <LogoWatermark position="top-right" size={400} opacity={0.055} delay={150} />
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
           <ScrollReveal>
             <span className="label-text">Services & Pricing</span>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import ScrollReveal from '../components/ScrollReveal'
+import LogoWatermark from '../components/LogoWatermark'
 
 const conferences2026 = [
   { name: 'International Roofing Expo', date: 'Feb 4–6, 2026', location: 'Houston, TX', region: 'South', type: 'National', link: '#' },
@@ -91,6 +92,7 @@ export default function Resources() {
     <div>
       {/* Hero */}
       <section className="page-hero" style={{ minHeight: '50vh', display: 'flex', alignItems: 'center' }}>
+        <LogoWatermark position="top-right" size={380} opacity={0.055} delay={150} />
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
           <ScrollReveal>
             <span className="label-text">Free Resources</span>

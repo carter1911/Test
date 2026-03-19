@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import ScrollReveal from '../components/ScrollReveal'
+import LogoWatermark from '../components/LogoWatermark'
 
 const challenges = [
   'Not generating enough leads',
@@ -33,6 +34,7 @@ export default function Contact() {
     <div>
       {/* Hero */}
       <section className="page-hero" style={{ minHeight: '50vh', display: 'flex', alignItems: 'center' }}>
+        <LogoWatermark position="top-right" size={380} opacity={0.055} delay={150} />
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
           <ScrollReveal>
             <span className="label-text">Let's Talk</span>
