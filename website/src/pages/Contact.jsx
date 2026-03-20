@@ -38,11 +38,11 @@ export default function Contact() {
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
           <ScrollReveal>
             <span className="label-text">Let's Talk</span>
-            <h1 className="display-xl" style={{ color: '#fff', marginTop: '16px', marginBottom: '24px' }}>
+            <h1 className="display-xl" style={{ color: '#0A0A0A', marginTop: '16px', marginBottom: '24px' }}>
               Book Your Free<br />
               <span style={{ color: '#D4A017' }}>Strategy Call</span>
             </h1>
-            <p style={{ color: '#A0A8B8', fontSize: 'clamp(16px,2vw,20px)', maxWidth: '560px', lineHeight: 1.7 }}>
+            <p style={{ color: '#5C5C5C', fontSize: 'clamp(16px,2vw,20px)', maxWidth: '560px', lineHeight: 1.7 }}>
               30 minutes. Zero pressure. Walk away knowing exactly what's holding your revenue back
               and how BraveHeart can fix it.
             </p>
@@ -51,7 +51,7 @@ export default function Contact() {
       </section>
 
       {/* Contact Section */}
-      <section style={{ background: '#0A0F1E', padding: '100px 0' }}>
+      <section style={{ background: '#FAF7F2', padding: '100px 0' }}>
         <div className="container">
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.3fr', gap: '80px', alignItems: 'start' }}>
 
@@ -63,7 +63,7 @@ export default function Contact() {
                   fontFamily: 'Playfair Display, serif',
                   fontSize: 'clamp(28px,3.5vw,44px)',
                   fontWeight: 700,
-                  color: '#fff',
+                  color: '#0A0A0A',
                   marginTop: '16px',
                   marginBottom: '28px',
                   lineHeight: 1.2,
@@ -77,7 +77,7 @@ export default function Contact() {
                   display: 'flex',
                   alignItems: 'center',
                   gap: '16px',
-                  background: 'linear-gradient(135deg, rgba(212,160,23,0.12), rgba(212,160,23,0.04))',
+                  background: 'linear-gradient(135deg, rgba(212,160,23,0.15), rgba(242,234,216,0.9))',
                   border: '1px solid rgba(212,160,23,0.3)',
                   borderRadius: '10px',
                   padding: '20px 24px',
@@ -102,7 +102,7 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div>
-                    <div style={{ fontSize: '12px', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#A0A8B8', marginBottom: '4px' }}>
+                    <div style={{ fontSize: '12px', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#5C5C5C', marginBottom: '4px' }}>
                       Call or Text Directly
                     </div>
                     <div style={{
@@ -120,8 +120,8 @@ export default function Contact() {
                   display: 'flex',
                   alignItems: 'center',
                   gap: '16px',
-                  background: 'rgba(28,35,51,0.5)',
-                  border: '1px solid rgba(255,255,255,0.08)',
+                  background: 'rgba(255,254,248,0.85)',
+                  border: '1px solid rgba(0,0,0,0.10)',
                   borderRadius: '10px',
                   padding: '20px 24px',
                   marginBottom: '40px',
@@ -131,8 +131,8 @@ export default function Contact() {
                   <div style={{
                     width: '52px',
                     height: '52px',
-                    background: 'rgba(255,255,255,0.05)',
-                    border: '1px solid rgba(255,255,255,0.1)',
+                    background: 'rgba(0,0,0,0.04)',
+                    border: '1px solid rgba(0,0,0,0.10)',
                     borderRadius: '50%',
                     display: 'flex',
                     alignItems: 'center',
@@ -144,7 +144,7 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div>
-                    <div style={{ fontSize: '12px', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#A0A8B8', marginBottom: '4px' }}>
+                    <div style={{ fontSize: '12px', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#5C5C5C', marginBottom: '4px' }}>
                       Email Us
                     </div>
                     <div style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '16px', fontWeight: 600, color: '#D0D5E0' }}>
@@ -167,12 +167,12 @@ export default function Contact() {
                       display: 'flex',
                       gap: '14px',
                       padding: '16px 0',
-                      borderBottom: '1px solid rgba(255,255,255,0.05)',
+                      borderBottom: '1px solid rgba(0,0,0,0.08)',
                     }}>
                       <span style={{ fontSize: '22px', flexShrink: 0 }}>{item.icon}</span>
                       <div>
-                        <div style={{ fontWeight: 700, color: '#fff', fontSize: '15px', marginBottom: '4px' }}>{item.title}</div>
-                        <div style={{ color: '#A0A8B8', fontSize: '14px', lineHeight: 1.6 }}>{item.desc}</div>
+                        <div style={{ fontWeight: 700, color: '#0A0A0A', fontSize: '15px', marginBottom: '4px' }}>{item.title}</div>
+                        <div style={{ color: '#5C5C5C', fontSize: '14px', lineHeight: 1.6 }}>{item.desc}</div>
                       </div>
                     </div>
                   ))}
@@ -185,7 +185,7 @@ export default function Contact() {
               <div>
                 {/* Calendly Placeholder */}
                 <div style={{
-                  background: 'linear-gradient(135deg, rgba(28,35,51,0.9), rgba(37,45,64,0.9))',
+                  background: 'linear-gradient(135deg, rgba(255,254,248,0.95), rgba(242,234,216,0.95))',
                   border: '1px solid rgba(212,160,23,0.2)',
                   borderRadius: '12px',
                   padding: '40px',
@@ -197,29 +197,29 @@ export default function Contact() {
                     fontFamily: 'Bebas Neue, sans-serif',
                     fontSize: '24px',
                     letterSpacing: '0.08em',
-                    color: '#fff',
+                    color: '#0A0A0A',
                     marginBottom: '8px',
                   }}>
                     Schedule Directly on Calendly
                   </h3>
-                  <p style={{ color: '#A0A8B8', fontSize: '14px', marginBottom: '24px', lineHeight: 1.6 }}>
+                  <p style={{ color: '#5C5C5C', fontSize: '14px', marginBottom: '24px', lineHeight: 1.6 }}>
                     Pick a date and time that works for you. The 30-minute strategy call with
                     Sekayi is completely free, no commitment required.
                   </p>
                   {/* Calendly embed placeholder */}
                   <div style={{
-                    background: 'rgba(10,15,30,0.6)',
-                    border: '1px solid rgba(255,255,255,0.06)',
+                    background: 'rgba(250,247,242,0.98)',
+                    border: '1px solid rgba(0,0,0,0.08)',
                     borderRadius: '8px',
                     padding: '40px 24px',
                     marginBottom: '20px',
-                    color: '#6B7280',
+                    color: '#888888',
                     fontSize: '14px',
                     fontStyle: 'italic',
                   }}>
                     [Calendly embed will be integrated here with your scheduling link]
                     <br/>
-                    <code style={{ fontSize: '12px', color: '#A0A8B8', marginTop: '8px', display: 'block' }}>
+                    <code style={{ fontSize: '12px', color: '#5C5C5C', marginTop: '8px', display: 'block' }}>
                       Replace this block with: &lt;InlineWidget url="https://calendly.com/your-link" /&gt;
                     </code>
                   </div>
@@ -236,11 +236,11 @@ export default function Contact() {
 
                 {/* Or Divider */}
                 <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '32px' }}>
-                  <div style={{ flex: 1, height: '1px', background: 'rgba(255,255,255,0.08)' }} />
-                  <span style={{ color: '#6B7280', fontSize: '13px', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+                  <div style={{ flex: 1, height: '1px', background: 'rgba(0,0,0,0.10)' }} />
+                  <span style={{ color: '#888888', fontSize: '13px', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em' }}>
                     Or send a message
                   </span>
-                  <div style={{ flex: 1, height: '1px', background: 'rgba(255,255,255,0.08)' }} />
+                  <div style={{ flex: 1, height: '1px', background: 'rgba(0,0,0,0.10)' }} />
                 </div>
 
                 {/* Lead Capture Form */}
@@ -257,12 +257,12 @@ export default function Contact() {
                       fontFamily: 'Bebas Neue, sans-serif',
                       fontSize: '28px',
                       letterSpacing: '0.05em',
-                      color: '#fff',
+                      color: '#0A0A0A',
                       marginBottom: '12px',
                     }}>
                       Message Received!
                     </h3>
-                    <p style={{ color: '#A0A8B8', fontSize: '15px', lineHeight: 1.7, maxWidth: '340px', margin: '0 auto 20px' }}>
+                    <p style={{ color: '#5C5C5C', fontSize: '15px', lineHeight: 1.7, maxWidth: '340px', margin: '0 auto 20px' }}>
                       Sekayi or someone from the BraveHeart team will follow up within 24 hours.
                       For faster response, call or text: <strong style={{ color: '#D4A017' }}>843-535-3251</strong>
                     </p>
@@ -271,8 +271,8 @@ export default function Contact() {
                   <form
                     onSubmit={handleSubmit}
                     style={{
-                      background: 'rgba(28,35,51,0.5)',
-                      border: '1px solid rgba(255,255,255,0.08)',
+                      background: 'rgba(255,254,248,0.85)',
+                      border: '1px solid rgba(0,0,0,0.10)',
                       borderRadius: '12px',
                       padding: '40px',
                     }}
@@ -281,7 +281,7 @@ export default function Contact() {
                       fontFamily: 'DM Sans, sans-serif',
                       fontSize: '20px',
                       fontWeight: 700,
-                      color: '#fff',
+                      color: '#0A0A0A',
                       marginBottom: '24px',
                     }}>
                       Send Us a Message
@@ -369,7 +369,7 @@ export default function Contact() {
                       </svg>
                     </button>
 
-                    <p style={{ color: '#6B7280', fontSize: '12px', textAlign: 'center', marginTop: '12px', lineHeight: 1.5 }}>
+                    <p style={{ color: '#888888', fontSize: '12px', textAlign: 'center', marginTop: '12px', lineHeight: 1.5 }}>
                       We respond within 24 hours. Your information is never sold or shared.
                     </p>
                   </form>
@@ -381,7 +381,7 @@ export default function Contact() {
       </section>
 
       {/* Trust Strip */}
-      <section style={{ background: '#0D1526', padding: '60px 0' }}>
+      <section style={{ background: '#F2EAD8', padding: '60px 0' }}>
         <div className="container">
           <ScrollReveal>
             <div style={{
@@ -401,7 +401,7 @@ export default function Contact() {
                   <div style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: '32px', letterSpacing: '0.05em', color: '#D4A017' }}>
                     {stat.num}
                   </div>
-                  <div style={{ fontSize: '13px', color: '#A0A8B8', fontWeight: 600, letterSpacing: '0.06em', textTransform: 'uppercase', marginTop: '2px' }}>
+                  <div style={{ fontSize: '13px', color: '#5C5C5C', fontWeight: 600, letterSpacing: '0.06em', textTransform: 'uppercase', marginTop: '2px' }}>
                     {stat.label}
                   </div>
                 </div>

@@ -197,7 +197,7 @@ function ServiceCard({ service, index }) {
               {service.deliverables.map((d, i) => (
                 <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', padding: '8px 0', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
                   <span style={{ color: '#D4A017' }}>→</span>
-                  <span style={{ color: '#A0A8B8', fontSize: '14px' }}>{d}</span>
+                  <span style={{ color: '#5C5C5C', fontSize: '14px' }}>{d}</span>
                 </div>
               ))}
             </div>

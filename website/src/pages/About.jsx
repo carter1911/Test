@@ -134,7 +134,7 @@ export default function About() {
                   <div style={{ display: 'flex', gap: '8px', marginTop: '12px', flexWrap: 'wrap' }}>
                     {['$150M+', '18+ Leaders', '100+ Bootcamps'].map((stat, i) => (
                       <div key={i} style={{
-                        background: 'rgba(10,15,30,0.8)',
+                        background: 'rgba(250,247,242,0.98)',
                         border: '1px solid rgba(212,160,23,0.25)',
                         borderRadius: '6px',
                         padding: '6px 10px',
