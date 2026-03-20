@@ -352,7 +352,7 @@ export default function Resources() {
                   cursor: 'pointer',
                 }}>
                   <div style={{
-                    background: 'rgba(10,15,30,0.8)',
+                    background: 'rgba(250,247,242,0.98)',
                     aspectRatio: '16/9',
                     display: 'flex',
                     alignItems: 'center',
@@ -374,7 +374,7 @@ export default function Resources() {
                         <polygon points="5 3 19 12 5 21 5 3"/>
                       </svg>
                     </div>
-                    <div style={{ position: 'absolute', bottom: '10px', right: '12px', background: 'rgba(0,0,0,0.7)', color: '#fff', fontSize: '12px', fontWeight: 600, padding: '3px 8px', borderRadius: '4px' }}>
+                    <div style={{ position: 'absolute', bottom: '10px', right: '12px', background: 'rgba(0,0,0,0.7)', color: '#0A0A0A', fontSize: '12px', fontWeight: 600, padding: '3px 8px', borderRadius: '4px' }}>
                       {vid.duration}
                     </div>
                   </div>
@@ -382,10 +382,10 @@ export default function Resources() {
                     <span style={{ background: 'rgba(212,160,23,0.1)', border: '1px solid rgba(212,160,23,0.2)', color: '#D4A017', fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', padding: '2px 10px', borderRadius: '100px', marginBottom: '10px', display: 'inline-block' }}>
                       {vid.tag}
                     </span>
-                    <h3 style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '15px', fontWeight: 700, color: '#fff', marginBottom: '8px', lineHeight: 1.3 }}>
+                    <h3 style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '15px', fontWeight: 700, color: '#0A0A0A', marginBottom: '8px', lineHeight: 1.3 }}>
                       {vid.title}
                     </h3>
-                    <p style={{ color: '#A0A8B8', fontSize: '13px', lineHeight: 1.6 }}>{vid.desc}</p>
+                    <p style={{ color: '#5C5C5C', fontSize: '13px', lineHeight: 1.6 }}>{vid.desc}</p>
                   </div>
                 </div>
               </ScrollReveal>
@@ -395,13 +395,13 @@ export default function Resources() {
       </section>
 
       {/* CTA */}
-      <section style={{ background: '#0D1526', padding: '80px 0' }}>
+      <section style={{ background: '#F2EAD8', padding: '80px 0' }}>
         <div className="container" style={{ textAlign: 'center' }}>
           <ScrollReveal>
-            <h2 className="display-md" style={{ color: '#fff', marginBottom: '16px' }}>
+            <h2 className="display-md" style={{ color: '#0A0A0A', marginBottom: '16px' }}>
               Want More Than Resources?
             </h2>
-            <p style={{ color: '#A0A8B8', fontSize: '18px', maxWidth: '520px', margin: '0 auto 36px', lineHeight: 1.7 }}>
+            <p style={{ color: '#5C5C5C', fontSize: '18px', maxWidth: '520px', margin: '0 auto 36px', lineHeight: 1.7 }}>
               Resources are great. But nothing replaces a direct conversation with Sekayi about your specific situation.
             </p>
             <Link to="/contact" className="btn btn-gold btn-lg">Book Your Free Strategy Call</Link>
