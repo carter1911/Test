@@ -141,7 +141,7 @@ function ModuleCard({ module, color, index }) {
   return (
     <ScrollReveal delay={index * 60}>
       <div style={{
-        background: open ? 'rgba(28,35,51,0.9)' : 'rgba(28,35,51,0.5)',
+        background: open ? 'rgba(255,254,248,0.95)' : 'rgba(255,254,248,0.85)',
         border: `1px solid ${open ? `rgba(${color},0.4)` : 'rgba(255,255,255,0.07)'}`,
         borderRadius: '8px',
         overflow: 'hidden',
@@ -174,13 +174,13 @@ function ModuleCard({ module, color, index }) {
               fontFamily: 'DM Sans, sans-serif',
               fontSize: '16px',
               fontWeight: 700,
-              color: '#fff',
+              color: '#0A0A0A',
               marginBottom: '4px',
             }}>
               {module.title}
             </div>
             {!open && (
-              <div style={{ color: '#6B7280', fontSize: '13px' }}>{module.duration} · Click to expand</div>
+              <div style={{ color: '#888888', fontSize: '13px' }}>{module.duration} · Click to expand</div>
             )}
           </div>
           <div style={{
@@ -205,10 +205,10 @@ function ModuleCard({ module, color, index }) {
             gap: '28px',
           }}>
             <div>
-              <p style={{ color: '#A0A8B8', fontSize: '14px', lineHeight: 1.8, marginBottom: '12px' }}>
+              <p style={{ color: '#5C5C5C', fontSize: '14px', lineHeight: 1.8, marginBottom: '12px' }}>
                 {module.desc}
               </p>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#6B7280', fontSize: '13px', fontWeight: 600 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#888888', fontSize: '13px', fontWeight: 600 }}>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
                 </svg>
@@ -224,7 +224,7 @@ function ModuleCard({ module, color, index }) {
                   display: 'flex',
                   alignItems: 'flex-start',
                   gap: '8px',
-                  color: '#A0A8B8',
+                  color: '#5C5C5C',
                   fontSize: '13px',
                   lineHeight: 1.5,
                   padding: '6px 0',
@@ -253,11 +253,11 @@ export default function TrainingAcademy() {
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
           <ScrollReveal>
             <span className="label-text">BraveHeart Training Academy</span>
-            <h1 className="display-xl" style={{ color: '#fff', marginTop: '16px', marginBottom: '24px' }}>
+            <h1 className="display-xl" style={{ color: '#0A0A0A', marginTop: '16px', marginBottom: '24px' }}>
               Where Champions<br />
               <span style={{ color: '#D4A017' }}>Are Built</span>
             </h1>
-            <p style={{ color: '#A0A8B8', fontSize: 'clamp(16px,2vw,20px)', maxWidth: '600px', lineHeight: 1.7 }}>
+            <p style={{ color: '#5C5C5C', fontSize: 'clamp(16px,2vw,20px)', maxWidth: '600px', lineHeight: 1.7 }}>
               18 modules across two tracks — Mindset Mastery and Canvassing Excellence —
               designed to transform sales professionals from the inside out.
             </p>
@@ -266,7 +266,7 @@ export default function TrainingAcademy() {
       </section>
 
       {/* Track Overview */}
-      <section style={{ background: '#0D1526', padding: '80px 0' }}>
+      <section style={{ background: '#F2EAD8', padding: '80px 0' }}>
         <div className="container">
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '32px', maxWidth: '900px', margin: '0 auto' }}>
             {[
@@ -295,7 +295,7 @@ export default function TrainingAcademy() {
                   style={{
                     background: activeTrack === track.id
                       ? `rgba(${track.color},0.1)`
-                      : 'rgba(28,35,51,0.5)',
+                      : 'rgba(255,254,248,0.85)',
                     border: `2px solid ${activeTrack === track.id ? `rgba(${track.color},0.4)` : 'rgba(255,255,255,0.07)'}`,
                     borderRadius: '12px',
                     padding: '32px',
@@ -308,7 +308,7 @@ export default function TrainingAcademy() {
                     fontFamily: 'DM Sans, sans-serif',
                     fontSize: '18px',
                     fontWeight: 700,
-                    color: '#fff',
+                    color: '#0A0A0A',
                     marginBottom: '12px',
                     lineHeight: 1.3,
                   }}>
@@ -318,10 +318,10 @@ export default function TrainingAcademy() {
                     <span style={{ fontSize: '12px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: `rgb(${track.color})` }}>
                       {track.modules}
                     </span>
-                    <span style={{ color: '#6B7280', fontSize: '12px' }}>·</span>
-                    <span style={{ fontSize: '12px', color: '#A0A8B8', fontWeight: 500 }}>{track.duration}</span>
+                    <span style={{ color: '#888888', fontSize: '12px' }}>·</span>
+                    <span style={{ fontSize: '12px', color: '#5C5C5C', fontWeight: 500 }}>{track.duration}</span>
                   </div>
-                  <p style={{ color: '#A0A8B8', fontSize: '14px', lineHeight: 1.7 }}>{track.desc}</p>
+                  <p style={{ color: '#5C5C5C', fontSize: '14px', lineHeight: 1.7 }}>{track.desc}</p>
                   {activeTrack === track.id && (
                     <div style={{ marginTop: '16px', display: 'flex', alignItems: 'center', gap: '6px', color: `rgb(${track.color})`, fontSize: '13px', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase' }}>
                       <span>Viewing Below</span>
@@ -336,18 +336,18 @@ export default function TrainingAcademy() {
       </section>
 
       {/* Modules */}
-      <section style={{ background: '#0A0F1E', padding: '80px 0' }}>
+      <section style={{ background: '#FAF7F2', padding: '80px 0' }}>
         <div className="container">
           {activeTrack === 'mindset' ? (
             <div>
               <ScrollReveal>
                 <div style={{ textAlign: 'center', marginBottom: '48px' }}>
                   <span className="label-text">Track A</span>
-                  <h2 className="display-md" style={{ marginTop: '12px', color: '#fff' }}>
+                  <h2 className="display-md" style={{ marginTop: '12px', color: '#0A0A0A' }}>
                     12-Module Mindset<br />
                     <span style={{ color: '#D4A017' }}>Mastery Program</span>
                   </h2>
-                  <p style={{ color: '#A0A8B8', fontSize: '17px', maxWidth: '560px', margin: '16px auto 0' }}>
+                  <p style={{ color: '#5C5C5C', fontSize: '17px', maxWidth: '560px', margin: '16px auto 0' }}>
                     Are you ready for what you want? This journey starts with radical honesty
                     and ends with a limitless growth system you'll use for life.
                   </p>
@@ -362,11 +362,11 @@ export default function TrainingAcademy() {
               <ScrollReveal>
                 <div style={{ textAlign: 'center', marginBottom: '48px' }}>
                   <span style={{ fontSize: '12px', fontWeight: 700, letterSpacing: '0.15em', textTransform: 'uppercase', color: 'rgb(100,160,255)' }}>Track B</span>
-                  <h2 className="display-md" style={{ marginTop: '12px', color: '#fff' }}>
+                  <h2 className="display-md" style={{ marginTop: '12px', color: '#0A0A0A' }}>
                     6-Module Canvassing<br />
                     <span style={{ color: 'rgb(100,160,255)' }}>Mastery System</span>
                   </h2>
-                  <p style={{ color: '#A0A8B8', fontSize: '17px', maxWidth: '560px', margin: '16px auto 0' }}>
+                  <p style={{ color: '#5C5C5C', fontSize: '17px', maxWidth: '560px', margin: '16px auto 0' }}>
                     From mission and mindset to field launch — the complete blueprint for
                     building a professional door-to-door operation that generates consistent results.
                   </p>
@@ -381,7 +381,7 @@ export default function TrainingAcademy() {
       </section>
 
       {/* Academy CTA */}
-      <section style={{ background: '#0D1526', padding: '100px 0' }}>
+      <section style={{ background: '#F2EAD8', padding: '100px 0' }}>
         <div className="container">
           <ScrollReveal>
             <div style={{
@@ -398,7 +398,7 @@ export default function TrainingAcademy() {
                   fontFamily: 'Bebas Neue, sans-serif',
                   fontSize: 'clamp(36px, 5vw, 60px)',
                   letterSpacing: '0.05em',
-                  color: '#fff',
+                  color: '#0A0A0A',
                   marginTop: '16px',
                   marginBottom: '20px',
                   lineHeight: 1,
@@ -406,7 +406,7 @@ export default function TrainingAcademy() {
                   Ready to Train<br />
                   <span style={{ color: '#D4A017' }}>Your Entire Team?</span>
                 </h2>
-                <p style={{ color: '#A0A8B8', fontSize: '16px', lineHeight: 1.7, marginBottom: '28px' }}>
+                <p style={{ color: '#5C5C5C', fontSize: '16px', lineHeight: 1.7, marginBottom: '28px' }}>
                   The BraveHeart Training Academy is available as a standalone subscription for your team
                   or bundled with any consulting engagement. Access both tracks, all modules, and
                   ongoing updates as part of the Silver or Gold packages.
@@ -436,7 +436,7 @@ export default function TrainingAcademy() {
                   <div style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: '20px', letterSpacing: '0.1em', color: '#D4A017', marginBottom: '4px' }}>
                     BraveHeart Training Academy
                   </div>
-                  <div style={{ color: '#6B7280', fontSize: '14px', marginBottom: '28px' }}>Included with Silver & Gold packages</div>
+                  <div style={{ color: '#888888', fontSize: '14px', marginBottom: '28px' }}>Included with Silver & Gold packages</div>
                   <div style={{
                     display: 'grid',
                     gridTemplateColumns: '1fr 1fr',
@@ -450,13 +450,13 @@ export default function TrainingAcademy() {
                       { num: '∞', label: 'Team Access' },
                     ].map((stat, i) => (
                       <div key={i} style={{
-                        background: 'rgba(10,15,30,0.6)',
+                        background: 'rgba(250,247,242,0.98)',
                         borderRadius: '8px',
                         padding: '16px',
-                        border: '1px solid rgba(255,255,255,0.05)',
+                        border: '1px solid rgba(0,0,0,0.08)',
                       }}>
                         <div style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: '28px', color: '#D4A017', letterSpacing: '0.05em' }}>{stat.num}</div>
-                        <div style={{ fontSize: '12px', color: '#A0A8B8', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase' }}>{stat.label}</div>
+                        <div style={{ fontSize: '12px', color: '#5C5C5C', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase' }}>{stat.label}</div>
                       </div>
                     ))}
                   </div>

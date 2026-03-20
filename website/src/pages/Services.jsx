@@ -112,7 +112,7 @@ function ServiceCard({ service, index }) {
   return (
     <ScrollReveal delay={index * 60}>
       <div style={{
-        background: 'rgba(28,35,51,0.6)',
+        background: 'rgba(255,254,248,0.85)',
         border: `1px solid ${open ? tier.border : 'rgba(255,255,255,0.07)'}`,
         borderRadius: '10px',
         overflow: 'hidden',
@@ -137,7 +137,7 @@ function ServiceCard({ service, index }) {
                 fontFamily: 'DM Sans, sans-serif',
                 fontSize: '19px',
                 fontWeight: 700,
-                color: '#fff',
+                color: '#0A0A0A',
               }}>
                 {service.title}
               </h3>
@@ -155,7 +155,7 @@ function ServiceCard({ service, index }) {
                 {tier.label} · {tier.price}
               </span>
             </div>
-            <p style={{ color: '#A0A8B8', fontSize: '14px', lineHeight: 1.7 }}>{service.desc}</p>
+            <p style={{ color: '#5C5C5C', fontSize: '14px', lineHeight: 1.7 }}>{service.desc}</p>
           </div>
           <div style={{
             color: '#D4A017',
@@ -217,11 +217,11 @@ export default function Services() {
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
           <ScrollReveal>
             <span className="label-text">Services & Pricing</span>
-            <h1 className="display-xl" style={{ color: '#fff', marginTop: '16px', marginBottom: '24px' }}>
+            <h1 className="display-xl" style={{ color: '#0A0A0A', marginTop: '16px', marginBottom: '24px' }}>
               9 Ways to Build Your<br />
               <span style={{ color: '#D4A017' }}>Revenue Engine</span>
             </h1>
-            <p style={{ color: '#A0A8B8', fontSize: 'clamp(16px,2vw,20px)', maxWidth: '580px', lineHeight: 1.7 }}>
+            <p style={{ color: '#5C5C5C', fontSize: 'clamp(16px,2vw,20px)', maxWidth: '580px', lineHeight: 1.7 }}>
               Every service is built from real-world results — not theory. Click any card to see
               outcome metrics and deliverables.
             </p>
@@ -230,12 +230,12 @@ export default function Services() {
       </section>
 
       {/* Pricing Tiers */}
-      <section style={{ background: '#0D1526', padding: '80px 0' }}>
+      <section style={{ background: '#F2EAD8', padding: '80px 0' }}>
         <div className="container">
           <ScrollReveal>
             <div className="section-header">
               <span className="label-text">Investment Tiers</span>
-              <h2 className="display-md" style={{ marginTop: '12px', color: '#fff' }}>
+              <h2 className="display-md" style={{ marginTop: '12px', color: '#0A0A0A' }}>
                 Three Tiers. One Goal:<br />
                 <span style={{ color: '#D4A017' }}>Your Revenue Growth</span>
               </h2>
@@ -283,12 +283,12 @@ export default function Services() {
                   <div style={{
                     fontFamily: 'Bebas Neue, sans-serif',
                     fontSize: '28px',
-                    color: '#fff',
+                    color: '#0A0A0A',
                     marginBottom: '16px',
                   }}>
                     {tier.price}
                   </div>
-                  <p style={{ color: '#A0A8B8', fontSize: '14px', lineHeight: 1.7 }}>{tier.desc}</p>
+                  <p style={{ color: '#5C5C5C', fontSize: '14px', lineHeight: 1.7 }}>{tier.desc}</p>
                 </div>
               </ScrollReveal>
             ))}
@@ -297,12 +297,12 @@ export default function Services() {
       </section>
 
       {/* Services List */}
-      <section style={{ background: '#0A0F1E', padding: '80px 0' }}>
+      <section style={{ background: '#FAF7F2', padding: '80px 0' }}>
         <div className="container">
           <ScrollReveal>
             <div className="section-header">
               <span className="label-text">All Services</span>
-              <h2 className="display-md" style={{ marginTop: '12px', color: '#fff' }}>
+              <h2 className="display-md" style={{ marginTop: '12px', color: '#0A0A0A' }}>
                 Click to Explore<br />
                 <span style={{ color: '#D4A017' }}>Each Service</span>
               </h2>
@@ -328,12 +328,12 @@ export default function Services() {
                 fontFamily: 'Playfair Display, serif',
                 fontSize: 'clamp(24px, 3vw, 36px)',
                 fontWeight: 700,
-                color: '#fff',
+                color: '#0A0A0A',
                 marginBottom: '16px',
               }}>
                 Not Sure Which Package Is Right?
               </h3>
-              <p style={{ color: '#A0A8B8', fontSize: '17px', maxWidth: '520px', margin: '0 auto 32px', lineHeight: 1.7 }}>
+              <p style={{ color: '#5C5C5C', fontSize: '17px', maxWidth: '520px', margin: '0 auto 32px', lineHeight: 1.7 }}>
                 Every company is different. Book a free strategy call and Sekayi will personally
                 recommend the exact engagement to fit your goals, team size, and budget.
               </p>

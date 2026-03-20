@@ -45,12 +45,12 @@ export default function Navbar() {
           border-bottom: 1px solid transparent;
         }
         .navbar--scrolled {
-          background: rgba(10, 15, 30, 0.96);
+          background: rgba(250, 247, 242, 0.96);
           backdrop-filter: blur(20px);
           -webkit-backdrop-filter: blur(20px);
           padding: 14px 0;
-          border-bottom-color: rgba(212, 160, 23, 0.15);
-          box-shadow: 0 4px 32px rgba(0, 0, 0, 0.4);
+          border-bottom-color: rgba(184, 134, 11, 0.2);
+          box-shadow: 0 4px 32px rgba(0, 0, 0, 0.08);
         }
         .navbar__inner {
           max-width: 1280px;
@@ -89,10 +89,10 @@ export default function Navbar() {
           font-family: 'Bebas Neue', sans-serif;
           font-size: 22px;
           letter-spacing: 0.08em;
-          color: #fff;
+          color: #0A0A0A;
         }
         .navbar__logo-main span {
-          color: #D4A017;
+          color: #B8860B;
         }
         .navbar__logo-sub {
           font-family: 'DM Sans', sans-serif;
@@ -100,7 +100,7 @@ export default function Navbar() {
           font-weight: 500;
           letter-spacing: 0.2em;
           text-transform: uppercase;
-          color: #A0A8B8;
+          color: #5C5C5C;
           margin-top: 2px;
         }
         .navbar__links {
@@ -114,7 +114,7 @@ export default function Navbar() {
           font-family: 'DM Sans', sans-serif;
           font-size: 14px;
           font-weight: 500;
-          color: #A0A8B8;
+          color: #3A3A3A;
           padding: 8px 12px;
           border-radius: 4px;
           transition: all 0.2s ease;
@@ -122,18 +122,18 @@ export default function Navbar() {
           text-decoration: none;
         }
         .navbar__link:hover {
-          color: #fff;
-          background: rgba(255,255,255,0.05);
+          color: #0A0A0A;
+          background: rgba(0,0,0,0.05);
         }
         .navbar__link.active {
-          color: #D4A017;
+          color: #B8860B;
         }
         .navbar__cta {
           display: inline-flex;
           align-items: center;
           gap: 8px;
-          background: #D4A017;
-          color: #0A0F1E;
+          background: #B8860B;
+          color: #fff;
           font-family: 'DM Sans', sans-serif;
           font-size: 14px;
           font-weight: 700;
@@ -148,9 +148,9 @@ export default function Navbar() {
           flex-shrink: 0;
         }
         .navbar__cta:hover {
-          background: #E8B930;
+          background: #9A7009;
           transform: translateY(-1px);
-          box-shadow: 0 4px 20px rgba(212, 160, 23, 0.3);
+          box-shadow: 0 4px 20px rgba(184, 134, 11, 0.3);
         }
         .navbar__hamburger {
           display: none;
@@ -167,7 +167,7 @@ export default function Navbar() {
           display: block;
           width: 24px;
           height: 2px;
-          background: #fff;
+          background: #0A0A0A;
           transition: all 0.3s ease;
           transform-origin: center;
         }
@@ -188,7 +188,7 @@ export default function Navbar() {
           left: 0;
           right: 0;
           bottom: 0;
-          background: rgba(10, 15, 30, 0.98);
+          background: rgba(250, 247, 242, 0.98);
           flex-direction: column;
           align-items: center;
           justify-content: center;
@@ -216,26 +216,26 @@ export default function Navbar() {
           font-family: 'Bebas Neue', sans-serif;
           font-size: 24px;
           letter-spacing: 0.08em;
-          color: #fff;
+          color: #0A0A0A;
         }
-        .navbar__mobile-logo-text span { color: #D4A017; }
+        .navbar__mobile-logo-text span { color: #B8860B; }
         .navbar__mobile-link {
           font-family: 'Bebas Neue', sans-serif;
           font-size: 36px;
           letter-spacing: 0.05em;
-          color: #A0A8B8;
+          color: #5C5C5C;
           text-decoration: none;
           transition: color 0.2s ease;
           padding: 8px 0;
         }
         .navbar__mobile-link:hover,
         .navbar__mobile-link.active {
-          color: #D4A017;
+          color: #B8860B;
         }
         .navbar__mobile-cta {
           margin-top: 32px;
-          background: #D4A017;
-          color: #0A0F1E;
+          background: #B8860B;
+          color: #fff;
           font-family: 'DM Sans', sans-serif;
           font-size: 18px;
           font-weight: 700;

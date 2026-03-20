@@ -76,11 +76,11 @@ export default function Results() {
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
           <ScrollReveal>
             <span className="label-text">Client Results</span>
-            <h1 className="display-xl" style={{ color: '#fff', marginTop: '16px', marginBottom: '24px' }}>
+            <h1 className="display-xl" style={{ color: '#0A0A0A', marginTop: '16px', marginBottom: '24px' }}>
               Real Results.<br />
               <span style={{ color: '#D4A017' }}>Real Companies.</span>
             </h1>
-            <p style={{ color: '#A0A8B8', fontSize: 'clamp(16px,2vw,20px)', maxWidth: '580px', lineHeight: 1.7 }}>
+            <p style={{ color: '#5C5C5C', fontSize: 'clamp(16px,2vw,20px)', maxWidth: '580px', lineHeight: 1.7 }}>
               Every number here is earned in the field — not projected, not hypothetical.
               This is what happens when proven systems meet committed teams.
             </p>
@@ -89,7 +89,7 @@ export default function Results() {
       </section>
 
       {/* Key Metrics */}
-      <section style={{ background: '#0D1526', padding: '80px 0' }}>
+      <section style={{ background: '#F2EAD8', padding: '80px 0' }}>
         <div className="container">
           <ScrollReveal>
             <StatCounter stats={metrics} />
@@ -98,12 +98,12 @@ export default function Results() {
       </section>
 
       {/* Testimonials */}
-      <section style={{ background: '#0A0F1E', padding: '100px 0' }}>
+      <section style={{ background: '#FAF7F2', padding: '100px 0' }}>
         <div className="container">
           <ScrollReveal>
             <div className="section-header">
               <span className="label-text">Client Testimonials</span>
-              <h2 className="display-lg" style={{ marginTop: '12px', color: '#fff' }}>
+              <h2 className="display-lg" style={{ marginTop: '12px', color: '#0A0A0A' }}>
                 What Our Clients<br />
                 <span style={{ color: '#D4A017' }}>Say About BraveHeart</span>
               </h2>
@@ -114,8 +114,8 @@ export default function Results() {
             {testimonials.map((t, i) => (
               <ScrollReveal key={i} delay={i * 80}>
                 <div style={{
-                  background: 'rgba(28,35,51,0.6)',
-                  border: '1px solid rgba(255,255,255,0.07)',
+                  background: 'rgba(255,254,248,0.85)',
+                  border: '1px solid rgba(0,0,0,0.08)',
                   borderRadius: '10px',
                   padding: '32px',
                   display: 'flex',
@@ -159,12 +159,12 @@ export default function Results() {
 
                   {/* Author */}
                   <div style={{
-                    borderTop: '1px solid rgba(255,255,255,0.07)',
+                    borderTop: '1px solid rgba(0,0,0,0.08)',
                     paddingTop: '16px',
                   }}>
-                    <div style={{ fontWeight: 700, color: '#fff', fontSize: '15px', marginBottom: '4px' }}>{t.name}</div>
-                    <div style={{ color: '#A0A8B8', fontSize: '13px' }}>{t.title}</div>
-                    <div style={{ color: '#6B7280', fontSize: '12px', marginTop: '2px' }}>{t.location}</div>
+                    <div style={{ fontWeight: 700, color: '#0A0A0A', fontSize: '15px', marginBottom: '4px' }}>{t.name}</div>
+                    <div style={{ color: '#5C5C5C', fontSize: '13px' }}>{t.title}</div>
+                    <div style={{ color: '#888888', fontSize: '12px', marginTop: '2px' }}>{t.location}</div>
                   </div>
                 </div>
               </ScrollReveal>
@@ -174,16 +174,16 @@ export default function Results() {
       </section>
 
       {/* Conference Presence */}
-      <section style={{ background: '#111827', padding: '100px 0' }}>
+      <section style={{ background: '#E8DCC8', padding: '100px 0' }}>
         <div className="container">
           <ScrollReveal>
             <div className="section-header">
               <span className="label-text">Industry Presence</span>
-              <h2 className="display-lg" style={{ marginTop: '12px', color: '#fff' }}>
+              <h2 className="display-lg" style={{ marginTop: '12px', color: '#0A0A0A' }}>
                 Speaking & Presenting<br />
                 <span style={{ color: '#D4A017' }}>At National Conferences</span>
               </h2>
-              <p style={{ color: '#A0A8B8', fontSize: '17px', maxWidth: '560px', margin: '16px auto 0' }}>
+              <p style={{ color: '#5C5C5C', fontSize: '17px', maxWidth: '560px', margin: '16px auto 0' }}>
                 Sekayi Brown is a recognized speaker and trainer on the national exterior remodeling conference circuit.
               </p>
             </div>
@@ -193,8 +193,8 @@ export default function Results() {
             {conferences.map((conf, i) => (
               <ScrollReveal key={i} delay={i * 80}>
                 <div style={{
-                  background: 'rgba(28,35,51,0.6)',
-                  border: '1px solid rgba(255,255,255,0.07)',
+                  background: 'rgba(255,254,248,0.85)',
+                  border: '1px solid rgba(0,0,0,0.08)',
                   borderRadius: '10px',
                   padding: '32px',
                   display: 'flex',
@@ -220,7 +220,7 @@ export default function Results() {
                       fontFamily: 'DM Sans, sans-serif',
                       fontSize: '17px',
                       fontWeight: 700,
-                      color: '#fff',
+                      color: '#0A0A0A',
                       marginBottom: '6px',
                     }}>
                       {conf.name}
@@ -229,9 +229,9 @@ export default function Results() {
                       <span style={{ background: 'rgba(212,160,23,0.1)', border: '1px solid rgba(212,160,23,0.2)', color: '#D4A017', fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', padding: '2px 10px', borderRadius: '100px' }}>
                         {conf.region}
                       </span>
-                      <span style={{ color: '#6B7280', fontSize: '12px', display: 'flex', alignItems: 'center' }}>{conf.year}</span>
+                      <span style={{ color: '#888888', fontSize: '12px', display: 'flex', alignItems: 'center' }}>{conf.year}</span>
                     </div>
-                    <p style={{ color: '#A0A8B8', fontSize: '13px', lineHeight: 1.6 }}>{conf.desc}</p>
+                    <p style={{ color: '#5C5C5C', fontSize: '13px', lineHeight: 1.6 }}>{conf.desc}</p>
                   </div>
                 </div>
               </ScrollReveal>
@@ -241,12 +241,12 @@ export default function Results() {
       </section>
 
       {/* Client Industries */}
-      <section style={{ background: '#0A0F1E', padding: '80px 0' }}>
+      <section style={{ background: '#FAF7F2', padding: '80px 0' }}>
         <div className="container">
           <ScrollReveal>
             <div className="section-header">
               <span className="label-text">Industry Expertise</span>
-              <h2 className="display-md" style={{ marginTop: '12px', color: '#fff' }}>
+              <h2 className="display-md" style={{ marginTop: '12px', color: '#0A0A0A' }}>
                 We Serve Companies Across<br />
                 <span style={{ color: '#D4A017' }}>The Home Services Sector</span>
               </h2>
@@ -256,8 +256,8 @@ export default function Results() {
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px', justifyContent: 'center' }}>
               {industries.map((ind, i) => (
                 <span key={i} style={{
-                  background: 'rgba(28,35,51,0.8)',
-                  border: '1px solid rgba(255,255,255,0.08)',
+                  background: 'rgba(255,254,248,0.85)',
+                  border: '1px solid rgba(0,0,0,0.10)',
                   color: '#D0D5E0',
                   fontSize: '15px',
                   fontWeight: 500,
@@ -274,14 +274,14 @@ export default function Results() {
       </section>
 
       {/* CTA */}
-      <section style={{ background: '#0D1526', padding: '80px 0' }}>
+      <section style={{ background: '#F2EAD8', padding: '80px 0' }}>
         <div className="container" style={{ textAlign: 'center' }}>
           <ScrollReveal>
-            <h2 className="display-md" style={{ color: '#fff', marginBottom: '16px' }}>
+            <h2 className="display-md" style={{ color: '#0A0A0A', marginBottom: '16px' }}>
               Your Success Story<br />
               <span style={{ color: '#D4A017' }}>Starts Here</span>
             </h2>
-            <p style={{ color: '#A0A8B8', fontSize: '18px', marginBottom: '36px', maxWidth: '520px', margin: '0 auto 36px', lineHeight: 1.7 }}>
+            <p style={{ color: '#5C5C5C', fontSize: '18px', marginBottom: '36px', maxWidth: '520px', margin: '0 auto 36px', lineHeight: 1.7 }}>
               These results are real. And they're available to you. The only variable is when you decide to start.
             </p>
             <Link to="/contact" className="btn btn-gold btn-lg">Book Your Free Strategy Call</Link>

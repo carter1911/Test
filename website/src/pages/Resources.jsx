@@ -41,10 +41,10 @@ function GatedDownloadForm({ onSubmit }) {
     return (
       <div style={{ textAlign: 'center', padding: '40px' }}>
         <div style={{ fontSize: '48px', marginBottom: '16px' }}>✅</div>
-        <h3 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: '28px', letterSpacing: '0.05em', color: '#fff', marginBottom: '12px' }}>
+        <h3 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: '28px', letterSpacing: '0.05em', color: '#0A0A0A', marginBottom: '12px' }}>
           Your Script is on the Way!
         </h3>
-        <p style={{ color: '#A0A8B8', fontSize: '15px' }}>
+        <p style={{ color: '#5C5C5C', fontSize: '15px' }}>
           Check your inbox. We've also enrolled you in our weekly sales tips newsletter — no spam, just tactics.
         </p>
       </div>
@@ -74,7 +74,7 @@ function GatedDownloadForm({ onSubmit }) {
       <button type="submit" className="btn btn-gold" style={{ width: '100%', justifyContent: 'center', padding: '16px' }}>
         Send Me the Free Cold Call Script →
       </button>
-      <p style={{ color: '#6B7280', fontSize: '12px', textAlign: 'center', marginTop: '12px' }}>
+      <p style={{ color: '#888888', fontSize: '12px', textAlign: 'center', marginTop: '12px' }}>
         We respect your privacy. No spam, ever. Unsubscribe anytime.
       </p>
     </form>
@@ -96,11 +96,11 @@ export default function Resources() {
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
           <ScrollReveal>
             <span className="label-text">Free Resources</span>
-            <h1 className="display-xl" style={{ color: '#fff', marginTop: '16px', marginBottom: '24px' }}>
+            <h1 className="display-xl" style={{ color: '#0A0A0A', marginTop: '16px', marginBottom: '24px' }}>
               Tools to Grow<br />
               <span style={{ color: '#D4A017' }}>Your Revenue</span>
             </h1>
-            <p style={{ color: '#A0A8B8', fontSize: 'clamp(16px,2vw,20px)', maxWidth: '560px', lineHeight: 1.7 }}>
+            <p style={{ color: '#5C5C5C', fontSize: 'clamp(16px,2vw,20px)', maxWidth: '560px', lineHeight: 1.7 }}>
               Free downloads, conference intel, book recommendations, and video content
               to help you sharpen your edge between sessions.
             </p>
@@ -109,7 +109,7 @@ export default function Resources() {
       </section>
 
       {/* Free Download CTA */}
-      <section style={{ background: '#0D1526', padding: '100px 0' }}>
+      <section style={{ background: '#F2EAD8', padding: '100px 0' }}>
         <div className="container">
           <div style={{
             display: 'grid',
@@ -126,7 +126,7 @@ export default function Resources() {
                   fontFamily: 'Bebas Neue, sans-serif',
                   fontSize: 'clamp(36px,5vw,60px)',
                   letterSpacing: '0.05em',
-                  color: '#fff',
+                  color: '#0A0A0A',
                   marginTop: '16px',
                   marginBottom: '20px',
                   lineHeight: 1,
@@ -134,7 +134,7 @@ export default function Resources() {
                   The BraveHeart<br />
                   <span style={{ color: '#D4A017' }}>Cold Call Script</span>
                 </h2>
-                <p style={{ color: '#A0A8B8', fontSize: '16px', lineHeight: 1.8, marginBottom: '24px' }}>
+                <p style={{ color: '#5C5C5C', fontSize: '16px', lineHeight: 1.8, marginBottom: '24px' }}>
                   The exact cold call script Sekayi refined over 10+ years and thousands of dials in the
                   exterior remodeling industry. Opens homeowners, handles gatekeepers, and books appointments.
                 </p>
@@ -157,7 +157,7 @@ export default function Resources() {
 
             <ScrollReveal direction="right">
               <div style={{
-                background: 'linear-gradient(135deg, rgba(28,35,51,0.9), rgba(37,45,64,0.9))',
+                background: 'linear-gradient(135deg, rgba(255,254,248,0.95), rgba(242,234,216,0.95))',
                 border: '1px solid rgba(212,160,23,0.2)',
                 borderRadius: '12px',
                 padding: '40px',
@@ -168,12 +168,12 @@ export default function Resources() {
                     fontFamily: 'Playfair Display, serif',
                     fontSize: '22px',
                     fontWeight: 700,
-                    color: '#fff',
+                    color: '#0A0A0A',
                     marginBottom: '6px',
                   }}>
                     Get Your Free Script
                   </h3>
-                  <p style={{ color: '#A0A8B8', fontSize: '14px' }}>Delivered instantly to your inbox</p>
+                  <p style={{ color: '#5C5C5C', fontSize: '14px' }}>Delivered instantly to your inbox</p>
                 </div>
                 <GatedDownloadForm />
               </div>
@@ -183,16 +183,16 @@ export default function Resources() {
       </section>
 
       {/* Conference Calendar */}
-      <section style={{ background: '#0A0F1E', padding: '100px 0' }}>
+      <section style={{ background: '#FAF7F2', padding: '100px 0' }}>
         <div className="container">
           <ScrollReveal>
             <div className="section-header">
               <span className="label-text">2026 Conference Calendar</span>
-              <h2 className="display-lg" style={{ marginTop: '12px', color: '#fff' }}>
+              <h2 className="display-lg" style={{ marginTop: '12px', color: '#0A0A0A' }}>
                 Industry Events<br />
                 <span style={{ color: '#D4A017' }}>Worth Your Time</span>
               </h2>
-              <p style={{ color: '#A0A8B8', fontSize: '17px', maxWidth: '560px', margin: '16px auto 0' }}>
+              <p style={{ color: '#5C5C5C', fontSize: '17px', maxWidth: '560px', margin: '16px auto 0' }}>
                 Filter by region to find conferences near you. Sekayi speaks and trains at several of these annually.
               </p>
             </div>
@@ -206,9 +206,9 @@ export default function Resources() {
                   key={r}
                   onClick={() => setSelectedRegion(r)}
                   style={{
-                    background: selectedRegion === r ? '#D4A017' : 'rgba(28,35,51,0.8)',
-                    border: `1px solid ${selectedRegion === r ? '#D4A017' : 'rgba(255,255,255,0.1)'}`,
-                    color: selectedRegion === r ? '#0A0F1E' : '#A0A8B8',
+                    background: selectedRegion === r ? '#D4A017' : 'rgba(255,254,248,0.85)',
+                    border: `1px solid ${selectedRegion === r ? '#D4A017' : 'rgba(0,0,0,0.10)'}`,
+                    color: selectedRegion === r ? '#0A0F1E' : '#5C5C5C',
                     fontFamily: 'DM Sans, sans-serif',
                     fontSize: '14px',
                     fontWeight: 600,
@@ -232,16 +232,16 @@ export default function Resources() {
                   display: 'flex',
                   gap: '20px',
                   alignItems: 'center',
-                  background: 'rgba(28,35,51,0.5)',
-                  border: '1px solid rgba(255,255,255,0.07)',
+                  background: 'rgba(255,254,248,0.85)',
+                  border: '1px solid rgba(0,0,0,0.08)',
                   borderRadius: '8px',
                   padding: '20px 24px',
                   transition: 'all 0.2s',
                   flexWrap: 'wrap',
                 }}>
                   <div style={{ flex: '1 1 200px' }}>
-                    <div style={{ fontWeight: 700, color: '#fff', fontSize: '16px', marginBottom: '4px' }}>{conf.name}</div>
-                    <div style={{ color: '#A0A8B8', fontSize: '13px' }}>{conf.location}</div>
+                    <div style={{ fontWeight: 700, color: '#0A0A0A', fontSize: '16px', marginBottom: '4px' }}>{conf.name}</div>
+                    <div style={{ color: '#5C5C5C', fontSize: '13px' }}>{conf.location}</div>
                   </div>
                   <div style={{ color: '#D4A017', fontFamily: 'DM Sans, sans-serif', fontSize: '14px', fontWeight: 600, minWidth: '140px' }}>
                     📅 {conf.date}
@@ -250,7 +250,7 @@ export default function Resources() {
                     <span style={{ background: 'rgba(212,160,23,0.1)', border: '1px solid rgba(212,160,23,0.2)', color: '#D4A017', fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', padding: '3px 10px', borderRadius: '100px' }}>
                       {conf.region}
                     </span>
-                    <span style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', color: '#A0A8B8', fontSize: '11px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', padding: '3px 10px', borderRadius: '100px' }}>
+                    <span style={{ background: 'rgba(0,0,0,0.04)', border: '1px solid rgba(0,0,0,0.10)', color: '#5C5C5C', fontSize: '11px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', padding: '3px 10px', borderRadius: '100px' }}>
                       {conf.type}
                     </span>
                   </div>
@@ -262,12 +262,12 @@ export default function Resources() {
       </section>
 
       {/* Books */}
-      <section style={{ background: '#111827', padding: '100px 0' }}>
+      <section style={{ background: '#E8DCC8', padding: '100px 0' }}>
         <div className="container">
           <ScrollReveal>
             <div className="section-header">
               <span className="label-text">Recommended Reading</span>
-              <h2 className="display-lg" style={{ marginTop: '12px', color: '#fff' }}>
+              <h2 className="display-lg" style={{ marginTop: '12px', color: '#0A0A0A' }}>
                 Books That Build<br />
                 <span style={{ color: '#D4A017' }}>Revenue Champions</span>
               </h2>
@@ -278,8 +278,8 @@ export default function Resources() {
             {books.map((book, i) => (
               <ScrollReveal key={i} delay={i * 80}>
                 <div style={{
-                  background: 'rgba(28,35,51,0.6)',
-                  border: '1px solid rgba(255,255,255,0.07)',
+                  background: 'rgba(255,254,248,0.85)',
+                  border: '1px solid rgba(0,0,0,0.08)',
                   borderRadius: '10px',
                   padding: '28px',
                   height: '100%',
@@ -303,12 +303,12 @@ export default function Resources() {
                     {book.category}
                   </div>
                   <div>
-                    <h3 style={{ fontFamily: 'Playfair Display, serif', fontSize: '18px', fontWeight: 700, color: '#fff', marginBottom: '4px', lineHeight: 1.3 }}>
+                    <h3 style={{ fontFamily: 'Playfair Display, serif', fontSize: '18px', fontWeight: 700, color: '#0A0A0A', marginBottom: '4px', lineHeight: 1.3 }}>
                       {book.title}
                     </h3>
                     <div style={{ color: '#D4A017', fontSize: '13px', fontWeight: 600 }}>by {book.author}</div>
                   </div>
-                  <p style={{ color: '#A0A8B8', fontSize: '14px', lineHeight: 1.7, flex: 1 }}>{book.desc}</p>
+                  <p style={{ color: '#5C5C5C', fontSize: '14px', lineHeight: 1.7, flex: 1 }}>{book.desc}</p>
                 </div>
               </ScrollReveal>
             ))}
@@ -317,16 +317,16 @@ export default function Resources() {
       </section>
 
       {/* Video Resources */}
-      <section style={{ background: '#0A0F1E', padding: '100px 0' }}>
+      <section style={{ background: '#FAF7F2', padding: '100px 0' }}>
         <div className="container">
           <ScrollReveal>
             <div className="section-header">
               <span className="label-text">Video Training</span>
-              <h2 className="display-md" style={{ marginTop: '12px', color: '#fff' }}>
+              <h2 className="display-md" style={{ marginTop: '12px', color: '#0A0A0A' }}>
                 Watch & Learn<br />
                 <span style={{ color: '#D4A017' }}>From the Field</span>
               </h2>
-              <p style={{ color: '#A0A8B8', fontSize: '17px', maxWidth: '540px', margin: '16px auto 0' }}>
+              <p style={{ color: '#5C5C5C', fontSize: '17px', maxWidth: '540px', margin: '16px auto 0' }}>
                 Short-form training videos covering canvassing, closing, leadership, and mindset.
                 Follow BraveHeart Way on social for new content every week.
               </p>
@@ -344,8 +344,8 @@ export default function Resources() {
             ].map((vid, i) => (
               <ScrollReveal key={i} delay={i * 80}>
                 <div style={{
-                  background: 'rgba(28,35,51,0.5)',
-                  border: '1px solid rgba(255,255,255,0.07)',
+                  background: 'rgba(255,254,248,0.85)',
+                  border: '1px solid rgba(0,0,0,0.08)',
                   borderRadius: '10px',
                   overflow: 'hidden',
                   transition: 'all 0.3s',

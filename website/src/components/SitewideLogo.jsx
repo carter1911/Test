@@ -77,10 +77,10 @@ export default function SitewideLogo() {
           height: '100%',
           objectFit: 'contain',
           filter: `
-            sepia(0.85)
-            saturate(0.55)
-            brightness(${glowing ? 2.8 : 2.2})
-            drop-shadow(0 0 ${glowing ? 80 : 40}px rgba(212,160,23,${glowing ? 0.4 : 0.2}))
+            sepia(1)
+            saturate(0.7)
+            brightness(${glowing ? 0.65 : 0.55})
+            drop-shadow(0 0 ${glowing ? 60 : 30}px rgba(184,134,11,${glowing ? 0.3 : 0.12}))
           `,
           userSelect: 'none',
           transition: 'filter 0.6s ease',

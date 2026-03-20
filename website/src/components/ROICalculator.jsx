@@ -33,8 +33,8 @@ export default function ROICalculator() {
 
   return (
     <div className="roi-outer" style={{
-      background: 'linear-gradient(135deg, #1C2333, #252D40)',
-      border: '1px solid rgba(212,160,23,0.2)',
+      background: '#FFFEF8',
+      border: '1px solid rgba(184,134,11,0.2)',
       borderRadius: '12px',
       padding: '48px',
       maxWidth: '860px',
@@ -49,13 +49,13 @@ export default function ROICalculator() {
           margin-bottom: 10px;
           font-family: 'DM Sans', sans-serif;
         }
-        .roi-label-text { font-size: 14px; font-weight: 600; color: #A0A8B8; text-transform: uppercase; letter-spacing: 0.08em; }
-        .roi-label-val { font-size: 16px; font-weight: 700; color: #D4A017; }
+        .roi-label-text { font-size: 14px; font-weight: 600; color: #5C5C5C; text-transform: uppercase; letter-spacing: 0.08em; }
+        .roi-label-val { font-size: 16px; font-weight: 700; color: #B8860B; }
         .roi-slider {
           -webkit-appearance: none;
           width: 100%;
           height: 4px;
-          background: linear-gradient(to right, #D4A017 0%, #D4A017 var(--val), rgba(255,255,255,0.1) var(--val), rgba(255,255,255,0.1) 100%);
+          background: linear-gradient(to right, #B8860B 0%, #B8860B var(--val), rgba(0,0,0,0.1) var(--val), rgba(0,0,0,0.1) 100%);
           border-radius: 100px;
           outline: none;
         }
@@ -63,44 +63,44 @@ export default function ROICalculator() {
           -webkit-appearance: none;
           width: 20px;
           height: 20px;
-          background: #D4A017;
+          background: #B8860B;
           border-radius: 50%;
           cursor: pointer;
-          box-shadow: 0 0 10px rgba(212,160,23,0.4);
+          box-shadow: 0 0 10px rgba(184,134,11,0.4);
         }
         .roi-slider::-moz-range-thumb {
           width: 20px;
           height: 20px;
-          background: #D4A017;
+          background: #B8860B;
           border-radius: 50%;
           cursor: pointer;
           border: none;
         }
         .roi-result-card {
-          background: rgba(212,160,23,0.08);
-          border: 1px solid rgba(212,160,23,0.2);
+          background: rgba(184,134,11,0.07);
+          border: 1px solid rgba(184,134,11,0.2);
           border-radius: 8px;
           padding: 20px 24px;
           margin-bottom: 16px;
         }
-        .roi-result-label { font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #A0A8B8; margin-bottom: 6px; }
-        .roi-result-value { font-family: 'Bebas Neue', sans-serif; font-size: 36px; letter-spacing: 0.03em; color: #D4A017; line-height: 1; }
-        .roi-result-sub { font-size: 13px; color: #6B7280; margin-top: 4px; }
+        .roi-result-label { font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #5C5C5C; margin-bottom: 6px; }
+        .roi-result-value { font-family: 'Bebas Neue', sans-serif; font-size: 36px; letter-spacing: 0.03em; color: #B8860B; line-height: 1; }
+        .roi-result-sub { font-size: 13px; color: #888888; margin-top: 4px; }
         .roi-highlight {
-          background: linear-gradient(135deg, rgba(212,160,23,0.2), rgba(212,160,23,0.08));
-          border: 1px solid rgba(212,160,23,0.35);
+          background: linear-gradient(135deg, rgba(184,134,11,0.12), rgba(184,134,11,0.05));
+          border: 1px solid rgba(184,134,11,0.3);
           border-radius: 10px;
           padding: 28px 24px;
           text-align: center;
           margin-top: 8px;
         }
-        .roi-highlight-label { font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #A0A8B8; margin-bottom: 8px; }
-        .roi-highlight-value { font-family: 'Bebas Neue', sans-serif; font-size: clamp(40px, 5vw, 56px); color: #D4A017; letter-spacing: 0.03em; line-height: 1; }
-        .roi-highlight-sub { font-size: 14px; color: #fff; margin-top: 8px; font-weight: 500; }
+        .roi-highlight-label { font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #5C5C5C; margin-bottom: 8px; }
+        .roi-highlight-value { font-family: 'Bebas Neue', sans-serif; font-size: clamp(40px, 5vw, 56px); color: #B8860B; letter-spacing: 0.03em; line-height: 1; }
+        .roi-highlight-sub { font-size: 14px; color: #0A0A0A; margin-top: 8px; font-weight: 500; }
         .roi-compare { display: flex; gap: 12px; margin-bottom: 12px; }
-        .roi-compare-item { flex: 1; background: rgba(255,255,255,0.04); border-radius: 6px; padding: 14px 16px; }
-        .roi-compare-label { font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #6B7280; margin-bottom: 4px; }
-        .roi-compare-val { font-family: 'Bebas Neue', sans-serif; font-size: 24px; color: #fff; letter-spacing: 0.02em; }
+        .roi-compare-item { flex: 1; background: rgba(0,0,0,0.03); border-radius: 6px; padding: 14px 16px; }
+        .roi-compare-label { font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #888888; margin-bottom: 4px; }
+        .roi-compare-val { font-family: 'Bebas Neue', sans-serif; font-size: 24px; color: #0A0A0A; letter-spacing: 0.02em; }
         @media (max-width: 768px) { .roi-grid { grid-template-columns: 1fr; gap: 32px; } }
         @media (max-width: 600px) { .roi-outer { padding: 28px 20px !important; } }
       `}</style>
@@ -111,12 +111,12 @@ export default function ROICalculator() {
           fontFamily: 'Bebas Neue, sans-serif',
           fontSize: 'clamp(32px, 4vw, 48px)',
           letterSpacing: '0.05em',
-          color: '#fff',
+          color: '#0A0A0A',
           marginTop: '12px',
         }}>
           See Your Revenue Potential
         </h3>
-        <p style={{ color: '#A0A8B8', fontSize: '15px', marginTop: '8px' }}>
+        <p style={{ color: '#5C5C5C', fontSize: '15px', marginTop: '8px' }}>
           Adjust the sliders to model your projected revenue lift with BraveHeart systems.
         </p>
       </div>
@@ -184,9 +184,9 @@ export default function ROICalculator() {
               <div className="roi-compare-label">Current Monthly</div>
               <div className="roi-compare-val" style={{ color: '#A0A8B8', fontSize: '20px' }}>{fmt(results.currentMonthlyRevenue)}</div>
             </div>
-            <div className="roi-compare-item" style={{ background: 'rgba(212,160,23,0.08)', border: '1px solid rgba(212,160,23,0.15)' }}>
-              <div className="roi-compare-label" style={{ color: '#D4A017' }}>Projected Monthly</div>
-              <div className="roi-compare-val" style={{ color: '#D4A017', fontSize: '20px' }}>{fmt(results.improvedMonthlyRevenue)}</div>
+            <div className="roi-compare-item" style={{ background: 'rgba(184,134,11,0.07)', border: '1px solid rgba(184,134,11,0.2)' }}>
+              <div className="roi-compare-label" style={{ color: '#B8860B' }}>Projected Monthly</div>
+              <div className="roi-compare-val" style={{ color: '#B8860B', fontSize: '20px' }}>{fmt(results.improvedMonthlyRevenue)}</div>
             </div>
           </div>
 
@@ -202,7 +202,7 @@ export default function ROICalculator() {
             <div className="roi-highlight-sub">Estimated additional annual revenue with BraveHeart systems</div>
           </div>
 
-          <div style={{ marginTop: '24px', background: 'rgba(255,255,255,0.03)', borderRadius: '8px', padding: '16px', fontSize: '12px', color: '#6B7280', lineHeight: 1.6 }}>
+          <div style={{ marginTop: '24px', background: 'rgba(0,0,0,0.03)', borderRadius: '8px', padding: '16px', fontSize: '12px', color: '#888888', lineHeight: 1.6 }}>
             * Projections based on typical client outcomes: +12% close rate improvement, +32% lead volume increase. Results vary by market, team, and execution.
           </div>
 
@@ -210,8 +210,8 @@ export default function ROICalculator() {
             to="/contact"
             style={{
               display: 'block',
-              background: '#D4A017',
-              color: '#0A0F1E',
+              background: '#B8860B',
+              color: '#fff',
               fontWeight: 700,
               fontSize: '16px',
               padding: '16px 32px',
@@ -222,8 +222,8 @@ export default function ROICalculator() {
               transition: 'all 0.3s',
               letterSpacing: '0.02em',
             }}
-            onMouseEnter={e => { e.target.style.background = '#E8B930'; e.target.style.transform = 'translateY(-2px)' }}
-            onMouseLeave={e => { e.target.style.background = '#D4A017'; e.target.style.transform = 'translateY(0)' }}
+            onMouseEnter={e => { e.target.style.background = '#9A7009'; e.target.style.transform = 'translateY(-2px)' }}
+            onMouseLeave={e => { e.target.style.background = '#B8860B'; e.target.style.transform = 'translateY(0)' }}
           >
             Get My Custom Growth Plan
           </Link>

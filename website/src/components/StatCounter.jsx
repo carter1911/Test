@@ -55,13 +55,13 @@ export default function StatCounter({ stats }) {
           display: grid;
           grid-template-columns: repeat(4, 1fr);
           gap: 1px;
-          background: rgba(212,160,23,0.1);
+          background: rgba(184,134,11,0.12);
           border-radius: 12px;
           overflow: hidden;
-          border: 1px solid rgba(212,160,23,0.15);
+          border: 1px solid rgba(184,134,11,0.2);
         }
         .stat-item {
-          background: rgba(28, 35, 51, 0.9);
+          background: #FFFEF8;
         }
         .stat-cell {
           text-align: center;
@@ -71,14 +71,14 @@ export default function StatCounter({ stats }) {
           font-family: 'Bebas Neue', sans-serif;
           font-size: clamp(48px, 6vw, 88px);
           line-height: 1;
-          color: #D4A017;
+          color: #B8860B;
           letter-spacing: 0.02em;
         }
         .stat-label {
           font-family: 'DM Sans', sans-serif;
           font-size: 16px;
           font-weight: 700;
-          color: #fff;
+          color: #0A0A0A;
           margin-top: 12px;
           margin-bottom: 6px;
           letter-spacing: 0.02em;
@@ -87,7 +87,7 @@ export default function StatCounter({ stats }) {
         .stat-sublabel {
           font-family: 'DM Sans', sans-serif;
           font-size: 13px;
-          color: #A0A8B8;
+          color: #5C5C5C;
           max-width: 160px;
           margin: 0 auto;
           line-height: 1.5;

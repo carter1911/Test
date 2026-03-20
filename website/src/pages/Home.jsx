@@ -5,6 +5,7 @@ import ServiceMatcherQuiz from '../components/ServiceMatcherQuiz'
 import ROICalculator from '../components/ROICalculator'
 import ScrollReveal from '../components/ScrollReveal'
 import LogoWatermark from '../components/LogoWatermark'
+import VideoEmbed from '../components/VideoEmbed'
 
 const stats = [
   { end: 150, prefix: '$', suffix: 'M+', label: 'Revenue Influenced', sublabel: 'Across all client partnerships' },
@@ -51,7 +52,7 @@ export default function Home() {
       {/* ============ HERO ============ */}
       <section style={{
         minHeight: '100vh',
-        background: 'linear-gradient(160deg, #060A15 0%, #0A0F1E 40%, #111827 100%)',
+        background: 'linear-gradient(160deg, #FAF7F2 0%, #F2EAD8 40%, #EDE3CF 100%)',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
@@ -65,7 +66,7 @@ export default function Home() {
             position: absolute;
             width: 600px;
             height: 600px;
-            background: radial-gradient(circle, rgba(212,160,23,0.08) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(184,134,11,0.06) 0%, transparent 70%);
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -75,7 +76,7 @@ export default function Home() {
             position: absolute;
             width: 300px;
             height: 300px;
-            background: radial-gradient(circle, rgba(212,160,23,0.05) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(184,134,11,0.04) 0%, transparent 70%);
             top: 20%;
             right: 10%;
             pointer-events: none;
@@ -93,8 +94,8 @@ export default function Home() {
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            background: rgba(212,160,23,0.12);
-            border: 1px solid rgba(212,160,23,0.3);
+            background: rgba(184,134,11,0.1);
+            border: 1px solid rgba(184,134,11,0.3);
             border-radius: 100px;
             padding: 8px 20px;
             margin-bottom: 32px;
@@ -102,7 +103,7 @@ export default function Home() {
             font-weight: 600;
             letter-spacing: 0.1em;
             text-transform: uppercase;
-            color: #D4A017;
+            color: #B8860B;
             opacity: 0;
             animation: fadeIn 0.8s ease 0.2s forwards;
           }
@@ -131,7 +132,7 @@ export default function Home() {
           .hero-scroll-line {
             width: 1px;
             height: 48px;
-            background: linear-gradient(to bottom, rgba(212,160,23,0.6), transparent);
+            background: linear-gradient(to bottom, rgba(184,134,11,0.6), transparent);
             animation: scrollLine 1.5s ease-in-out infinite;
           }
           @keyframes scrollLine {
@@ -139,8 +140,8 @@ export default function Home() {
             50% { transform: scaleY(1.2); opacity: 1; }
           }
           .service-tile {
-            background: rgba(28,35,51,0.6);
-            border: 1px solid rgba(255,255,255,0.06);
+            background: #FFFEF8;
+            border: 1px solid rgba(0,0,0,0.07);
             border-radius: 8px;
             padding: 28px 24px;
             transition: all 0.3s ease;
@@ -149,10 +150,10 @@ export default function Home() {
             display: block;
           }
           .service-tile:hover {
-            background: rgba(28,35,51,0.9);
-            border-color: rgba(212,160,23,0.3);
+            background: #fff;
+            border-color: rgba(184,134,11,0.3);
             transform: translateY(-4px);
-            box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
           }
           .services-grid {
             display: grid;
@@ -188,20 +189,20 @@ export default function Home() {
             fontSize: 'clamp(52px, 9vw, 120px)',
             lineHeight: 0.95,
             letterSpacing: '0.02em',
-            color: '#fff',
+            color: '#0A0A0A',
             marginBottom: '32px',
           }}>
             <span className="hero-word">WE&nbsp;</span>
             <span className="hero-word">DON'T&nbsp;</span>
             <span className="hero-word">JUST&nbsp;</span>
-            <span style={{ color: '#D4A017' }}>
+            <span style={{ color: '#B8860B' }}>
               <span className="hero-word">TRAIN&nbsp;</span>
               <span className="hero-word">TEAMS.</span>
             </span>
             <br />
             <span className="hero-word">WE&nbsp;</span>
             <span className="hero-word">BUILD&nbsp;</span>
-            <span style={{ color: '#D4A017' }}>
+            <span style={{ color: '#B8860B' }}>
               <span className="hero-word">REVENUE</span>
             </span>
             <br />
@@ -211,7 +212,7 @@ export default function Home() {
           <p className="hero-sub" style={{
             fontFamily: 'DM Sans, sans-serif',
             fontSize: 'clamp(17px, 2.2vw, 22px)',
-            color: '#A0A8B8',
+            color: '#5C5C5C',
             maxWidth: '700px',
             margin: '0 auto 40px',
             lineHeight: 1.7,
@@ -239,21 +240,21 @@ export default function Home() {
         </div>
 
         <div className="hero-scroll">
-          <span style={{ fontSize: '11px', letterSpacing: '0.15em', textTransform: 'uppercase', color: '#6B7280', fontWeight: 600 }}>Scroll</span>
+          <span style={{ fontSize: '11px', letterSpacing: '0.15em', textTransform: 'uppercase', color: '#888888', fontWeight: 600 }}>Scroll</span>
           <div className="hero-scroll-line" />
         </div>
       </section>
 
       {/* ============ STATS ============ */}
-      <section style={{ background: '#0D1526', padding: '80px 0', position: 'relative', overflow: 'hidden' }}>
+      <section style={{ background: '#F2EAD8', padding: '80px 0', position: 'relative', overflow: 'hidden' }}>
         <LogoWatermark position="right" size={500} opacity={0.042} delay={300} />
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
           <ScrollReveal>
             <div style={{ textAlign: 'center', marginBottom: '48px' }}>
               <span className="label-text">Proven Track Record</span>
-              <h2 className="display-lg" style={{ marginTop: '12px', color: '#fff' }}>
+              <h2 className="display-lg" style={{ marginTop: '12px', color: '#0A0A0A' }}>
                 Numbers That Drive<br />
-                <span style={{ color: '#D4A017' }}>Decisions</span>
+                <span style={{ color: '#B8860B' }}>Decisions</span>
               </h2>
             </div>
             <StatCounter stats={stats} />
@@ -262,16 +263,16 @@ export default function Home() {
       </section>
 
       {/* ============ PAIN POINTS ============ */}
-      <section style={{ background: '#0A0F1E', padding: '100px 0' }}>
+      <section style={{ background: '#FAF7F2', padding: '100px 0' }}>
         <div className="container">
           <ScrollReveal>
             <div className="section-header">
               <span className="label-text">Sound Familiar?</span>
-              <h2 className="display-lg" style={{ marginTop: '12px', color: '#fff' }}>
+              <h2 className="display-lg" style={{ marginTop: '12px', color: '#0A0A0A' }}>
                 Most Exterior Remodelers<br />
-                <span style={{ color: '#D4A017' }}>Struggle With This</span>
+                <span style={{ color: '#B8860B' }}>Struggle With This</span>
               </h2>
-              <p style={{ color: '#A0A8B8', fontSize: '18px', maxWidth: '620px', margin: '20px auto 0', lineHeight: 1.7 }}>
+              <p style={{ color: '#5C5C5C', fontSize: '18px', maxWidth: '620px', margin: '20px auto 0', lineHeight: 1.7 }}>
                 After training thousands of reps across the country, these are the six core breakdowns that
                 hold most remodeling companies below their revenue potential.
               </p>
@@ -282,8 +283,8 @@ export default function Home() {
             {painPoints.map((pt, i) => (
               <ScrollReveal key={i} delay={i * 80}>
                 <div style={{
-                  background: 'rgba(28,35,51,0.5)',
-                  border: '1px solid rgba(255,255,255,0.06)',
+                  background: '#FFFEF8',
+                  border: '1px solid rgba(0,0,0,0.07)',
                   borderRadius: '8px',
                   padding: '32px 28px',
                   transition: 'all 0.3s',
@@ -294,13 +295,13 @@ export default function Home() {
                     fontFamily: 'DM Sans, sans-serif',
                     fontSize: '18px',
                     fontWeight: 700,
-                    color: '#fff',
+                    color: '#0A0A0A',
                     marginBottom: '10px',
                     lineHeight: 1.3,
                   }}>
                     {pt.title}
                   </h3>
-                  <p style={{ color: '#A0A8B8', fontSize: '14px', lineHeight: 1.7 }}>{pt.desc}</p>
+                  <p style={{ color: '#5C5C5C', fontSize: '14px', lineHeight: 1.7 }}>{pt.desc}</p>
                 </div>
               </ScrollReveal>
             ))}
@@ -311,22 +312,22 @@ export default function Home() {
               textAlign: 'center',
               marginTop: '60px',
               padding: '48px',
-              background: 'linear-gradient(135deg, rgba(212,160,23,0.08), rgba(212,160,23,0.04))',
-              border: '1px solid rgba(212,160,23,0.2)',
+              background: 'linear-gradient(135deg, rgba(184,134,11,0.07), rgba(184,134,11,0.03))',
+              border: '1px solid rgba(184,134,11,0.2)',
               borderRadius: '12px',
             }}>
               <p style={{
                 fontFamily: 'Playfair Display, serif',
                 fontSize: 'clamp(20px, 3vw, 28px)',
                 fontStyle: 'italic',
-                color: '#fff',
+                color: '#0A0A0A',
                 maxWidth: '700px',
                 margin: '0 auto 28px',
                 lineHeight: 1.5,
               }}>
                 "I've sat in the seat. I've done it at scale. Not just coached it."
               </p>
-              <p style={{ color: '#D4A017', fontWeight: 600, fontSize: '15px', letterSpacing: '0.1em', textTransform: 'uppercase' }}>
+              <p style={{ color: '#B8860B', fontWeight: 600, fontSize: '15px', letterSpacing: '0.1em', textTransform: 'uppercase' }}>
                 — Sekayi Brown, Founder · BraveHeart Consulting LLC
               </p>
             </div>
@@ -335,14 +336,14 @@ export default function Home() {
       </section>
 
       {/* ============ SERVICES ============ */}
-      <section style={{ background: '#111827', padding: '100px 0' }}>
+      <section style={{ background: '#F2EAD8', padding: '100px 0' }}>
         <div className="container">
           <ScrollReveal>
             <div className="section-header">
               <span className="label-text">What We Do</span>
-              <h2 className="display-lg" style={{ marginTop: '12px', color: '#fff' }}>
+              <h2 className="display-lg" style={{ marginTop: '12px', color: '#0A0A0A' }}>
                 9 Ways We Can<br />
-                <span style={{ color: '#D4A017' }}>Build Your Revenue Engine</span>
+                <span style={{ color: '#B8860B' }}>Build Your Revenue Engine</span>
               </h2>
             </div>
           </ScrollReveal>
@@ -356,13 +357,13 @@ export default function Home() {
                     fontFamily: 'DM Sans, sans-serif',
                     fontSize: '17px',
                     fontWeight: 700,
-                    color: '#fff',
+                    color: '#0A0A0A',
                     marginBottom: '8px',
                   }}>
                     {s.title}
                   </h3>
-                  <p style={{ color: '#A0A8B8', fontSize: '14px', lineHeight: 1.6 }}>{s.desc}</p>
-                  <div style={{ marginTop: '16px', color: '#D4A017', fontSize: '13px', fontWeight: 600, letterSpacing: '0.05em', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                  <p style={{ color: '#5C5C5C', fontSize: '14px', lineHeight: 1.6 }}>{s.desc}</p>
+                  <div style={{ marginTop: '16px', color: '#B8860B', fontSize: '13px', fontWeight: 600, letterSpacing: '0.05em', display: 'flex', alignItems: 'center', gap: '6px' }}>
                     Learn more
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                       <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -384,16 +385,16 @@ export default function Home() {
       </section>
 
       {/* ============ SERVICE MATCHER ============ */}
-      <section style={{ background: '#0A0F1E', padding: '100px 0' }}>
+      <section style={{ background: '#FAF7F2', padding: '100px 0' }}>
         <div className="container">
           <ScrollReveal>
             <div className="section-header">
               <span className="label-text">Not Sure Where to Start?</span>
-              <h2 className="display-lg" style={{ marginTop: '12px', color: '#fff' }}>
+              <h2 className="display-lg" style={{ marginTop: '12px', color: '#0A0A0A' }}>
                 Find Your Perfect<br />
-                <span style={{ color: '#D4A017' }}>BraveHeart Package</span>
+                <span style={{ color: '#B8860B' }}>BraveHeart Package</span>
               </h2>
-              <p style={{ color: '#A0A8B8', fontSize: '18px', maxWidth: '560px', margin: '20px auto 0' }}>
+              <p style={{ color: '#5C5C5C', fontSize: '18px', maxWidth: '560px', margin: '20px auto 0' }}>
                 Answer 3 questions and we'll recommend the exact engagement that fits your team, budget, and goals.
               </p>
             </div>
@@ -404,8 +405,43 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ============ VIDEO SHOWCASE ============ */}
+      <section style={{ background: '#EDE3CF', padding: '100px 0' }}>
+        <div className="container">
+          <ScrollReveal>
+            <div className="section-header">
+              <span className="label-text">See It In Action</span>
+              <h2 className="display-lg" style={{ marginTop: '12px', color: '#0A0A0A' }}>
+                The BraveHeart Way<br />
+                <span style={{ color: '#B8860B' }}>In Action</span>
+              </h2>
+              <p style={{ color: '#5C5C5C', fontSize: '18px', maxWidth: '580px', margin: '20px auto 0', lineHeight: 1.7 }}>
+                Watch how we've helped exterior remodeling companies build scalable revenue engines from the ground up.
+              </p>
+            </div>
+          </ScrollReveal>
+          <ScrollReveal delay={150}>
+            <div style={{ maxWidth: '860px', margin: '0 auto' }}>
+              {/* Replace with your actual YouTube video ID */}
+              <VideoEmbed
+                type="youtube"
+                src="dQw4w9WgXcQ"
+                title="BraveHeart Consulting — Building Revenue Engines for Exterior Remodelers"
+              />
+            </div>
+          </ScrollReveal>
+          <ScrollReveal delay={200}>
+            <div style={{ textAlign: 'center', marginTop: '40px' }}>
+              <Link to="/results" className="btn btn-gold btn-lg">
+                See Client Results
+              </Link>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
       {/* ============ ROI CALCULATOR ============ */}
-      <section style={{ background: '#0D1526', padding: '100px 0' }}>
+      <section style={{ background: '#F2EAD8', padding: '100px 0' }}>
         <div className="container">
           <ScrollReveal>
             <ROICalculator />
@@ -415,7 +451,7 @@ export default function Home() {
 
       {/* ============ BOTTOM CTA ============ */}
       <section style={{
-        background: 'linear-gradient(135deg, #0A0F1E, #1C2333)',
+        background: 'linear-gradient(135deg, #EDE3CF, #E8DCC8)',
         padding: '100px 0',
         position: 'relative',
         overflow: 'hidden',
@@ -423,7 +459,7 @@ export default function Home() {
         <div style={{
           position: 'absolute',
           inset: 0,
-          background: 'radial-gradient(ellipse at center, rgba(212,160,23,0.07) 0%, transparent 70%)',
+          background: 'radial-gradient(ellipse at center, rgba(184,134,11,0.07) 0%, transparent 70%)',
         }} />
         <LogoWatermark position="center" size={720} opacity={0.05} delay={200} />
         <div className="container" style={{ textAlign: 'center', position: 'relative', zIndex: 1 }}>
@@ -433,16 +469,16 @@ export default function Home() {
               fontFamily: 'Bebas Neue, sans-serif',
               fontSize: 'clamp(40px, 6vw, 80px)',
               letterSpacing: '0.03em',
-              color: '#fff',
+              color: '#0A0A0A',
               marginTop: '16px',
               marginBottom: '24px',
               lineHeight: 1,
             }}>
               Let's Build Your<br />
-              <span style={{ color: '#D4A017' }}>Revenue Engine Together</span>
+              <span style={{ color: '#B8860B' }}>Revenue Engine Together</span>
             </h2>
             <p style={{
-              color: '#A0A8B8',
+              color: '#5C5C5C',
               fontSize: 'clamp(16px, 2vw, 20px)',
               maxWidth: '580px',
               margin: '0 auto 40px',
@@ -462,7 +498,7 @@ export default function Home() {
                 fontFamily: 'Bebas Neue, sans-serif',
                 fontSize: '22px',
                 letterSpacing: '0.05em',
-                color: '#D4A017',
+                color: '#B8860B',
                 textDecoration: 'none',
                 display: 'flex',
                 alignItems: 'center',

@@ -104,10 +104,10 @@ export default function LogoWatermark({
               objectFit: 'contain',
               // Warm gold tint so it matches the brand palette
               filter: `
-                sepia(0.9)
-                saturate(0.6)
-                brightness(2.2)
-                drop-shadow(0 0 60px rgba(212,160,23,0.3))
+                sepia(1)
+                saturate(0.7)
+                brightness(0.55)
+                drop-shadow(0 0 60px rgba(184,134,11,0.15))
               `,
               userSelect: 'none',
             }}

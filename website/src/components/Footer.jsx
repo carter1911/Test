@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 export default function Footer() {
   return (
     <footer style={{
-      background: '#060A15',
-      borderTop: '1px solid rgba(212, 160, 23, 0.15)',
+      background: '#EDE3CF',
+      borderTop: '1px solid rgba(184, 134, 11, 0.2)',
       padding: '80px 0 32px',
     }}>
       <style>{`
@@ -26,22 +26,20 @@ export default function Footer() {
           width: 60px;
           height: 60px;
           object-fit: contain;
-          /* Invert the white-bg logo so it reads on dark footer,
-             then tint toward gold to match the brand palette */
-          filter: invert(1) sepia(0.4) hue-rotate(5deg) saturate(0.9) brightness(0.95)
-                  drop-shadow(0 0 8px rgba(212,160,23,0.2));
+          filter: sepia(0.5) saturate(0.7) brightness(0.85)
+                  drop-shadow(0 0 8px rgba(184,134,11,0.2));
           flex-shrink: 0;
         }
         .footer-logo-text {
           font-family: 'Bebas Neue', sans-serif;
           font-size: 26px;
           letter-spacing: 0.08em;
-          color: #fff;
+          color: #0A0A0A;
           line-height: 1;
         }
-        .footer-logo-text span { color: #D4A017; }
+        .footer-logo-text span { color: #B8860B; }
         .footer-tagline {
-          color: #A0A8B8;
+          color: #5C5C5C;
           font-size: 14px;
           line-height: 1.7;
           margin-bottom: 24px;
@@ -51,18 +49,18 @@ export default function Footer() {
           display: flex;
           align-items: center;
           gap: 10px;
-          color: #A0A8B8;
+          color: #5C5C5C;
           font-size: 14px;
           margin-bottom: 10px;
           transition: color 0.2s;
           text-decoration: none;
         }
-        .footer-contact-item:hover { color: #D4A017; }
+        .footer-contact-item:hover { color: #B8860B; }
         .footer-heading {
           font-family: 'Bebas Neue', sans-serif;
           font-size: 18px;
           letter-spacing: 0.1em;
-          color: #fff;
+          color: #0A0A0A;
           margin-bottom: 20px;
         }
         .footer-links {
@@ -71,7 +69,7 @@ export default function Footer() {
           gap: 10px;
         }
         .footer-links a {
-          color: #A0A8B8;
+          color: #5C5C5C;
           font-size: 14px;
           text-decoration: none;
           transition: color 0.2s;
@@ -79,31 +77,31 @@ export default function Footer() {
           align-items: center;
           gap: 6px;
         }
-        .footer-links a:hover { color: #D4A017; }
+        .footer-links a:hover { color: #B8860B; }
         .footer-links a::before {
           content: '→';
-          color: #D4A017;
+          color: #B8860B;
           font-size: 12px;
           opacity: 0;
           transition: opacity 0.2s;
         }
         .footer-links a:hover::before { opacity: 1; }
         .footer-cta-box {
-          background: linear-gradient(135deg, rgba(212,160,23,0.1), rgba(212,160,23,0.05));
-          border: 1px solid rgba(212,160,23,0.2);
+          background: rgba(184,134,11,0.08);
+          border: 1px solid rgba(184,134,11,0.25);
           border-radius: 8px;
           padding: 24px;
         }
         .footer-cta-box p {
-          color: #A0A8B8;
+          color: #3A3A3A;
           font-size: 14px;
           margin-bottom: 16px;
           line-height: 1.6;
         }
         .footer-cta-btn {
           display: inline-block;
-          background: #D4A017;
-          color: #0A0F1E;
+          background: #B8860B;
+          color: #fff;
           font-weight: 700;
           font-size: 14px;
           padding: 12px 24px;
@@ -113,11 +111,11 @@ export default function Footer() {
           letter-spacing: 0.02em;
         }
         .footer-cta-btn:hover {
-          background: #E8B930;
+          background: #9A7009;
           transform: translateY(-1px);
         }
         .footer-bottom {
-          border-top: 1px solid rgba(255,255,255,0.06);
+          border-top: 1px solid rgba(0,0,0,0.1);
           padding-top: 32px;
           display: flex;
           align-items: center;
@@ -126,7 +124,7 @@ export default function Footer() {
           flex-wrap: wrap;
         }
         .footer-copyright {
-          color: #6B7280;
+          color: #888888;
           font-size: 13px;
         }
         .footer-legal {
@@ -134,23 +132,23 @@ export default function Footer() {
           gap: 24px;
         }
         .footer-legal a {
-          color: #6B7280;
+          color: #888888;
           font-size: 13px;
           text-decoration: none;
           transition: color 0.2s;
         }
-        .footer-legal a:hover { color: #A0A8B8; }
+        .footer-legal a:hover { color: #5C5C5C; }
         .footer-phone-big {
           font-family: 'Bebas Neue', sans-serif;
           font-size: 22px;
           letter-spacing: 0.05em;
-          color: #D4A017;
+          color: #B8860B;
           text-decoration: none;
           display: block;
           margin-bottom: 8px;
           transition: color 0.2s;
         }
-        .footer-phone-big:hover { color: #E8B930; }
+        .footer-phone-big:hover { color: #9A7009; }
         @media (max-width: 1024px) {
           .footer-grid {
             grid-template-columns: 1fr 1fr;

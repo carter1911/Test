@@ -54,11 +54,11 @@ export default function About() {
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
           <ScrollReveal>
             <span className="label-text">About Sekayi Brown</span>
-            <h1 className="display-xl" style={{ color: '#fff', marginTop: '16px', marginBottom: '24px' }}>
+            <h1 className="display-xl" style={{ color: '#0A0A0A', marginTop: '16px', marginBottom: '24px' }}>
               The Man Behind<br />
               <span style={{ color: '#D4A017' }}>The System</span>
             </h1>
-            <p style={{ color: '#A0A8B8', fontSize: 'clamp(16px,2vw,20px)', maxWidth: '600px', lineHeight: 1.7 }}>
+            <p style={{ color: '#5C5C5C', fontSize: 'clamp(16px,2vw,20px)', maxWidth: '600px', lineHeight: 1.7 }}>
               Sales, Marketing & Leadership Executive with 10+ years transforming exterior remodeling
               companies into revenue engines through proven systems, elite team development, and
               unwavering accountability.
@@ -68,7 +68,7 @@ export default function About() {
       </section>
 
       {/* Bio Section */}
-      <section style={{ background: '#0A0F1E', padding: '100px 0' }}>
+      <section style={{ background: '#FAF7F2', padding: '100px 0' }}>
         <div className="container">
           <div style={{
             display: 'grid',
@@ -109,7 +109,7 @@ export default function About() {
                   justifyContent: 'center',
                   flexDirection: 'column',
                   gap: '12px',
-                  color: '#6B7280',
+                  color: '#888888',
                   fontSize: '14px',
                 }}>
                   <span style={{ fontSize: '40px' }}>📷</span>
@@ -125,7 +125,7 @@ export default function About() {
                   background: 'linear-gradient(to top, rgba(6,10,20,0.95) 0%, rgba(6,10,20,0.5) 60%, transparent 100%)',
                   padding: '40px 24px 24px',
                 }}>
-                  <div style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: '26px', letterSpacing: '0.08em', color: '#fff' }}>
+                  <div style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: '26px', letterSpacing: '0.08em', color: '#0A0A0A' }}>
                     SEKAYI BROWN
                   </div>
                   <div style={{ fontSize: '12px', letterSpacing: '0.15em', textTransform: 'uppercase', color: '#D4A017', fontWeight: 600, marginTop: '4px' }}>
@@ -154,7 +154,7 @@ export default function About() {
                   fontFamily: 'Playfair Display, serif',
                   fontSize: 'clamp(28px, 3.5vw, 44px)',
                   fontWeight: 700,
-                  color: '#fff',
+                  color: '#0A0A0A',
                   marginTop: '16px',
                   marginBottom: '28px',
                   lineHeight: 1.2,
@@ -171,7 +171,7 @@ export default function About() {
                     'Today, through BraveHeart Consulting LLC, he\'s on a mission to give small and medium-sized remodeling companies access to the same elite-level infrastructure that powers the industry\'s top players — so they can compete, grow, and win.',
                   ].map((para, i) => (
                     <p key={i} style={{
-                      color: i === 0 ? '#D0D5E0' : '#A0A8B8',
+                      color: i === 0 ? '#D0D5E0' : '#5C5C5C',
                       fontSize: '16px',
                       lineHeight: 1.8,
                       fontWeight: i === 0 ? 500 : 400,
@@ -193,7 +193,7 @@ export default function About() {
                     fontFamily: 'Playfair Display, serif',
                     fontSize: '18px',
                     fontStyle: 'italic',
-                    color: '#fff',
+                    color: '#0A0A0A',
                     lineHeight: 1.6,
                     marginBottom: '12px',
                   }}>
@@ -216,12 +216,12 @@ export default function About() {
       </section>
 
       {/* Timeline */}
-      <section style={{ background: '#0D1526', padding: '100px 0' }}>
+      <section style={{ background: '#F2EAD8', padding: '100px 0' }}>
         <div className="container">
           <ScrollReveal>
             <div className="section-header">
               <span className="label-text">Career Authority</span>
-              <h2 className="display-lg" style={{ marginTop: '12px', color: '#fff' }}>
+              <h2 className="display-lg" style={{ marginTop: '12px', color: '#0A0A0A' }}>
                 The Track Record<br />
                 <span style={{ color: '#D4A017' }}>That Built BraveHeart</span>
               </h2>
@@ -260,7 +260,7 @@ export default function About() {
                       height: '20px',
                       background: '#D4A017',
                       borderRadius: '50%',
-                      border: '3px solid #0D1526',
+                      border: '3px solid #F2EAD8',
                       boxShadow: '0 0 16px rgba(212,160,23,0.5)',
                       position: 'relative',
                       zIndex: 1,
@@ -270,8 +270,8 @@ export default function About() {
                   {/* Content */}
                   <div style={{
                     flex: 1,
-                    background: 'rgba(28,35,51,0.6)',
-                    border: '1px solid rgba(255,255,255,0.06)',
+                    background: 'rgba(255,254,248,0.85)',
+                    border: '1px solid rgba(0,0,0,0.08)',
                     borderRadius: '10px',
                     padding: '28px 32px',
                   }}>
@@ -294,7 +294,7 @@ export default function About() {
                         fontFamily: 'Bebas Neue, sans-serif',
                         fontSize: '20px',
                         letterSpacing: '0.05em',
-                        color: '#fff',
+                        color: '#0A0A0A',
                       }}>
                         {item.company}
                       </span>
@@ -304,12 +304,12 @@ export default function About() {
                       fontWeight: 600,
                       letterSpacing: '0.08em',
                       textTransform: 'uppercase',
-                      color: '#A0A8B8',
+                      color: '#5C5C5C',
                       marginBottom: '12px',
                     }}>
                       {item.role}
                     </div>
-                    <p style={{ color: '#A0A8B8', fontSize: '15px', lineHeight: 1.7, marginBottom: '14px' }}>
+                    <p style={{ color: '#5C5C5C', fontSize: '15px', lineHeight: 1.7, marginBottom: '14px' }}>
                       {item.desc}
                     </p>
                     <div style={{
@@ -333,7 +333,7 @@ export default function About() {
       </section>
 
       {/* Family Section */}
-      <section style={{ background: '#0A0F1E', padding: '100px 0' }}>
+      <section style={{ background: '#FAF7F2', padding: '100px 0' }}>
         <div className="container">
           <div style={{
             display: 'grid',
@@ -404,7 +404,7 @@ export default function About() {
                     justifyContent: 'center',
                     flexDirection: 'column',
                     gap: '12px',
-                    color: '#6B7280',
+                    color: '#888888',
                     fontSize: '14px',
                     textAlign: 'center',
                     padding: '24px',
@@ -434,7 +434,7 @@ export default function About() {
                   fontFamily: 'Playfair Display, serif',
                   fontSize: 'clamp(28px, 3.5vw, 42px)',
                   fontWeight: 700,
-                  color: '#fff',
+                  color: '#0A0A0A',
                   marginTop: '16px',
                   marginBottom: '24px',
                   lineHeight: 1.2,
@@ -444,16 +444,16 @@ export default function About() {
                 </h2>
 
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '18px' }}>
-                  <p style={{ color: '#D0D5E0', fontSize: '16px', lineHeight: 1.8, fontWeight: 500 }}>
+                  <p style={{ color: '#1A1A1A', fontSize: '16px', lineHeight: 1.8, fontWeight: 500 }}>
                     Behind every system Sekayi builds and every leader he develops is a deeper
                     purpose — the family waiting at home who remind him every day what it all means.
                   </p>
-                  <p style={{ color: '#A0A8B8', fontSize: '15px', lineHeight: 1.8 }}>
+                  <p style={{ color: '#5C5C5C', fontSize: '15px', lineHeight: 1.8 }}>
                     Sekayi is a proud husband and father. The discipline, resilience, and
                     relentless pursuit of excellence that define his professional approach
                     flow directly from his commitment to building a legacy his family can be proud of.
                   </p>
-                  <p style={{ color: '#A0A8B8', fontSize: '15px', lineHeight: 1.8 }}>
+                  <p style={{ color: '#5C5C5C', fontSize: '15px', lineHeight: 1.8 }}>
                     When clients work with BraveHeart, they're not just getting a consultant —
                     they're getting someone who understands that a thriving business creates
                     thriving families. That's not a tagline. It's personal.
@@ -472,7 +472,7 @@ export default function About() {
                     fontFamily: 'Playfair Display, serif',
                     fontSize: '17px',
                     fontStyle: 'italic',
-                    color: '#fff',
+                    color: '#0A0A0A',
                     lineHeight: 1.6,
                   }}>
                     "I build revenue engines so that families — mine and the ones my clients come home to — can live without limits."
@@ -488,12 +488,12 @@ export default function About() {
       </section>
 
       {/* Values */}
-      <section style={{ background: '#111827', padding: '100px 0' }}>
+      <section style={{ background: '#E8DCC8', padding: '100px 0' }}>
         <div className="container">
           <ScrollReveal>
             <div className="section-header">
               <span className="label-text">Core Values</span>
-              <h2 className="display-lg" style={{ marginTop: '12px', color: '#fff' }}>
+              <h2 className="display-lg" style={{ marginTop: '12px', color: '#0A0A0A' }}>
                 The BraveHeart<br />
                 <span style={{ color: '#D4A017' }}>Way of Thinking</span>
               </h2>
@@ -504,8 +504,8 @@ export default function About() {
             {values.map((v, i) => (
               <ScrollReveal key={i} delay={i * 80}>
                 <div style={{
-                  background: 'rgba(28,35,51,0.5)',
-                  border: '1px solid rgba(255,255,255,0.06)',
+                  background: 'rgba(255,254,248,0.85)',
+                  border: '1px solid rgba(0,0,0,0.08)',
                   borderRadius: '10px',
                   padding: '36px 28px',
                   textAlign: 'center',
@@ -517,12 +517,12 @@ export default function About() {
                     fontFamily: 'DM Sans, sans-serif',
                     fontSize: '17px',
                     fontWeight: 700,
-                    color: '#fff',
+                    color: '#0A0A0A',
                     marginBottom: '12px',
                   }}>
                     {v.title}
                   </h3>
-                  <p style={{ color: '#A0A8B8', fontSize: '14px', lineHeight: 1.7 }}>{v.desc}</p>
+                  <p style={{ color: '#5C5C5C', fontSize: '14px', lineHeight: 1.7 }}>{v.desc}</p>
                 </div>
               </ScrollReveal>
             ))}
@@ -531,13 +531,13 @@ export default function About() {
       </section>
 
       {/* CTA */}
-      <section style={{ background: '#0D1526', padding: '80px 0' }}>
+      <section style={{ background: '#F2EAD8', padding: '80px 0' }}>
         <div className="container" style={{ textAlign: 'center' }}>
           <ScrollReveal>
-            <h2 className="display-md" style={{ color: '#fff', marginBottom: '16px' }}>
+            <h2 className="display-md" style={{ color: '#0A0A0A', marginBottom: '16px' }}>
               Ready to Work With Sekayi?
             </h2>
-            <p style={{ color: '#A0A8B8', fontSize: '18px', marginBottom: '36px', maxWidth: '520px', margin: '0 auto 36px' }}>
+            <p style={{ color: '#5C5C5C', fontSize: '18px', marginBottom: '36px', maxWidth: '520px', margin: '0 auto 36px' }}>
               Book a free 30-minute strategy call and walk away with clarity on exactly how to build your revenue engine.
             </p>
             <Link to="/contact" className="btn btn-gold btn-lg">Book Your Free Strategy Call</Link>
