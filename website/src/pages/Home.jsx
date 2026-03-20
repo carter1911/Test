@@ -5,7 +5,7 @@ import ServiceMatcherQuiz from '../components/ServiceMatcherQuiz'
 import ROICalculator from '../components/ROICalculator'
 import ScrollReveal from '../components/ScrollReveal'
 import LogoWatermark from '../components/LogoWatermark'
-import VideoEmbed from '../components/VideoEmbed'
+import VideoCarousel from '../components/VideoCarousel'
 
 const stats = [
   { end: 150, prefix: '$', suffix: 'M+', label: 'Revenue Influenced', sublabel: 'Across all client partnerships' },
@@ -405,7 +405,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ============ VIDEO SHOWCASE ============ */}
+      {/* ============ VIDEO CAROUSEL ============ */}
       <section style={{ background: '#EDE3CF', padding: '100px 0' }}>
         <div className="container">
           <ScrollReveal>
@@ -421,17 +421,29 @@ export default function Home() {
             </div>
           </ScrollReveal>
           <ScrollReveal delay={150}>
-            <div style={{ maxWidth: '860px', margin: '0 auto' }}>
-              {/* Replace with your actual YouTube video ID */}
-              <VideoEmbed
-                type="youtube"
-                src="dQw4w9WgXcQ"
-                title="BraveHeart Consulting — Building Revenue Engines for Exterior Remodelers"
-              />
+            <div style={{ maxWidth: '920px', margin: '0 auto', padding: '0 24px' }}>
+              <VideoCarousel videos={[
+                {
+                  id: 'JHuDXhZNcTY',
+                  title: 'The BraveHeart Way — Building Revenue Engines for Exterior Remodelers',
+                  label: 'BraveHeart Way',
+                },
+                // Add more videos from https://www.youtube.com/@thebraveheartway3934
+                // Example: { id: 'YOUR_VIDEO_ID', title: 'Video Title', label: 'Short Label' },
+              ]} />
             </div>
           </ScrollReveal>
           <ScrollReveal delay={200}>
-            <div style={{ textAlign: 'center', marginTop: '40px' }}>
+            <div style={{ textAlign: 'center', marginTop: '48px' }}>
+              <a
+                href="https://www.youtube.com/@thebraveheartway3934"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-outline btn-lg"
+                style={{ marginRight: '16px' }}
+              >
+                View All Videos
+              </a>
               <Link to="/results" className="btn btn-gold btn-lg">
                 See Client Results
               </Link>
