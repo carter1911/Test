@@ -148,7 +148,7 @@ export default function Results() {
 
                   {/* Quote */}
                   <p style={{
-                    color: '#D0D5E0',
+                    color: '#3A3A3A',
                     fontSize: '15px',
                     lineHeight: 1.8,
                     fontStyle: 'italic',
@@ -258,7 +258,7 @@ export default function Results() {
                 <span key={i} style={{
                   background: 'rgba(255,254,248,0.85)',
                   border: '1px solid rgba(0,0,0,0.10)',
-                  color: '#D0D5E0',
+                  color: '#3A3A3A',
                   fontSize: '15px',
                   fontWeight: 500,
                   padding: '12px 24px',

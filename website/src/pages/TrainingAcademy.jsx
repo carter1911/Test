@@ -420,7 +420,7 @@ export default function TrainingAcademy() {
                   ].map((item, i) => (
                     <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                       <span style={{ color: '#D4A017', fontSize: '18px' }}>✓</span>
-                      <span style={{ color: '#D0D5E0', fontSize: '15px' }}>{item}</span>
+                      <span style={{ color: '#3A3A3A', fontSize: '15px' }}>{item}</span>
                     </div>
                   ))}
                 </div>

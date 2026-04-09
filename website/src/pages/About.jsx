@@ -172,7 +172,7 @@ export default function About() {
                     'Today, through BraveHeart Consulting LLC, he\'s on a mission to give small and medium-sized remodeling companies access to the same elite-level infrastructure that powers the industry\'s top players — so they can compete, grow, and win.',
                   ].map((para, i) => (
                     <p key={i} style={{
-                      color: i === 0 ? '#D0D5E0' : '#5C5C5C',
+                      color: '#3A3A3A',
                       fontSize: '16px',
                       lineHeight: 1.8,
                       fontWeight: i === 0 ? 500 : 400,

@@ -147,7 +147,7 @@ export default function Contact() {
                     <div style={{ fontSize: '12px', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#5C5C5C', marginBottom: '4px' }}>
                       Email Us
                     </div>
-                    <div style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '16px', fontWeight: 600, color: '#D0D5E0' }}>
+                    <div style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '16px', fontWeight: 600, color: '#0A0A0A' }}>
                       braveheartway@gmail.com
                     </div>
                   </div>
