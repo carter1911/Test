@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import ScrollReveal from '../components/ScrollReveal'
 import LogoWatermark from '../components/LogoWatermark'
 
@@ -13,6 +13,29 @@ const challenges = [
   'Building sales systems from scratch',
   'Other / Let\'s discuss',
 ]
+
+const CALENDLY_URL = 'https://calendly.com/braveheartway/30min'
+
+function CalendlyEmbed() {
+  useEffect(() => {
+    const existing = document.getElementById('calendly-script')
+    if (!existing) {
+      const script = document.createElement('script')
+      script.id = 'calendly-script'
+      script.src = 'https://assets.calendly.com/assets/external/widget.js'
+      script.async = true
+      document.head.appendChild(script)
+    }
+  }, [])
+
+  return (
+    <div
+      className="calendly-inline-widget"
+      data-url={CALENDLY_URL}
+      style={{ minWidth: '320px', height: '700px' }}
+    />
+  )
+}
 
 export default function Contact() {
   const [form, setForm] = useState({
@@ -217,55 +240,14 @@ export default function Contact() {
             {/* Right - Form */}
             <ScrollReveal direction="right">
               <div>
-                {/* Calendly Placeholder */}
+                {/* Calendly Inline Embed */}
                 <div style={{
-                  background: 'linear-gradient(135deg, rgba(255,254,248,0.95), rgba(242,234,216,0.95))',
-                  border: '1px solid rgba(212,160,23,0.2)',
+                  border: '1px solid rgba(184,134,11,0.2)',
                   borderRadius: '12px',
-                  padding: '40px',
+                  overflow: 'hidden',
                   marginBottom: '32px',
-                  textAlign: 'center',
                 }}>
-                  <div style={{ fontSize: '40px', marginBottom: '16px' }}>📅</div>
-                  <h3 style={{
-                    fontFamily: 'Bebas Neue, sans-serif',
-                    fontSize: '24px',
-                    letterSpacing: '0.08em',
-                    color: '#0A0A0A',
-                    marginBottom: '8px',
-                  }}>
-                    Schedule Directly on Calendly
-                  </h3>
-                  <p style={{ color: '#5C5C5C', fontSize: '14px', marginBottom: '24px', lineHeight: 1.6 }}>
-                    Pick a date and time that works for you. The 30-minute strategy call with
-                    Sekayi is completely free, no commitment required.
-                  </p>
-                  {/* Calendly embed placeholder */}
-                  <div style={{
-                    background: 'rgba(250,247,242,0.98)',
-                    border: '1px solid rgba(0,0,0,0.08)',
-                    borderRadius: '8px',
-                    padding: '40px 24px',
-                    marginBottom: '20px',
-                    color: '#888888',
-                    fontSize: '14px',
-                    fontStyle: 'italic',
-                  }}>
-                    [Calendly embed will be integrated here with your scheduling link]
-                    <br/>
-                    <code style={{ fontSize: '12px', color: '#5C5C5C', marginTop: '8px', display: 'block' }}>
-                      Replace this block with: &lt;InlineWidget url="https://calendly.com/your-link" /&gt;
-                    </code>
-                  </div>
-                  <a
-                    href="https://calendly.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-gold"
-                    style={{ display: 'inline-block', padding: '14px 32px' }}
-                  >
-                    Open Calendly Scheduler
-                  </a>
+                  <CalendlyEmbed />
                 </div>
 
                 {/* Or Divider */}

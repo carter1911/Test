@@ -207,7 +207,7 @@ export default function About() {
                 </div>
 
                 <div style={{ marginTop: '36px', display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
-                  <Link to="/contact" className="btn btn-gold">Book a Strategy Call</Link>
+                  <a href="https://calendly.com/braveheartway/30min" target="_blank" rel="noopener noreferrer" className="btn btn-gold">Book a Strategy Call</a>
                   <Link to="/services" className="btn btn-outline">View Services</Link>
                 </div>
               </div>
@@ -541,7 +541,7 @@ export default function About() {
             <p style={{ color: '#5C5C5C', fontSize: '18px', marginBottom: '36px', maxWidth: '520px', margin: '0 auto 36px' }}>
               Book a free 30-minute strategy call and walk away with clarity on exactly how to build your revenue engine.
             </p>
-            <Link to="/contact" className="btn btn-gold btn-lg">Book Your Free Strategy Call</Link>
+            <a href="https://calendly.com/braveheartway/30min" target="_blank" rel="noopener noreferrer" className="btn btn-gold btn-lg">Book Your Free Strategy Call</a>
           </ScrollReveal>
         </div>
       </section>

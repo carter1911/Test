@@ -227,12 +227,12 @@ export default function Home() {
             justifyContent: 'center',
             flexWrap: 'wrap',
           }}>
-            <Link to="/contact" className="btn btn-gold btn-lg">
+            <a href="https://calendly.com/braveheartway/30min" target="_blank" rel="noopener noreferrer" className="btn btn-gold btn-lg">
               Book Your Free Strategy Call
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                 <path d="M5 12h14M12 5l7 7-7 7"/>
               </svg>
-            </Link>
+            </a>
             <Link to="/services" className="btn btn-outline btn-lg">
               Explore Services
             </Link>
@@ -676,12 +676,12 @@ export default function Home() {
               what's holding your revenue back and how to fix it.
             </p>
             <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap', alignItems: 'center' }}>
-              <Link to="/contact" className="btn btn-gold btn-lg">
+              <a href="https://calendly.com/braveheartway/30min" target="_blank" rel="noopener noreferrer" className="btn btn-gold btn-lg">
                 Book Your Free Strategy Call
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                   <path d="M5 12h14M12 5l7 7-7 7"/>
                 </svg>
-              </Link>
+              </a>
               <a href="tel:7146868157" style={{
                 fontFamily: 'Bebas Neue, sans-serif',
                 fontSize: '22px',

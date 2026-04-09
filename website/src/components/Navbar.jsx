@@ -306,12 +306,12 @@ export default function Navbar() {
             ))}
           </div>
 
-          <Link to="/contact" className="navbar__cta">
+          <a href="https://calendly.com/braveheartway/30min" target="_blank" rel="noopener noreferrer" className="navbar__cta">
             Book a Call
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M5 12h14M12 5l7 7-7 7"/>
             </svg>
-          </Link>
+          </a>
 
           <button
             className={`navbar__hamburger ${menuOpen ? 'open' : ''}`}
@@ -348,9 +348,9 @@ export default function Navbar() {
               {label}
             </NavLink>
           ))}
-          <Link to="/contact" className="navbar__mobile-cta">
+          <a href="https://calendly.com/braveheartway/30min" target="_blank" rel="noopener noreferrer" className="navbar__mobile-cta">
             Book a Free Strategy Call
-          </Link>
+          </a>
         </div>,
         document.body
       )}

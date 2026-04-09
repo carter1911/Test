@@ -338,7 +338,7 @@ export default function Services() {
                 recommend the exact engagement to fit your goals, team size, and budget.
               </p>
               <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
-                <Link to="/contact" className="btn btn-gold btn-lg">Book Free Strategy Call</Link>
+                <a href="https://calendly.com/braveheartway/30min" target="_blank" rel="noopener noreferrer" className="btn btn-gold btn-lg">Book Free Strategy Call</a>
                 <Link to="/" style={{
                   display: 'inline-flex',
                   alignItems: 'center',

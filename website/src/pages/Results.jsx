@@ -284,7 +284,7 @@ export default function Results() {
             <p style={{ color: '#5C5C5C', fontSize: '18px', marginBottom: '36px', maxWidth: '520px', margin: '0 auto 36px', lineHeight: 1.7 }}>
               These results are real. And they're available to you. The only variable is when you decide to start.
             </p>
-            <Link to="/contact" className="btn btn-gold btn-lg">Book Your Free Strategy Call</Link>
+            <a href="https://calendly.com/braveheartway/30min" target="_blank" rel="noopener noreferrer" className="btn btn-gold btn-lg">Book Your Free Strategy Call</a>
           </ScrollReveal>
         </div>
       </section>

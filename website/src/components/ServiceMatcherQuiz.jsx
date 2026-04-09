@@ -278,8 +278,10 @@ export default function ServiceMatcherQuiz() {
           </div>
 
           <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
-            <Link
-              to="/contact"
+            <a
+              href="https://calendly.com/braveheartway/30min"
+              target="_blank"
+              rel="noopener noreferrer"
               style={{
                 background: '#B8860B',
                 color: '#fff',
@@ -295,7 +297,7 @@ export default function ServiceMatcherQuiz() {
               onMouseLeave={e => { e.target.style.background = '#B8860B'; e.target.style.transform = 'translateY(0)' }}
             >
               Book a Free Strategy Call
-            </Link>
+            </a>
             <button
               onClick={reset}
               style={{

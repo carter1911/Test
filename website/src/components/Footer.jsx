@@ -240,7 +240,7 @@ export default function Footer() {
                 Book a free 30-minute strategy call with Sekayi and discover exactly how to build a
                 revenue engine for your remodeling company.
               </p>
-              <Link to="/contact" className="footer-cta-btn">Book Free Strategy Call</Link>
+              <a href="https://calendly.com/braveheartway/30min" target="_blank" rel="noopener noreferrer" className="footer-cta-btn">Book Free Strategy Call</a>
             </div>
           </div>
         </div>

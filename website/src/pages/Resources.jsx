@@ -404,7 +404,7 @@ export default function Resources() {
             <p style={{ color: '#5C5C5C', fontSize: '18px', maxWidth: '520px', margin: '0 auto 36px', lineHeight: 1.7 }}>
               Resources are great. But nothing replaces a direct conversation with Sekayi about your specific situation.
             </p>
-            <Link to="/contact" className="btn btn-gold btn-lg">Book Your Free Strategy Call</Link>
+            <a href="https://calendly.com/braveheartway/30min" target="_blank" rel="noopener noreferrer" className="btn btn-gold btn-lg">Book Your Free Strategy Call</a>
           </ScrollReveal>
         </div>
       </section>

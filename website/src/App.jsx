@@ -99,7 +99,7 @@ function AppNotifications() {
         duration: 9000,
         action: {
           label: 'Book Now',
-          onClick: () => { window.location.href = '/contact' },
+          onClick: () => { window.open('https://calendly.com/braveheartway/30min', '_blank') },
         },
       })
       sessionStorage.setItem('bh_welcomed', '1')
