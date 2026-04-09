@@ -32,7 +32,7 @@ export default function Navbar() {
   }, [menuOpen])
 
   return (
-    <nav className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}>
+    <nav className={`navbar ${scrolled && !menuOpen ? 'navbar--scrolled' : ''}`}>
       <style>{`
         .navbar {
           position: fixed;
@@ -161,7 +161,7 @@ export default function Navbar() {
           border-radius: 4px;
           background: none;
           border: none;
-          z-index: 1001;
+          z-index: 1003;
         }
         .navbar__hamburger span {
           display: block;
@@ -182,22 +182,28 @@ export default function Navbar() {
           transform: translateY(-7px) rotate(-45deg);
         }
         .navbar__mobile {
-          display: none;
+          display: flex;
           position: fixed;
           top: 0;
           left: 0;
           right: 0;
           bottom: 0;
-          background: rgba(250, 247, 242, 0.98);
+          background: #FAF7F2;
           flex-direction: column;
           align-items: center;
           justify-content: center;
           gap: 8px;
-          z-index: 999;
+          z-index: 1002;
           padding: 80px 24px 40px;
+          opacity: 0;
+          visibility: hidden;
+          pointer-events: none;
+          transition: opacity 0.25s ease, visibility 0.25s ease;
         }
         .navbar__mobile.open {
-          display: flex;
+          opacity: 1;
+          visibility: visible;
+          pointer-events: auto;
         }
         .navbar__mobile-logo {
           display: flex;
