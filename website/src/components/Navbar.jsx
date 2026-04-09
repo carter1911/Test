@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { createPortal } from 'react-dom'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 
 const navLinks = [
@@ -32,7 +33,7 @@ export default function Navbar() {
   }, [menuOpen])
 
   return (
-    <nav className={`navbar ${scrolled && !menuOpen ? 'navbar--scrolled' : ''}`}>
+    <>
       <style>{`
         .navbar {
           position: fixed;
@@ -41,7 +42,7 @@ export default function Navbar() {
           right: 0;
           z-index: 1000;
           padding: 20px 0;
-          transition: all 0.4s ease;
+          transition: background 0.4s ease, padding 0.4s ease, border-bottom-color 0.4s ease, box-shadow 0.4s ease;
           border-bottom: 1px solid transparent;
         }
         .navbar--scrolled {
@@ -72,8 +73,6 @@ export default function Navbar() {
           height: 52px;
           width: 52px;
           object-fit: contain;
-          /* black-bg logo blends naturally into dark nav;
-             the chess diamond becomes a glowing emblem */
           filter: drop-shadow(0 0 10px rgba(212,160,23,0.25));
           transition: filter 0.3s ease;
         }
@@ -161,6 +160,7 @@ export default function Navbar() {
           border-radius: 4px;
           background: none;
           border: none;
+          position: relative;
           z-index: 1003;
         }
         .navbar__hamburger span {
@@ -181,19 +181,19 @@ export default function Navbar() {
         .navbar__hamburger.open span:nth-child(3) {
           transform: translateY(-7px) rotate(-45deg);
         }
+        /* Mobile overlay — rendered via portal at document.body, no backdrop-filter parent */
         .navbar__mobile {
-          display: flex;
           position: fixed;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
+          inset: 0;
+          width: 100vw;
+          height: 100vh;
           background: #FAF7F2;
+          display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: center;
           gap: 8px;
-          z-index: 1002;
+          z-index: 9999;
           padding: 80px 24px 40px;
           opacity: 0;
           visibility: hidden;
@@ -225,6 +225,19 @@ export default function Navbar() {
           color: #0A0A0A;
         }
         .navbar__mobile-logo-text span { color: #B8860B; }
+        .navbar__mobile-close {
+          position: absolute;
+          top: 20px;
+          right: 20px;
+          background: none;
+          border: none;
+          cursor: pointer;
+          padding: 8px;
+          color: #0A0A0A;
+          font-size: 32px;
+          line-height: 1;
+          z-index: 10000;
+        }
         .navbar__mobile-link {
           font-family: 'Bebas Neue', sans-serif;
           font-size: 36px;
@@ -266,69 +279,81 @@ export default function Navbar() {
         }
       `}</style>
 
-      <div className="navbar__inner">
-        <Link to="/" className="navbar__logo">
-          <img
-            src="/images/braveheart-consulting-logo.png"
-            alt="BraveHeart Consulting"
-            className="navbar__logo-img"
-          />
-          <div className="navbar__logo-text">
-            <span className="navbar__logo-main">BRAVE<span>HEART</span> WAY</span>
-            <span className="navbar__logo-sub">BraveHeart Consulting LLC</span>
-          </div>
-        </Link>
+      <nav className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}>
+        <div className="navbar__inner">
+          <Link to="/" className="navbar__logo">
+            <img
+              src="/images/braveheart-consulting-logo.png"
+              alt="BraveHeart Consulting"
+              className="navbar__logo-img"
+            />
+            <div className="navbar__logo-text">
+              <span className="navbar__logo-main">BRAVE<span>HEART</span> WAY</span>
+              <span className="navbar__logo-sub">BraveHeart Consulting LLC</span>
+            </div>
+          </Link>
 
-        <div className="navbar__links">
+          <div className="navbar__links">
+            {navLinks.map(({ to, label }) => (
+              <NavLink
+                key={to}
+                to={to}
+                end={to === '/'}
+                className={({ isActive }) => `navbar__link${isActive ? ' active' : ''}`}
+              >
+                {label}
+              </NavLink>
+            ))}
+          </div>
+
+          <Link to="/contact" className="navbar__cta">
+            Book a Call
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </Link>
+
+          <button
+            className={`navbar__hamburger ${menuOpen ? 'open' : ''}`}
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Toggle menu"
+          >
+            <span />
+            <span />
+            <span />
+          </button>
+        </div>
+      </nav>
+
+      {createPortal(
+        <div className={`navbar__mobile ${menuOpen ? 'open' : ''}`}>
+          <button
+            className="navbar__mobile-close"
+            onClick={() => setMenuOpen(false)}
+            aria-label="Close menu"
+          >
+            ×
+          </button>
+          <Link to="/" className="navbar__mobile-logo">
+            <img src="/images/braveheart-consulting-logo.png" alt="BraveHeart" />
+            <span className="navbar__mobile-logo-text">BRAVE<span>HEART</span> WAY</span>
+          </Link>
           {navLinks.map(({ to, label }) => (
             <NavLink
               key={to}
               to={to}
               end={to === '/'}
-              className={({ isActive }) => `navbar__link${isActive ? ' active' : ''}`}
+              className={({ isActive }) => `navbar__mobile-link${isActive ? ' active' : ''}`}
             >
               {label}
             </NavLink>
           ))}
-        </div>
-
-        <Link to="/contact" className="navbar__cta">
-          Book a Call
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-            <path d="M5 12h14M12 5l7 7-7 7"/>
-          </svg>
-        </Link>
-
-        <button
-          className={`navbar__hamburger ${menuOpen ? 'open' : ''}`}
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle menu"
-        >
-          <span />
-          <span />
-          <span />
-        </button>
-      </div>
-
-      <div className={`navbar__mobile ${menuOpen ? 'open' : ''}`}>
-        <Link to="/" className="navbar__mobile-logo">
-          <img src="/images/braveheart-consulting-logo.png" alt="BraveHeart" />
-          <span className="navbar__mobile-logo-text">BRAVE<span>HEART</span> WAY</span>
-        </Link>
-        {navLinks.map(({ to, label }) => (
-          <NavLink
-            key={to}
-            to={to}
-            end={to === '/'}
-            className={({ isActive }) => `navbar__mobile-link${isActive ? ' active' : ''}`}
-          >
-            {label}
-          </NavLink>
-        ))}
-        <Link to="/contact" className="navbar__mobile-cta">
-          Book a Free Strategy Call
-        </Link>
-      </div>
-    </nav>
+          <Link to="/contact" className="navbar__mobile-cta">
+            Book a Free Strategy Call
+          </Link>
+        </div>,
+        document.body
+      )}
+    </>
   )
 }
