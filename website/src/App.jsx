@@ -5,6 +5,7 @@ import Footer from './components/Footer'
 import ToastNotification from './components/ToastNotification'
 import ToolsDrawer from './components/ToolsDrawer'
 import SitewideLogo from './components/SitewideLogo'
+import SplashScreen from './components/SplashScreen'
 import { NotificationProvider, useNotification } from './context/NotificationContext'
 import Home from './pages/Home'
 import About from './pages/About'
@@ -125,6 +126,7 @@ function AppNotifications() {
 export default function App() {
   return (
     <NotificationProvider>
+      <SplashScreen />
       <SitewideLogo />
       <ScrollToTop />
       <Navbar />
