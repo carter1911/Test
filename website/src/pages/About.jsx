@@ -92,7 +92,8 @@ export default function About() {
                     width: '100%',
                     display: 'block',
                     objectFit: 'cover',
-                    aspectRatio: '3/4',
+                    objectPosition: 'center 15%',
+                    aspectRatio: '4/5',
                   }}
                   onError={e => {
                     // Fallback if image not yet placed
