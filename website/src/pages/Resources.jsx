@@ -148,7 +148,7 @@ export default function Resources() {
                   ].map((item, i) => (
                     <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '10px' }}>
                       <span style={{ color: '#D4A017', fontSize: '16px', marginTop: '2px' }}>✓</span>
-                      <span style={{ color: '#D0D5E0', fontSize: '15px' }}>{item}</span>
+                      <span style={{ color: '#3A3A3A', fontSize: '15px' }}>{item}</span>
                     </div>
                   ))}
                 </div>

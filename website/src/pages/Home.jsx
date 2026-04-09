@@ -245,6 +245,178 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ============ WELCOME VIDEO ============ */}
+      <section style={{ background: '#0A0A0A', padding: '80px 0', position: 'relative', overflow: 'hidden' }}>
+        <style>{`
+          .welcome-video-wrap {
+            display: grid;
+            grid-template-columns: 1.15fr 1fr;
+            gap: 64px;
+            align-items: center;
+          }
+          .yt-channel-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255,0,0,0.12);
+            border: 1px solid rgba(255,0,0,0.3);
+            border-radius: 100px;
+            padding: 8px 20px;
+            margin-bottom: 20px;
+          }
+          .yt-subscribe-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #FF0000;
+            color: #fff;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            padding: 14px 28px;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            letter-spacing: 0.02em;
+          }
+          .yt-subscribe-btn:hover {
+            background: #CC0000;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 24px rgba(255,0,0,0.35);
+          }
+          .welcome-video-player {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 24px 80px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.06);
+          }
+          .welcome-video-sizer {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            background: #111;
+          }
+          .welcome-video-iframe {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+          }
+          .welcome-stat-row {
+            display: flex;
+            gap: 32px;
+            margin-top: 36px;
+            flex-wrap: wrap;
+          }
+          .welcome-stat {
+            display: flex;
+            flex-direction: column;
+          }
+          .welcome-stat-num {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 36px;
+            color: #B8860B;
+            letter-spacing: 0.03em;
+            line-height: 1;
+          }
+          .welcome-stat-lbl {
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #888;
+            margin-top: 4px;
+          }
+          @media (max-width: 900px) {
+            .welcome-video-wrap { grid-template-columns: 1fr; gap: 40px; }
+            .welcome-video-wrap > div:first-child { order: 2; }
+            .welcome-video-wrap > div:last-child { order: 1; }
+          }
+        `}</style>
+
+        <div className="container">
+          <div className="welcome-video-wrap">
+            {/* Video player */}
+            <div className="welcome-video-player">
+              <div className="welcome-video-sizer">
+                <iframe
+                  className="welcome-video-iframe"
+                  src="https://www.youtube-nocookie.com/embed/pniCZEXDMo4?autoplay=1&mute=1&loop=1&playlist=pniCZEXDMo4&controls=1&rel=0&modestbranding=1"
+                  title="Welcome to The BraveHeart Way"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+            </div>
+
+            {/* Text side */}
+            <div>
+              <div className="yt-channel-badge">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="#FF0000">
+                  <path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58z"/>
+                  <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/>
+                </svg>
+                <span style={{ fontFamily: 'DM Sans', fontSize: '12px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#FF6666' }}>
+                  The BraveHeart Way · YouTube Channel
+                </span>
+              </div>
+
+              <h2 style={{
+                fontFamily: 'Bebas Neue, sans-serif',
+                fontSize: 'clamp(36px, 4.5vw, 64px)',
+                letterSpacing: '0.03em',
+                color: '#fff',
+                lineHeight: 0.95,
+                marginBottom: '20px',
+              }}>
+                FREE TRAINING.<br />
+                <span style={{ color: '#B8860B' }}>EVERY WEEK.</span>
+              </h2>
+
+              <p style={{ color: '#A0A0A0', fontSize: '16px', lineHeight: 1.8, marginBottom: '28px', maxWidth: '420px' }}>
+                Sekayi drops weekly videos on sales tactics, canvassing systems, mindset, and
+                leadership — all built for exterior remodeling teams ready to scale.
+                Subscribe and never miss a lesson.
+              </p>
+
+              <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap', alignItems: 'center' }}>
+                <a
+                  href="https://www.youtube.com/@thebraveheartway3934"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="yt-subscribe-btn"
+                >
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                    <path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58z"/>
+                    <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="red"/>
+                  </svg>
+                  Subscribe Free
+                </a>
+                <Link to="/contact" style={{ color: '#B8860B', fontFamily: 'DM Sans, sans-serif', fontSize: '15px', fontWeight: 600, textDecoration: 'none' }}>
+                  Work with Sekayi →
+                </Link>
+              </div>
+
+              <div className="welcome-stat-row">
+                <div className="welcome-stat">
+                  <span className="welcome-stat-num">$150M+</span>
+                  <span className="welcome-stat-lbl">Revenue Influenced</span>
+                </div>
+                <div className="welcome-stat">
+                  <span className="welcome-stat-num">100+</span>
+                  <span className="welcome-stat-lbl">Bootcamps Run</span>
+                </div>
+                <div className="welcome-stat">
+                  <span className="welcome-stat-num">10+</span>
+                  <span className="welcome-stat-lbl">Years Experience</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ============ STATS ============ */}
       <section style={{ background: '#F2EAD8', padding: '80px 0', position: 'relative', overflow: 'hidden' }}>
         <LogoWatermark position="right" size={500} opacity={0.042} delay={300} />
@@ -424,12 +596,16 @@ export default function Home() {
             <div style={{ maxWidth: '920px', margin: '0 auto', padding: '0 24px' }}>
               <VideoCarousel videos={[
                 {
+                  id: 'pniCZEXDMo4',
+                  title: 'Welcome to The BraveHeart Way',
+                  label: 'Channel Intro',
+                },
+                {
                   id: 'JHuDXhZNcTY',
                   title: 'The BraveHeart Way — Building Revenue Engines for Exterior Remodelers',
                   label: 'BraveHeart Way',
                 },
-                // Add more videos from https://www.youtube.com/@thebraveheartway3934
-                // Example: { id: 'YOUR_VIDEO_ID', title: 'Video Title', label: 'Short Label' },
+                // Add more: { id: 'VIDEO_ID', title: 'Title', label: 'Label' }
               ]} />
             </div>
           </ScrollReveal>
