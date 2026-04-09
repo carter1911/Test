@@ -73,7 +73,7 @@ export default function Contact() {
                 </h2>
 
                 {/* Phone - Styled Prominently */}
-                <a href="tel:8435353251" style={{
+                <a href="tel:7146868157" style={{
                   display: 'flex',
                   alignItems: 'center',
                   gap: '16px',
@@ -111,12 +111,12 @@ export default function Contact() {
                       letterSpacing: '0.08em',
                       color: '#D4A017',
                     }}>
-                      843-535-3251
+                      714-686-8157
                     </div>
                   </div>
                 </a>
 
-                <a href="mailto:info@braveheartway.com" style={{
+                <a href="mailto:braveheartway@gmail.com" style={{
                   display: 'flex',
                   alignItems: 'center',
                   gap: '16px',
@@ -148,10 +148,44 @@ export default function Contact() {
                       Email Us
                     </div>
                     <div style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '16px', fontWeight: 600, color: '#D0D5E0' }}>
-                      info@braveheartway.com
+                      braveheartway@gmail.com
                     </div>
                   </div>
                 </a>
+
+                {/* Social / Digital Card Links */}
+                <div style={{ display: 'flex', gap: '12px', marginBottom: '32px', flexWrap: 'wrap' }}>
+                  {[
+                    { href: 'https://linkedin.com/in/sekayibrown19892020', label: 'LinkedIn', icon: <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg> },
+                    { href: 'https://www.youtube.com/@thebraveheartway3934', label: 'YouTube', icon: <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg> },
+                    { href: 'https://poplme.co/hash/cHNNt5m9/1/contactcard', label: 'Digital Card', icon: <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg> },
+                  ].map(({ href, label, icon }) => (
+                    <a
+                      key={label}
+                      href={href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '8px',
+                        background: '#FFFEF8',
+                        border: '1px solid rgba(184,134,11,0.25)',
+                        borderRadius: '8px',
+                        padding: '10px 16px',
+                        color: '#5C5C5C',
+                        fontSize: '14px',
+                        fontWeight: 600,
+                        textDecoration: 'none',
+                        transition: 'all 0.2s',
+                      }}
+                      onMouseEnter={e => { e.currentTarget.style.borderColor = '#B8860B'; e.currentTarget.style.color = '#B8860B' }}
+                      onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(184,134,11,0.25)'; e.currentTarget.style.color = '#5C5C5C' }}
+                    >
+                      {icon} {label}
+                    </a>
+                  ))}
+                </div>
 
                 {/* What to Expect */}
                 <div>
@@ -264,7 +298,7 @@ export default function Contact() {
                     </h3>
                     <p style={{ color: '#5C5C5C', fontSize: '15px', lineHeight: 1.7, maxWidth: '340px', margin: '0 auto 20px' }}>
                       Sekayi or someone from the BraveHeart team will follow up within 24 hours.
-                      For faster response, call or text: <strong style={{ color: '#D4A017' }}>843-535-3251</strong>
+                      For faster response, call or text: <strong style={{ color: '#D4A017' }}>714-686-8157</strong>
                     </p>
                   </div>
                 ) : (
