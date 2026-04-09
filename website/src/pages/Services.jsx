@@ -184,9 +184,9 @@ function ServiceCard({ service, index }) {
                 Outcome Metrics
               </div>
               {service.outcomes.map((o, i) => (
-                <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', padding: '8px 0', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
+                <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', padding: '8px 0', borderBottom: '1px solid rgba(0,0,0,0.08)' }}>
                   <span style={{ color: tier.color, fontSize: '16px' }}>✓</span>
-                  <span style={{ color: '#D0D5E0', fontSize: '14px', fontWeight: 500 }}>{o}</span>
+                  <span style={{ color: '#0A0A0A', fontSize: '14px', fontWeight: 500 }}>{o}</span>
                 </div>
               ))}
             </div>
@@ -195,9 +195,9 @@ function ServiceCard({ service, index }) {
                 What's Included
               </div>
               {service.deliverables.map((d, i) => (
-                <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', padding: '8px 0', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
+                <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', padding: '8px 0', borderBottom: '1px solid rgba(0,0,0,0.08)' }}>
                   <span style={{ color: '#D4A017' }}>→</span>
-                  <span style={{ color: '#5C5C5C', fontSize: '14px' }}>{d}</span>
+                  <span style={{ color: '#3A3A3A', fontSize: '14px' }}>{d}</span>
                 </div>
               ))}
             </div>
