@@ -117,33 +117,33 @@ export default function About() {
                   <span>Add sekayi-headshot.jpg to<br/>public/images/</span>
                 </div>
 
-                {/* Gradient name overlay at bottom */}
-                <div style={{
-                  position: 'absolute',
-                  bottom: 0,
-                  left: 0,
-                  right: 0,
-                  background: 'linear-gradient(to top, rgba(6,10,20,0.95) 0%, rgba(6,10,20,0.5) 60%, transparent 100%)',
-                  padding: '40px 24px 24px',
-                }}>
-                  <div style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: '26px', letterSpacing: '0.08em', color: '#0A0A0A' }}>
-                    SEKAYI BROWN
-                  </div>
-                  <div style={{ fontSize: '12px', letterSpacing: '0.15em', textTransform: 'uppercase', color: '#D4A017', fontWeight: 600, marginTop: '4px' }}>
-                    Founder · BraveHeart Consulting LLC
-                  </div>
-                  <div style={{ display: 'flex', gap: '8px', marginTop: '12px', flexWrap: 'wrap' }}>
-                    {['$150M+', '18+ Leaders', '100+ Bootcamps'].map((stat, i) => (
-                      <div key={i} style={{
-                        background: 'rgba(250,247,242,0.98)',
-                        border: '1px solid rgba(212,160,23,0.25)',
-                        borderRadius: '6px',
-                        padding: '6px 10px',
-                      }}>
-                        <div style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: '14px', color: '#D4A017', letterSpacing: '0.03em' }}>{stat}</div>
-                      </div>
-                    ))}
-                  </div>
+              </div>
+
+              {/* Name block — below photo so it's always readable */}
+              <div style={{
+                background: '#FFFEF8',
+                border: '1px solid rgba(184,134,11,0.2)',
+                borderRadius: '0 0 12px 12px',
+                padding: '20px 24px',
+                marginTop: '-4px',
+              }}>
+                <div style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: '24px', letterSpacing: '0.08em', color: '#0A0A0A' }}>
+                  SEKAYI BROWN
+                </div>
+                <div style={{ fontSize: '12px', letterSpacing: '0.15em', textTransform: 'uppercase', color: '#B8860B', fontWeight: 600, marginTop: '2px' }}>
+                  Founder · BraveHeart Consulting LLC
+                </div>
+                <div style={{ display: 'flex', gap: '8px', marginTop: '12px', flexWrap: 'wrap' }}>
+                  {['$150M+', '18+ Leaders', '100+ Bootcamps'].map((stat, i) => (
+                    <div key={i} style={{
+                      background: 'rgba(184,134,11,0.08)',
+                      border: '1px solid rgba(184,134,11,0.25)',
+                      borderRadius: '6px',
+                      padding: '6px 12px',
+                    }}>
+                      <div style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: '14px', color: '#B8860B', letterSpacing: '0.03em' }}>{stat}</div>
+                    </div>
+                  ))}
                 </div>
               </div>
             </ScrollReveal>
