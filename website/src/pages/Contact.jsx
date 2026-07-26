@@ -388,10 +388,6 @@ export default function Contact() {
                     <p style={{ color: '#888888', fontSize: '12px', textAlign: 'center', marginTop: '12px', lineHeight: 1.5 }}>
                       We respond within 24 hours. Your information is never sold or shared.
                     </p>
-                    <p style={{ color: '#AAAAAA', fontSize: '11px', textAlign: 'center', marginTop: '8px', lineHeight: 1.6, fontStyle: 'italic' }}>
-                      Please note: Due to competitive interests, BraveHeart does not work with exterior remodeling,
-                      interior remodeling, or home improvement organizations.
-                    </p>
                   </form>
                 )}
               </div>

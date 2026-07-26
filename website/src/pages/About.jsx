@@ -214,11 +214,9 @@ export default function About() {
                   borderRadius: '0 6px 6px 0',
                 }}>
                   <p style={{ color: '#888888', fontSize: '13px', lineHeight: 1.7, margin: 0 }}>
-                    <strong style={{ color: '#5C5C5C', fontWeight: 600 }}>A note on fit:</strong>{' '}
-                    BraveHeart's work is exclusively focused on developing leaders, passionate sales professionals,
-                    and growth-oriented organizations. Due to competitive interests, Sekayi does not consult with
-                    exterior remodeling, interior remodeling, or home improvement companies — there are plenty of
-                    great consultants in that lane. This one's built for something different.
+                    My passion is developing professionals, leaders, and young people — giving them the systems,
+                    skills, and mindset to perform at the highest level and build something they're proud of.
+                    Please note: BraveHeart does not partner with home remodeling or exterior remodeling organizations.
                   </p>
                 </div>
 
