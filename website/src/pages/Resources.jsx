@@ -4,25 +4,25 @@ import ScrollReveal from '../components/ScrollReveal'
 import LogoWatermark from '../components/LogoWatermark'
 
 const conferences2026 = [
-  { name: 'International Roofing Expo', date: 'Feb 4–6, 2026', location: 'Houston, TX', region: 'South', type: 'National', link: '#' },
-  { name: 'Roofing Day in D.C.', date: 'April 7–9, 2026', location: 'Washington, D.C.', region: 'East', type: 'National', link: '#' },
-  { name: 'Western Roofing Expo', date: 'June 15–17, 2026', location: 'Las Vegas, NV', region: 'West', type: 'Regional', link: '#' },
-  { name: 'METALCON 2026', date: 'Oct 5–7, 2026', location: 'Charlotte, NC', region: 'East', type: 'National', link: '#' },
-  { name: 'RCAT Texas Annual Convention', date: 'Sept 10–12, 2026', location: 'San Antonio, TX', region: 'South', type: 'Regional', link: '#' },
-  { name: 'Northeast Roofing Conference', date: 'March 3–4, 2026', location: 'Boston, MA', region: 'East', type: 'Regional', link: '#' },
-  { name: 'Remodeling Leadership Conference', date: 'May 20–22, 2026', location: 'Nashville, TN', region: 'South', type: 'National', link: '#' },
-  { name: 'Home Improvement Franchise Expo', date: 'July 8–9, 2026', location: 'Chicago, IL', region: 'Midwest', type: 'National', link: '#' },
-  { name: 'Pacific Coast Contractors Summit', date: 'Aug 12–13, 2026', location: 'Seattle, WA', region: 'West', type: 'Regional', link: '#' },
-  { name: 'NARI Fall Forum', date: 'Nov 3–5, 2026', location: 'Denver, CO', region: 'West', type: 'National', link: '#' },
+  { name: 'National Sales Summit', date: 'Feb 4–6, 2026', location: 'Houston, TX', region: 'South', type: 'National', link: '#' },
+  { name: 'Leadership Accelerator Conference', date: 'April 7–9, 2026', location: 'Washington, D.C.', region: 'East', type: 'National', link: '#' },
+  { name: 'Sales Excellence Expo West', date: 'June 15–17, 2026', location: 'Las Vegas, NV', region: 'West', type: 'Regional', link: '#' },
+  { name: 'Professional Development Summit', date: 'Oct 5–7, 2026', location: 'Charlotte, NC', region: 'East', type: 'National', link: '#' },
+  { name: 'Texas Business Leaders Conference', date: 'Sept 10–12, 2026', location: 'San Antonio, TX', region: 'South', type: 'Regional', link: '#' },
+  { name: 'Northeast Sales & Marketing Forum', date: 'March 3–4, 2026', location: 'Boston, MA', region: 'East', type: 'Regional', link: '#' },
+  { name: 'Emerging Leaders Summit', date: 'May 20–22, 2026', location: 'Nashville, TN', region: 'South', type: 'National', link: '#' },
+  { name: 'B2B Revenue Growth Expo', date: 'July 8–9, 2026', location: 'Chicago, IL', region: 'Midwest', type: 'National', link: '#' },
+  { name: 'Pacific Coast Business Summit', date: 'Aug 12–13, 2026', location: 'Seattle, WA', region: 'West', type: 'Regional', link: '#' },
+  { name: 'Sales Leadership Forum', date: 'Nov 3–5, 2026', location: 'Denver, CO', region: 'West', type: 'National', link: '#' },
 ]
 
 const books = [
-  { title: 'The Closer\'s Survival Guide', author: 'Grant Cardone', desc: 'The definitive guide to closing any deal in any environment. Essential reading for every sales professional in the exterior remodeling space.', category: 'Sales' },
-  { title: 'Fanatical Prospecting', author: 'Jeb Blount', desc: 'The ultimate guide to opening sales conversations and filling the pipeline — directly applicable to canvassing and outbound lead generation.', category: 'Lead Generation' },
+  { title: 'The Closer\'s Survival Guide', author: 'Grant Cardone', desc: 'The definitive guide to closing any deal in any environment. Essential reading for every sales professional in any industry.', category: 'Sales' },
+  { title: 'Fanatical Prospecting', author: 'Jeb Blount', desc: 'The ultimate guide to opening sales conversations and filling the pipeline — directly applicable to direct outbound and lead generation strategies.', category: 'Lead Generation' },
   { title: 'Mindset', author: 'Carol S. Dweck', desc: 'The science behind the growth mindset that underlies the BraveHeart Training Academy. A foundational read before Module 01.', category: 'Mindset' },
   { title: 'Traction', author: 'Gino Wickman', desc: 'The EOS framework for getting your company out of chaos and into scalable, systemized growth. Recommended for owners and directors.', category: 'Leadership' },
-  { title: 'Never Split the Difference', author: 'Chris Voss', desc: 'Former FBI hostage negotiator reveals the communication tactics that transfer directly to in-home and threshold sales conversations.', category: 'Sales' },
-  { title: 'Can\'t Hurt Me', author: 'David Goggins', desc: 'The mental toughness framework that drives the resilience sections of the Mindset Mastery track. Required reading for canvassers.', category: 'Mindset' },
+  { title: 'Never Split the Difference', author: 'Chris Voss', desc: 'Former FBI hostage negotiator reveals the communication tactics that transfer directly to consultative and high-stakes sales conversations.', category: 'Sales' },
+  { title: 'Can\'t Hurt Me', author: 'David Goggins', desc: 'The mental toughness framework that drives the resilience sections of the Mindset Mastery track. Required reading for every serious sales professional.', category: 'Mindset' },
 ]
 
 const regions = ['All', 'East', 'West', 'South', 'Midwest', 'National']
@@ -135,8 +135,8 @@ export default function Resources() {
                   <span style={{ color: '#D4A017' }}>Cold Call Script</span>
                 </h2>
                 <p style={{ color: '#5C5C5C', fontSize: '16px', lineHeight: 1.8, marginBottom: '24px' }}>
-                  The exact cold call script Sekayi refined over 10+ years and thousands of dials in the
-                  exterior remodeling industry. Opens homeowners, handles gatekeepers, and books appointments.
+                  The exact cold call script Sekayi refined over 10+ years and thousands of dials in
+                  high-performance sales environments. Opens prospects, handles gatekeepers, and books appointments.
                 </p>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
                   {[
@@ -327,7 +327,7 @@ export default function Resources() {
                 <span style={{ color: '#D4A017' }}>From the Field</span>
               </h2>
               <p style={{ color: '#5C5C5C', fontSize: '17px', maxWidth: '540px', margin: '16px auto 0' }}>
-                Short-form training videos covering canvassing, closing, leadership, and mindset.
+                Short-form training videos covering outbound sales, closing, leadership, and mindset.
                 Follow BraveHeart Way on social for new content every week.
               </p>
             </div>
@@ -335,12 +335,12 @@ export default function Resources() {
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '24px' }}>
             {[
-              { icon: '🎥', title: 'The Perfect Door Knock Opening', duration: '12 min', tag: 'Canvassing', desc: 'The exact 3-sentence opening that gets homeowners to engage instead of shut the door.' },
+              { icon: '🎥', title: 'The Perfect Outreach Opening', duration: '12 min', tag: 'Direct Sales', desc: 'The exact 3-sentence opening that gets prospects to engage instead of disengage.' },
               { icon: '🎥', title: 'How to Handle "I Need to Think About It"', duration: '15 min', tag: 'Closing', desc: 'The objection that kills 40% of deals. Here\'s the proven pattern to reframe and close.' },
               { icon: '🎥', title: 'Building a 90-Day Sales Plan', duration: '20 min', tag: 'Planning', desc: 'The exact quarterly planning framework Sekayi uses with every coaching client.' },
-              { icon: '🎥', title: 'Recruiting Elite Canvassers', duration: '18 min', tag: 'Recruiting', desc: 'What to look for, what questions to ask, and how to spot a real canvasser vs. a pretender.' },
-              { icon: '🎥', title: 'Morning Routine of a $1M Producer', duration: '10 min', tag: 'Mindset', desc: 'The non-negotiable morning habits of the top 1% in exterior sales.' },
-              { icon: '🎥', title: 'Running a Home Show Booth That Converts', duration: '22 min', tag: 'Lead Gen', desc: 'The booth setup, approach script, and follow-up system that generates real appointments.' },
+              { icon: '🎥', title: 'Recruiting Elite Sales Professionals', duration: '18 min', tag: 'Recruiting', desc: 'What to look for, what questions to ask, and how to spot a real sales professional vs. a pretender.' },
+              { icon: '🎥', title: 'Morning Routine of a $1M Producer', duration: '10 min', tag: 'Mindset', desc: 'The non-negotiable morning habits of the top 1% in professional sales.' },
+              { icon: '🎥', title: 'Running a Conference Presence That Converts', duration: '22 min', tag: 'Lead Gen', desc: 'The conference setup, approach script, and follow-up system that generates real appointments.' },
             ].map((vid, i) => (
               <ScrollReveal key={i} delay={i * 80}>
                 <div style={{

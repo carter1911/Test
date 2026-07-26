@@ -6,54 +6,54 @@ import LogoWatermark from '../components/LogoWatermark'
 
 const testimonials = [
   {
-    quote: "Sekayi transformed how we think about canvassing. We went from 20 leads a month to over 80 within 60 days of implementing his system. The scripts, the territory strategy, the accountability framework — it all clicked.",
+    quote: "Sekayi transformed how we think about outbound sales. We went from 20 leads a month to over 80 within 60 days of implementing his system. The scripts, the territory strategy, the accountability framework — it all clicked.",
     name: 'Marcus T.',
-    title: 'Owner, Regional Roofing Co.',
+    title: 'Owner, Regional Sales Co.',
     location: 'Charlotte, NC',
     result: '+300% Lead Volume in 60 Days',
   },
   {
     quote: "We'd tried other consultants before and they gave us binders full of theory. Sekayi gave us systems. Real, working systems. Our close rate went from 18% to 31% in 3 months and we haven't looked back.",
     name: 'Jennifer R.',
-    title: 'VP of Sales, Exterior Solutions LLC',
+    title: 'VP of Sales, Apex Revenue Group',
     location: 'Dallas, TX',
     result: '18% → 31% Close Rate',
   },
   {
     quote: "The Fractional Sales Director engagement was the best investment we made in 2024. Sekayi didn't just coach — he was in the trenches with us, running team meetings, refining our hiring process, and building the culture we'd always wanted.",
     name: 'Derek W.',
-    title: 'CEO, Apex Home Exteriors',
+    title: 'CEO, Apex Business Solutions',
     location: 'Atlanta, GA',
     result: '$2.1M Revenue Added in Year 1',
   },
   {
-    quote: "Our home show conversion was abysmal before BraveHeart. Sekayi came in, retrained our booth team, redesigned the lead capture process, and our last expo produced 3x the qualified appointments we'd ever seen.",
+    quote: "Our conference and event conversion was abysmal before BraveHeart. Sekayi came in, retrained our booth team, redesigned the lead capture process, and our last expo produced 3x the qualified appointments we'd ever seen.",
     name: 'Priya S.',
-    title: 'Marketing Director, HomeFront Remodeling',
+    title: 'Marketing Director, FrontLine Business Group',
     location: 'Phoenix, AZ',
-    result: '3x Home Show Conversion',
+    result: '3x Conference Conversion',
   },
   {
     quote: "I went through the Mindset Mastery program as a sales rep and within 6 months I was a team lead managing 12 reps. The personal development work that Sekayi has built into the curriculum is unlike anything else in our industry.",
     name: 'Carlos M.',
-    title: 'Team Lead, Power Renovations',
+    title: 'Team Lead, Peak Performance Group',
     location: 'Miami, FL',
     result: 'Rep → Team Lead in 6 Months',
   },
   {
-    quote: "The Done-For-You Canvassing service paid for itself in the first month. We had a full team deployed, scripts dialed in, and qualified appointments flowing before I had to make a single hire. It's exactly what we needed to scale fast.",
+    quote: "The Outbound Sales Deployment service paid for itself in the first month. We had a full team deployed, scripts dialed in, and qualified appointments flowing before I had to make a single hire. It's exactly what we needed to scale fast.",
     name: 'Brian K.',
-    title: 'Founder, Storm Guard Exteriors',
+    title: 'Founder, Summit Growth Ventures',
     location: 'Denver, CO',
     result: 'ROI Positive in 30 Days',
   },
 ]
 
 const conferences = [
-  { name: 'Roofing Day DC', type: 'National', region: 'East', year: '2024', desc: 'Annual advocacy and networking event for roofing professionals in Washington, D.C.' },
-  { name: 'Western Roofing Expo', type: 'Regional', region: 'West', year: '2024', desc: 'The premier roofing industry event on the West Coast.' },
-  { name: 'METALCON', type: 'National', region: 'National', year: '2024', desc: 'International trade show and conference for the metal construction industry.' },
-  { name: 'RCAT Texas Annual Convention', type: 'Regional', region: 'South', year: '2024', desc: 'The Roofing Contractors Association of Texas premier networking and training event.' },
+  { name: 'National Sales Summit', type: 'National', region: 'East', year: '2024', desc: 'The premier national gathering of sales leaders, strategists, and revenue-growth professionals.' },
+  { name: 'Leadership Accelerator Conference', type: 'National', region: 'West', year: '2024', desc: 'A high-impact leadership development conference for executives and emerging leaders.' },
+  { name: 'Professional Development Expo', type: 'National', region: 'National', year: '2024', desc: 'The leading professional development event connecting trainers, coaches, and organizational leaders.' },
+  { name: 'Sales Excellence Forum', type: 'Regional', region: 'South', year: '2024', desc: 'A regional gathering of top sales professionals focused on strategy, mindset, and performance.' },
 ]
 
 const metrics = [
@@ -64,7 +64,7 @@ const metrics = [
 ]
 
 const industries = [
-  'Exterior Remodeling', 'Roofing', 'Siding & Windows', 'Solar', 'HVAC', 'Home Improvement', 'Door & Entry Systems', 'Gutters & Drainage'
+  'Sales Organizations', 'Corporate Training', 'Business Development', 'Professional Services', 'Technology & SaaS', 'Financial Services', 'Healthcare', 'Higher Education'
 ]
 
 export default function Results() {
@@ -184,7 +184,7 @@ export default function Results() {
                 <span style={{ color: '#D4A017' }}>At National Conferences</span>
               </h2>
               <p style={{ color: '#5C5C5C', fontSize: '17px', maxWidth: '560px', margin: '16px auto 0' }}>
-                Sekayi Brown is a recognized speaker and trainer on the national exterior remodeling conference circuit.
+                Sekayi Brown is a recognized speaker and trainer on the national sales, leadership, and professional development conference circuit.
               </p>
             </div>
           </ScrollReveal>
@@ -247,8 +247,8 @@ export default function Results() {
             <div className="section-header">
               <span className="label-text">Industry Expertise</span>
               <h2 className="display-md" style={{ marginTop: '12px', color: '#0A0A0A' }}>
-                We Serve Companies Across<br />
-                <span style={{ color: '#D4A017' }}>The Home Services Sector</span>
+                We Serve Organizations Across<br />
+                <span style={{ color: '#D4A017' }}>Every Professional Sector</span>
               </h2>
             </div>
           </ScrollReveal>

@@ -225,8 +225,8 @@ export default function Footer() {
               <Link to="/services">Lead Generation</Link>
               <Link to="/services">Recruiting & Staffing</Link>
               <Link to="/services">Sales Consulting</Link>
-              <Link to="/services">Home Show Management</Link>
-              <Link to="/services">Done-For-You Canvassing</Link>
+              <Link to="/services">Event & Conference Strategy</Link>
+              <Link to="/services">Outbound Sales Deployment</Link>
               <Link to="/services">Fractional Sales Director</Link>
               <Link to="/services">Sales Agency</Link>
             </div>
@@ -238,7 +238,7 @@ export default function Footer() {
             <div className="footer-cta-box">
               <p>
                 Book a free 30-minute strategy call with Sekayi and discover exactly how to build a
-                revenue engine for your remodeling company.
+                revenue engine for your organization.
               </p>
               <a href="https://calendly.com/braveheartway/30min" target="_blank" rel="noopener noreferrer" className="footer-cta-btn">Book Free Strategy Call</a>
             </div>

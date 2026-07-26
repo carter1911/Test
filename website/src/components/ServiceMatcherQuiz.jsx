@@ -37,17 +37,17 @@ function getRecommendation(answers) {
   if (challenge === 'leads') {
     if (timeline === 'now') return {
       tier: 'BRONZE',
-      package: 'Done-For-You Canvassing',
+      package: 'Outbound Sales Deployment',
       price: '$7,500',
-      description: 'We deploy proven canvassing teams and systems immediately so you have qualified leads in your pipeline within 30 days.',
-      bullets: ['Rapid deployment', 'Pre-qualified homeowner leads', 'Full canvassing scripts & tracking'],
+      description: 'We deploy proven outbound sales teams and systems immediately so you have qualified leads in your pipeline within 30 days.',
+      bullets: ['Rapid deployment', 'Pre-qualified prospect leads', 'Full outreach scripts & tracking'],
     }
     return {
       tier: 'SILVER',
       package: 'Lead Generation System Build',
       price: '$15,000–$25,000',
-      description: 'We build you a comprehensive outbound lead generation infrastructure — canvassing, home shows, and digital — tailored to your market.',
-      bullets: ['Custom lead gen playbook', 'Home show strategy', 'Digital + door knock integration'],
+      description: 'We build you a comprehensive outbound lead generation infrastructure — direct outreach, events, and digital — tailored to your market.',
+      bullets: ['Custom lead gen playbook', 'Event & conference strategy', 'Digital + direct outreach integration'],
     }
   }
 

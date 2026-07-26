@@ -94,42 +94,42 @@ const canvassingModules = [
   {
     num: '01',
     title: 'Mission & Mindset',
-    desc: 'Before you knock a single door, you need to be mentally bulletproof. This module establishes the canvassing mindset framework that separates elite canvassers from average ones.',
+    desc: 'Before you make a single contact, you need to be mentally bulletproof. This module establishes the direct sales mindset framework that separates elite performers from average ones.',
     duration: '40 min',
-    outcomes: ['Canvassing identity programming', 'Daily mental preparation', 'Mission statement creation'],
+    outcomes: ['High-performance identity programming', 'Daily mental preparation', 'Mission statement creation'],
   },
   {
     num: '02',
     title: 'Script & Structure',
-    desc: 'Master the exact language patterns, tonality, and conversational structure used to generate appointments at the door — including handling every objection at the threshold.',
+    desc: 'Master the exact language patterns, tonality, and conversational structure used to generate appointments and open conversations — including handling every objection in the field.',
     duration: '75 min',
     outcomes: ['Proven opening scripts', 'Objection response library', 'Appointment setting framework'],
   },
   {
     num: '03',
     title: 'Systems & Data',
-    desc: 'Canvassing without data is guessing. Learn how to track territory, measure conversion rates, and use performance data to optimize your routes and approach in real time.',
+    desc: 'Outbound sales without data is guessing. Learn how to track territory, measure conversion rates, and use performance data to optimize your strategy and approach in real time.',
     duration: '60 min',
-    outcomes: ['CRM & tracking setup', 'Territory mapping system', 'KPI dashboard design'],
+    outcomes: ['CRM & tracking setup', 'Territory strategy system', 'KPI dashboard design'],
   },
   {
     num: '04',
     title: 'Advanced Communication',
-    desc: 'Go beyond the script. Learn advanced rapport-building techniques, reading body language, NLP communication patterns, and the psychological triggers that open homeowners\' doors.',
+    desc: 'Go beyond the script. Learn advanced rapport-building techniques, reading body language, NLP communication patterns, and the psychological triggers that open conversations and build trust.',
     duration: '65 min',
     outcomes: ['Rapport acceleration techniques', 'Body language mastery', 'Psychological influence framework'],
   },
   {
     num: '05',
-    title: 'Safety & Logistics',
-    desc: 'Professional canvassing means operating with discipline and safety. Cover territory protocols, personal safety practices, legal compliance, and the logistics of running a field operation.',
+    title: 'Professional Operations',
+    desc: 'Professional outbound sales means operating with discipline and standards. Cover territory protocols, professional conduct practices, legal compliance, and the logistics of running a field operation.',
     duration: '45 min',
-    outcomes: ['Field safety protocols', 'Legal compliance checklist', 'Territory logistics framework'],
+    outcomes: ['Professional conduct standards', 'Legal compliance checklist', 'Territory logistics framework'],
   },
   {
     num: '06',
     title: 'Field Launch',
-    desc: 'The final module is your deployment blueprint — everything you need to launch your first (or next) canvassing operation with systems, team, and accountability already in place.',
+    desc: 'The final module is your deployment blueprint — everything you need to launch your first (or next) outbound sales operation with systems, team, and accountability already in place.',
     duration: '90 min',
     outcomes: ['Launch checklist & playbook', 'Team training framework', 'First 30-day accountability system'],
   },
@@ -258,7 +258,7 @@ export default function TrainingAcademy() {
               <span style={{ color: '#D4A017' }}>Are Built</span>
             </h1>
             <p style={{ color: '#5C5C5C', fontSize: 'clamp(16px,2vw,20px)', maxWidth: '600px', lineHeight: 1.7 }}>
-              18 modules across two tracks — Mindset Mastery and Canvassing Excellence —
+              18 modules across two tracks — Mindset Mastery and Direct Sales Excellence —
               designed to transform sales professionals from the inside out.
             </p>
           </ScrollReveal>
@@ -282,10 +282,10 @@ export default function TrainingAcademy() {
               {
                 id: 'canvassing',
                 icon: '🚀',
-                title: 'Track B: Canvassing Mastery',
+                title: 'Track B: Direct Sales Excellence',
                 modules: '6 Modules',
                 duration: '~6 hours',
-                desc: 'The field-proven system for dominating door-to-door lead generation — from first knock to booked appointment to scaled operation.',
+                desc: 'The field-proven system for dominating direct outbound sales — from first contact to booked appointment to scaled operation.',
                 color: '100,160,255',
               },
             ].map((track) => (
@@ -363,12 +363,12 @@ export default function TrainingAcademy() {
                 <div style={{ textAlign: 'center', marginBottom: '48px' }}>
                   <span style={{ fontSize: '12px', fontWeight: 700, letterSpacing: '0.15em', textTransform: 'uppercase', color: 'rgb(100,160,255)' }}>Track B</span>
                   <h2 className="display-md" style={{ marginTop: '12px', color: '#0A0A0A' }}>
-                    6-Module Canvassing<br />
-                    <span style={{ color: 'rgb(100,160,255)' }}>Mastery System</span>
+                    6-Module Direct Sales<br />
+                    <span style={{ color: 'rgb(100,160,255)' }}>Excellence System</span>
                   </h2>
                   <p style={{ color: '#5C5C5C', fontSize: '17px', maxWidth: '560px', margin: '16px auto 0' }}>
                     From mission and mindset to field launch — the complete blueprint for
-                    building a professional door-to-door operation that generates consistent results.
+                    building a professional outbound sales operation that generates consistent results.
                   </p>
                 </div>
               </ScrollReveal>

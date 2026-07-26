@@ -8,7 +8,7 @@ const timeline = [
     year: '2013',
     company: 'Power Home Remodeling',
     role: 'Sales Representative → Sales Manager',
-    desc: 'Joined one of the largest exterior remodeling companies in the US as a rep and climbed to management, developing a deep mastery of the in-home sales process, door-to-door lead generation, and high-volume team management.',
+    desc: 'Joined one of the largest sales organizations in the US as a rep and climbed to management, developing a deep mastery of the consultative sales process, direct outbound lead generation, and high-volume team management.',
     achievement: 'Top-performing regional team. Ran 100+ training bootcamps.',
     color: '#D4A017',
   },
@@ -16,7 +16,7 @@ const timeline = [
     year: '2019',
     company: 'Amazon',
     role: 'Sales & Operations Leader',
-    desc: 'Applied enterprise-level sales operations, customer success strategy, and data-driven management systems — bringing Fortune 500 discipline to the exterior remodeling world.',
+    desc: 'Applied enterprise-level sales operations, customer success strategy, and data-driven management systems — bringing Fortune 500 discipline to high-performance sales organizations.',
     achievement: 'Scaled team performance metrics. Developed accountability frameworks.',
     color: '#D4A017',
   },
@@ -24,7 +24,7 @@ const timeline = [
     year: '2021',
     company: 'Home Genius Exteriors',
     role: 'Regional Sales Director',
-    desc: 'Led multi-state sales expansion, recruiting top talent, building canvassing teams from scratch, and managing home show operations that generated consistent multi-million dollar pipelines.',
+    desc: 'Led multi-state sales expansion, recruiting top talent, building outbound sales teams from scratch, and managing conference and event operations that generated consistent multi-million dollar pipelines.',
     achievement: 'Influenced $150M+ in revenue. Built and coached 18+ leaders.',
     color: '#D4A017',
   },
@@ -32,7 +32,7 @@ const timeline = [
     year: '2024',
     company: 'BraveHeart Consulting LLC',
     role: 'Founder & CEO',
-    desc: 'Founded BraveHeart Way to bring proven, enterprise-grade sales and marketing systems to small and mid-size exterior remodeling companies — giving them the same playbooks used by the industry\'s top producers.',
+    desc: 'Founded BraveHeart Way to bring proven, enterprise-grade sales and marketing systems to organizations, emerging leaders, and sales professionals — giving them the same playbooks used by top performers.',
     achievement: 'Consulting, coaching, and building revenue engines nationwide.',
     color: '#D4A017',
   },
@@ -41,7 +41,7 @@ const timeline = [
 const values = [
   { icon: '🔥', title: 'BraveHeart Execution', desc: 'We don\'t sell ideas. We deliver results through relentless implementation and accountability.' },
   { icon: '🧠', title: 'Systems Over Hustle', desc: 'Scalable, repeatable systems outlast any individual. We build frameworks that compound.' },
-  { icon: '🎯', title: 'Precision Over Volume', desc: 'The right lead, the right script, the right close — executed with precision beats volume every time.' },
+  { icon: '🎯', title: 'Precision Over Volume', desc: 'The right audience, the right message, the right close — executed with precision beats volume every time.' },
   { icon: '🌱', title: 'Growth as Identity', desc: 'We develop people, not just pipelines. Leaders who grow transform the companies they touch.' },
 ]
 
@@ -59,9 +59,9 @@ export default function About() {
               <span style={{ color: '#D4A017' }}>The System</span>
             </h1>
             <p style={{ color: '#5C5C5C', fontSize: 'clamp(16px,2vw,20px)', maxWidth: '600px', lineHeight: 1.7 }}>
-              Sales, Marketing & Leadership Executive with 10+ years transforming exterior remodeling
-              companies into revenue engines through proven systems, elite team development, and
-              unwavering accountability.
+              Sales, Marketing & Leadership Executive with 10+ years transforming organizations and
+              emerging leaders into high-performance revenue engines through proven systems, elite team
+              development, and unwavering accountability.
             </p>
           </ScrollReveal>
         </div>
@@ -166,10 +166,10 @@ export default function About() {
 
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
                   {[
-                    'Sekayi Brown is a Sales, Marketing & Leadership Executive with over a decade of frontline experience in the exterior remodeling industry — one of the most competitive, high-stakes sales environments in the country.',
-                    'He\'s built canvassing teams from zero to hundreds of reps. He\'s run multi-state home show operations. He\'s trained sales professionals at every level from new hire to senior director. And he\'s done it at organizations like Power Home Remodeling — one of America\'s most recognized remodeling brands — as well as Amazon and Home Genius Exteriors.',
-                    'What separates Sekayi from other consultants? He\'s not teaching theory he read in a book. He\'s transferring the exact systems, scripts, hiring frameworks, and accountability structures that generated over $150M in revenue influence across his career.',
-                    'Today, through BraveHeart Consulting LLC, he\'s on a mission to give small and medium-sized remodeling companies access to the same elite-level infrastructure that powers the industry\'s top players — so they can compete, grow, and win.',
+                    'Sekayi Brown is a Sales, Marketing & Leadership Executive with over a decade of frontline experience developing high-performance teams and organizations — one of the most competitive, high-stakes professional environments in existence.',
+                    'He\'s built outbound sales teams from zero to hundreds of professionals. He\'s led multi-state business development operations. He\'s trained leaders at every level from emerging professional to senior director. And he\'s done it at enterprise organizations like Power Home Remodeling, Amazon, and Home Genius Exteriors.',
+                    'What separates Sekayi from other consultants? He\'s not teaching theory he read in a book. He\'s transferring the exact systems, hiring frameworks, and accountability structures that generated over $150M in revenue influence across his career.',
+                    'Today, through BraveHeart Consulting LLC, he\'s on a mission to give emerging leaders, sales professionals, and growing organizations access to the same elite-level infrastructure that powers top performers — so they can compete, grow, and win.',
                   ].map((para, i) => (
                     <p key={i} style={{
                       color: '#3A3A3A',

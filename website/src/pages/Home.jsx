@@ -11,26 +11,26 @@ const stats = [
   { end: 150, prefix: '$', suffix: 'M+', label: 'Revenue Influenced', sublabel: 'Across all client partnerships' },
   { end: 18, suffix: '+', label: 'Leaders Developed', sublabel: 'Sales directors & team leads' },
   { end: 100, suffix: '+', label: 'Bootcamps Delivered', sublabel: 'Nationwide sales training' },
-  { end: 10, suffix: '+', label: 'Years in Industry', sublabel: 'Exterior remodeling expertise' },
+  { end: 10, suffix: '+', label: 'Years in Industry', sublabel: 'Sales & leadership expertise' },
 ]
 
 const painPoints = [
-  { icon: '📉', title: 'Leads dry up after door knock season', desc: 'No consistent pipeline strategy beyond canvassing, leaving revenue unpredictable month to month.' },
+  { icon: '📉', title: 'Leads dry up without a system', desc: 'No consistent pipeline strategy beyond reactive outreach, leaving revenue unpredictable month to month.' },
   { icon: '🔄', title: 'High turnover kills momentum', desc: 'Constant recruiting cycles drain resources and reset team culture, making scale feel impossible.' },
   { icon: '📊', title: 'No sales tracking or accountability', desc: 'Without real-time KPI visibility, managers can\'t coach effectively and reps drift off target.' },
-  { icon: '🎯', title: 'Presentations don\'t convert', desc: 'Low in-home close rates signal a systemic script and objection-handling problem, not just talent.' },
-  { icon: '🏠', title: 'Home shows underperform', desc: 'Booth traffic doesn\'t convert because the follow-up system and qualification process are missing.' },
+  { icon: '🎯', title: 'Presentations don\'t convert', desc: 'Low close rates signal a systemic script and objection-handling problem, not just talent.' },
+  { icon: '🏢', title: 'Events and conferences underperform', desc: 'Conference presence doesn\'t convert because the follow-up system and qualification process are missing.' },
   { icon: '📱', title: 'Marketing and sales don\'t align', desc: 'Leads from digital ads don\'t match what the sales team can close, creating friction and waste.' },
 ]
 
 const services = [
-  { icon: '🎯', title: 'Lead Generation', desc: 'Outbound pipeline systems that fill your calendar with qualified homeowners.' },
+  { icon: '🎯', title: 'Lead Generation', desc: 'Outbound pipeline systems that fill your calendar with qualified prospects and decision-makers.' },
   { icon: '👥', title: 'Recruiting & Staffing', desc: 'We source, screen, and onboard elite sales talent faster than traditional hiring.' },
   { icon: '📈', title: 'Sales & Marketing Consulting', desc: 'End-to-end audit and rebuild of your entire revenue operation.' },
-  { icon: '🏠', title: 'Home Show Management', desc: 'Turn trade show floors into your most profitable lead source.' },
-  { icon: '🚀', title: 'Done-For-You Canvassing', desc: 'Deployed canvassing teams driving qualified leads to your pipeline.' },
+  { icon: '🏢', title: 'Event & Conference Strategy', desc: 'Turn professional events and conferences into your most powerful lead-generation channel.' },
+  { icon: '🚀', title: 'Outbound Sales Deployment', desc: 'Deployed outbound sales teams driving qualified leads to your pipeline.' },
   { icon: '🏆', title: 'Performance Coaching', desc: '1-on-1 and group coaching to maximize individual and team output.' },
-  { icon: '🎓', title: 'Online Training Academy', desc: '18 modules of proven sales, mindset, and canvassing mastery.' },
+  { icon: '🎓', title: 'Online Training Academy', desc: '18 modules of proven sales, mindset, and direct sales excellence.' },
   { icon: '💼', title: 'Fractional Sales Director', desc: 'Executive-level sales leadership without the full-time cost.' },
   { icon: '🏢', title: 'Sales Agency', desc: 'We run your entire outbound operation as your outsourced revenue team.' },
 ]
@@ -217,8 +217,8 @@ export default function Home() {
             margin: '0 auto 40px',
             lineHeight: 1.7,
           }}>
-            I help exterior remodeling companies build scalable outbound sales and marketing systems
-            — leveraging 10+ years of proven experience at Power Home Remodeling, Amazon, and Home Genius Exteriors.
+            I help organizations build scalable sales and marketing systems that develop leaders, grow revenue,
+            and create lasting performance cultures — leveraging 10+ years of proven experience at the highest levels.
           </p>
 
           <div className="hero-ctas" style={{
@@ -375,8 +375,8 @@ export default function Home() {
               </h2>
 
               <p style={{ color: '#A0A0A0', fontSize: '16px', lineHeight: 1.8, marginBottom: '28px', maxWidth: '420px' }}>
-                Sekayi drops weekly videos on sales tactics, canvassing systems, mindset, and
-                leadership — all built for exterior remodeling teams ready to scale.
+                Sekayi drops weekly videos on sales tactics, outbound systems, mindset, and
+                leadership — all built for professionals and organizations ready to scale.
                 Subscribe and never miss a lesson.
               </p>
 
@@ -441,12 +441,12 @@ export default function Home() {
             <div className="section-header">
               <span className="label-text">Sound Familiar?</span>
               <h2 className="display-lg" style={{ marginTop: '12px', color: '#0A0A0A' }}>
-                Most Exterior Remodelers<br />
+                Most Sales Organizations<br />
                 <span style={{ color: '#B8860B' }}>Struggle With This</span>
               </h2>
               <p style={{ color: '#5C5C5C', fontSize: '18px', maxWidth: '620px', margin: '20px auto 0', lineHeight: 1.7 }}>
-                After training thousands of reps across the country, these are the six core breakdowns that
-                hold most remodeling companies below their revenue potential.
+                After training thousands of professionals across the country, these are the six core breakdowns that
+                hold most organizations below their revenue potential.
               </p>
             </div>
           </ScrollReveal>
@@ -588,7 +588,7 @@ export default function Home() {
                 <span style={{ color: '#B8860B' }}>In Action</span>
               </h2>
               <p style={{ color: '#5C5C5C', fontSize: '18px', maxWidth: '580px', margin: '20px auto 0', lineHeight: 1.7 }}>
-                Watch how we've helped exterior remodeling companies build scalable revenue engines from the ground up.
+                Watch how we've helped organizations and sales professionals build scalable revenue engines from the ground up.
               </p>
             </div>
           </ScrollReveal>
@@ -602,7 +602,7 @@ export default function Home() {
                 },
                 {
                   id: 'JHuDXhZNcTY',
-                  title: 'The BraveHeart Way — Building Revenue Engines for Exterior Remodelers',
+                  title: 'The BraveHeart Way — Building Revenue Engines for Organizations',
                   label: 'BraveHeart Way',
                 },
                 // Add more: { id: 'VIDEO_ID', title: 'Title', label: 'Label' }
