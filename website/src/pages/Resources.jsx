@@ -42,7 +42,7 @@ function GatedDownloadForm({ onSubmit }) {
       <div style={{ textAlign: 'center', padding: '40px' }}>
         <div style={{ fontSize: '48px', marginBottom: '16px' }}>✅</div>
         <h3 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: '28px', letterSpacing: '0.05em', color: '#0A0A0A', marginBottom: '12px' }}>
-          Your Script is on the Way!
+          Your Word Track is on the Way!
         </h3>
         <p style={{ color: '#5C5C5C', fontSize: '15px' }}>
           Check your inbox. We've also enrolled you in our weekly sales tips newsletter — no spam, just tactics.
@@ -72,7 +72,7 @@ function GatedDownloadForm({ onSubmit }) {
         </div>
       </div>
       <button type="submit" className="btn btn-gold" style={{ width: '100%', justifyContent: 'center', padding: '16px' }}>
-        Send Me the Free Cold Call Script →
+        Send Me the Free Outreach Word Track →
       </button>
       <p style={{ color: '#888888', fontSize: '12px', textAlign: 'center', marginTop: '12px' }}>
         We respect your privacy. No spam, ever. Unsubscribe anytime.
@@ -132,17 +132,17 @@ export default function Resources() {
                   lineHeight: 1,
                 }}>
                   The BraveHeart<br />
-                  <span style={{ color: '#D4A017' }}>Cold Call Script</span>
+                  <span style={{ color: '#D4A017' }}>Outreach Word Track</span>
                 </h2>
                 <p style={{ color: '#5C5C5C', fontSize: '16px', lineHeight: 1.8, marginBottom: '24px' }}>
-                  The exact cold call script Sekayi refined over 10+ years and thousands of dials in
+                  The exact outreach word track Sekayi refined over 10+ years and thousands of conversations in
                   high-performance sales environments. Opens prospects, handles gatekeepers, and books appointments.
                 </p>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
                   {[
                     'Proven opening pattern that bypasses resistance',
                     'Gatekeeper navigation framework',
-                    '5 most common objections with scripted responses',
+                    '5 most common objections with field-tested responses',
                     'Appointment-setting close sequence',
                     'Follow-up cadence template',
                   ].map((item, i) => (
@@ -171,7 +171,7 @@ export default function Resources() {
                     color: '#0A0A0A',
                     marginBottom: '6px',
                   }}>
-                    Get Your Free Script
+                    Get Your Free Word Track
                   </h3>
                   <p style={{ color: '#5C5C5C', fontSize: '14px' }}>Delivered instantly to your inbox</p>
                 </div>
@@ -340,7 +340,7 @@ export default function Resources() {
               { icon: '🎥', title: 'Building a 90-Day Sales Plan', duration: '20 min', tag: 'Planning', desc: 'The exact quarterly planning framework Sekayi uses with every coaching client.' },
               { icon: '🎥', title: 'Recruiting Elite Sales Professionals', duration: '18 min', tag: 'Recruiting', desc: 'What to look for, what questions to ask, and how to spot a real sales professional vs. a pretender.' },
               { icon: '🎥', title: 'Morning Routine of a $1M Producer', duration: '10 min', tag: 'Mindset', desc: 'The non-negotiable morning habits of the top 1% in professional sales.' },
-              { icon: '🎥', title: 'Running a Conference Presence That Converts', duration: '22 min', tag: 'Lead Gen', desc: 'The conference setup, approach script, and follow-up system that generates real appointments.' },
+              { icon: '🎥', title: 'Running a Conference Presence That Converts', duration: '22 min', tag: 'Lead Gen', desc: 'The conference setup, approach framework, and follow-up system that generates real appointments.' },
             ].map((vid, i) => (
               <ScrollReveal key={i} delay={i * 80}>
                 <div style={{

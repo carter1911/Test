@@ -18,7 +18,7 @@ const painPoints = [
   { icon: '📉', title: 'Leads dry up without a system', desc: 'No consistent pipeline strategy beyond reactive outreach, leaving revenue unpredictable month to month.' },
   { icon: '🔄', title: 'High turnover kills momentum', desc: 'Constant recruiting cycles drain resources and reset team culture, making scale feel impossible.' },
   { icon: '📊', title: 'No sales tracking or accountability', desc: 'Without real-time KPI visibility, managers can\'t coach effectively and reps drift off target.' },
-  { icon: '🎯', title: 'Presentations don\'t convert', desc: 'Low close rates signal a systemic script and objection-handling problem, not just talent.' },
+  { icon: '🎯', title: 'Presentations don\'t convert', desc: 'Low close rates signal a systemic messaging and objection-handling problem, not just talent.' },
   { icon: '🏢', title: 'Events and conferences underperform', desc: 'Conference presence doesn\'t convert because the follow-up system and qualification process are missing.' },
   { icon: '📱', title: 'Marketing and sales don\'t align', desc: 'Leads from digital ads don\'t match what the sales team can close, creating friction and waste.' },
 ]

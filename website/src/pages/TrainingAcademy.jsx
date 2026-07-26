@@ -51,7 +51,7 @@ const mindsetModules = [
     title: 'Overcoming Rejection & Objections',
     desc: 'The most important skill in sales. Learn to hear "no" as data, not defeat — and transform objections into the fastest path to a close.',
     duration: '60 min',
-    outcomes: ['Objection reframing system', 'Response scripting toolkit', 'Pattern-interrupt techniques'],
+    outcomes: ['Objection reframing system', 'Conversation response toolkit', 'Pattern-interrupt techniques'],
   },
   {
     num: '08',
@@ -100,10 +100,10 @@ const canvassingModules = [
   },
   {
     num: '02',
-    title: 'Script & Structure',
+    title: 'Word Track & Structure',
     desc: 'Master the exact language patterns, tonality, and conversational structure used to generate appointments and open conversations — including handling every objection in the field.',
     duration: '75 min',
-    outcomes: ['Proven opening scripts', 'Objection response library', 'Appointment setting framework'],
+    outcomes: ['Proven opening word tracks', 'Objection response library', 'Appointment setting framework'],
   },
   {
     num: '03',
@@ -115,7 +115,7 @@ const canvassingModules = [
   {
     num: '04',
     title: 'Advanced Communication',
-    desc: 'Go beyond the script. Learn advanced rapport-building techniques, reading body language, NLP communication patterns, and the psychological triggers that open conversations and build trust.',
+    desc: 'Go beyond the word track. Learn advanced rapport-building techniques, reading body language, NLP communication patterns, and the psychological triggers that open conversations and build trust.',
     duration: '65 min',
     outcomes: ['Rapport acceleration techniques', 'Body language mastery', 'Psychological influence framework'],
   },

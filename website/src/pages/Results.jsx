@@ -6,7 +6,7 @@ import LogoWatermark from '../components/LogoWatermark'
 
 const testimonials = [
   {
-    quote: "Sekayi transformed how we think about outbound sales. We went from 20 leads a month to over 80 within 60 days of implementing his system. The scripts, the territory strategy, the accountability framework — it all clicked.",
+    quote: "Sekayi transformed how we think about outbound sales. We went from 20 leads a month to over 80 within 60 days of implementing his system. The word tracks, the territory strategy, the accountability framework — it all clicked.",
     name: 'Marcus T.',
     title: 'Owner, Regional Sales Co.',
     location: 'Charlotte, NC',
@@ -41,7 +41,7 @@ const testimonials = [
     result: 'Rep → Team Lead in 6 Months',
   },
   {
-    quote: "The Outbound Sales Deployment service paid for itself in the first month. We had a full team deployed, scripts dialed in, and qualified appointments flowing before I had to make a single hire. It's exactly what we needed to scale fast.",
+    quote: "The Outbound Sales Deployment service paid for itself in the first month. We had a full team deployed, word tracks dialed in, and qualified appointments flowing before I had to make a single hire. It's exactly what we needed to scale fast.",
     name: 'Brian K.',
     title: 'Founder, Summit Growth Ventures',
     location: 'Denver, CO',

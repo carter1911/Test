@@ -42,7 +42,7 @@ const services = [
     desc: 'We build, manage, and deploy outbound sales teams on your behalf — handling recruiting, training, territory strategy, and performance management so you get a fully operational lead engine without the overhead.',
     outcomes: ['Consistent daily prospecting activity', 'Predictable pipeline flow', 'Lower cost-per-lead than inbound alone'],
     tier: 'silver',
-    deliverables: ['Sales team recruitment & onboarding', 'Script & objection training', 'Territory strategy & performance management', 'Daily performance reporting'],
+    deliverables: ['Sales team recruitment & onboarding', 'Word track & objection training', 'Territory strategy & performance management', 'Daily performance reporting'],
   },
   {
     icon: '🏆',
@@ -50,7 +50,7 @@ const services = [
     desc: 'Intensive 1-on-1 and group coaching programs for sales reps and managers designed to maximize close rates, build consistent high-performance habits, and create a culture of accountability.',
     outcomes: ['+10–20% individual close rate', 'Stronger manager-rep relationships', 'Measurable KPI improvement'],
     tier: 'bronze',
-    deliverables: ['Weekly group coaching sessions', '1-on-1 rep coaching calls', 'Role-play & script refinement', 'Personal development plans'],
+    deliverables: ['Weekly group coaching sessions', '1-on-1 rep coaching calls', 'Role-play & word track refinement', 'Personal development plans'],
   },
   {
     icon: '🎓',

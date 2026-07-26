@@ -40,7 +40,7 @@ function getRecommendation(answers) {
       package: 'Outbound Sales Deployment',
       price: '$7,500',
       description: 'We deploy proven outbound sales teams and systems immediately so you have qualified leads in your pipeline within 30 days.',
-      bullets: ['Rapid deployment', 'Pre-qualified prospect leads', 'Full outreach scripts & tracking'],
+      bullets: ['Rapid deployment', 'Pre-qualified prospect leads', 'Full outreach word tracks & tracking'],
     }
     return {
       tier: 'SILVER',
@@ -57,7 +57,7 @@ function getRecommendation(answers) {
       package: 'Performance Coaching Program',
       price: '$7,500',
       description: 'Intensive 90-day coaching program for your sales reps to maximize close rates and build consistent high-performance habits.',
-      bullets: ['Weekly group coaching calls', 'Script refinement', 'KPI tracking & accountability'],
+      bullets: ['Weekly group coaching calls', 'Word track refinement', 'KPI tracking & accountability'],
     }
     return {
       tier: 'SILVER',
