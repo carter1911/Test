@@ -206,7 +206,23 @@ export default function About() {
                   </span>
                 </div>
 
-                <div style={{ marginTop: '36px', display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
+                <div style={{
+                  marginTop: '28px',
+                  padding: '14px 18px',
+                  background: 'rgba(0,0,0,0.025)',
+                  borderLeft: '3px solid rgba(212,160,23,0.3)',
+                  borderRadius: '0 6px 6px 0',
+                }}>
+                  <p style={{ color: '#888888', fontSize: '13px', lineHeight: 1.7, margin: 0 }}>
+                    <strong style={{ color: '#5C5C5C', fontWeight: 600 }}>A note on fit:</strong>{' '}
+                    BraveHeart's work is exclusively focused on developing leaders, passionate sales professionals,
+                    and growth-oriented organizations. Due to competitive interests, Sekayi does not consult with
+                    exterior remodeling, interior remodeling, or home improvement companies — there are plenty of
+                    great consultants in that lane. This one's built for something different.
+                  </p>
+                </div>
+
+                <div style={{ marginTop: '28px', display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
                   <a href="https://calendly.com/braveheartway/30min" target="_blank" rel="noopener noreferrer" className="btn btn-gold">Book a Strategy Call</a>
                   <Link to="/services" className="btn btn-outline">View Services</Link>
                 </div>
